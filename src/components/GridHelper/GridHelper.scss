@@ -1,0 +1,59 @@
+$sm: 320px;
+$md: 672px;
+$lg: 1056px;
+$xl: 1312px;
+$max: 1584px;
+
+$sm-minus-1: calc(#{$sm} - 1px);
+$md-minus-1: calc(#{$md} - 1px);
+$lg-minus-1: calc(#{$lg} - 1px);
+$xl-minus-1: calc(#{$xl} - 1px);
+$max-minus-1: calc(#{$max} - 1px);
+
+.grid-helper.isVisible {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  top: 0;
+  height: 100%;
+  background-color: rgba(235, 77, 222, 0.1);
+  z-index: 1000;
+  pointer-events: none;
+}
+
+.grid-helper:not(.isVisible) {
+  display: none;
+}
+
+.grid-helper .bx--row {
+  height: 100%;
+  border-left: 15px solid rgba(235, 77, 222, 0.1);
+  border-right: 15px solid rgba(235, 77, 222, 0.1);
+}
+.grid-helper__col {
+  border-right: dashed 1px rgba(235, 77, 222, 1);
+  height: 100vh;
+  -webkit-box-shadow: inset 0 0 0 16px rgba(235, 77, 222, 0.1);
+  -moz-box-shadow: inset 0 0 0 16px rgba(235, 77, 222, 0.1);
+  box-shadow: inset 0 0 0 16px rgba(235, 77, 222, 0.1);
+}
+
+.grid-helper .grid-helper__col:first-child {
+  border-left: dashed 1px cyan;
+}
+
+.grid-helper .grid-helper__col:last-child {
+  border-right: dashed 1px cyan;
+}
+
+@media (max-width: $lg-minus-1) {
+  .grid-helper .grid-helper__col:nth-child(8) {
+    border-right: dashed 1px cyan;
+  }
+}
+
+@media (max-width: $md-minus-1) {
+  .grid-helper .grid-helper__col:nth-child(4) {
+    border-right: dashed 1px cyan;
+  }
+}

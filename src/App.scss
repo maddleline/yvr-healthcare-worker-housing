@@ -3,19 +3,5 @@
 }
 
 .section {
-  height: 100vh;
-  display: flex;
-  justify-content: space-between;
-  &--text {
-    padding: 4rem 2rem;
-    width: 50vw;
-  }
-  &--image {
-    padding: 4rem 2rem;
-    width: 50vw;
-    img {
-      max-height: 100%;
-      max-width: 100%;
-    }
-  }
+  min-height: 100vh;
 }
