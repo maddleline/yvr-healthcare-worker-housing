@@ -1,7 +1,118 @@
 .App {
   text-align: left;
+  .bx--row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+h1,
+h2,
+h3 {
+  color: #6f5cb6;
+}
+
+h1 {
+  padding-bottom: 4rem;
+  font-size: 54px;
+  line-height: 58px;
+}
+h1 + p {
+  color: #556265;
+}
+h2 {
+  padding-bottom: 2rem;
+}
+h3 {
+  padding-bottom: 2rem;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 22px;
+}
+h4 {
+  padding-bottom: 0.5rem;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+}
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: #6f5cb6;
+  text-decoration: none;
+  svg {
+    fill: #6f5cb6;
+    padding-top: 4px;
+    margin-left: 0.25rem;
+  }
+}
+
+ol {
+  margin-left: 1rem;
+  li {
+    list-style: decimal;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    letter-spacing: 0;
+    color: #161616;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+  }
+}
+
+.bx--grid {
+  box-shadow: 0 -1px 0 #000;
+}
+
+.light-purple {
+  background-color: #f9f8ff;
+}
+
+.dark-purple {
+  background-color: #5e3ed6;
+  p,
+  h1,
+  h2,
+  h3 {
+    color: white;
+  }
+}
+
+.thank-you-message {
+  p {
+    font-size: 21px;
+    line-height: 32px;
+  }
 }
 
 .section {
-  min-height: 100vh;
+  .left {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .right {
+    display: flex;
+    flex-direction: column;
+    &.border {
+      box-shadow: 1px 0 0 #000 inset;
+    }
+    div {
+      flex-grow: 1;
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+    .eyebrow {
+      h4 {
+        box-shadow: 0 -1px 0 #d8d8d8;
+        padding-top: 1rem;
+      }
+    }
+  }
+  .divider {
+    height: 1px;
+    box-shadow: 0 -1px 0 #d8d8d8;
+  }
 }
