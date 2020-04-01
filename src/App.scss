@@ -7,6 +7,12 @@ html {
     margin-left: 0;
     margin-right: 0;
   }
+  .bx--no-gutter {
+    .left {
+      padding-right: 0;
+      padding-left: 3rem;
+    }
+  }
 }
 
 h1,
@@ -66,8 +72,15 @@ ol {
   }
 }
 
-.bx--grid {
-  box-shadow: 0 -1px 0 #000;
+.bx--grid.header,
+.bx--grid.introduction {
+  box-shadow: 0 1px 0 #000;
+}
+
+.stack {
+  div {
+    box-shadow: 0 1px 0 #000;
+  }
 }
 
 .light-purple {
@@ -100,7 +113,7 @@ ol {
     display: flex;
     flex-direction: column;
     &.border {
-      box-shadow: 1px 0 0 #000 inset;
+      box-shadow: 1px 1px 0 #000 inset;
     }
     div {
       flex-grow: 1;
@@ -113,10 +126,20 @@ ol {
         padding-top: 1rem;
       }
     }
+    .card {
+      max-width: 65%;
+    }
   }
   .divider {
     height: 1px;
-    box-shadow: 0 -1px 0 #d8d8d8;
+    padding-top: 0;
+    padding-bottom: 0;
+    &.black {
+      box-shadow: 0 -1px 0 black;
+    }
+    &.grey {
+      box-shadow: 0 -1px 0 #d8d8d8;
+    }
   }
 
   &__header {

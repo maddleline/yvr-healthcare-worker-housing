@@ -10,7 +10,7 @@ function App() {
     <>
       {process.env.NODE_ENV === "development" && <GridHelper />}
       <div className="App">
-        <div className="bx--grid">
+        <div className="bx--grid header">
           <div className="bx--row section section__header">
             <div className="bx--col-md-4 bx--col-lg-4">
               <h4>Vancouver Healthcare Worker Housing</h4>
@@ -28,7 +28,7 @@ function App() {
           </div>
         </div>
 
-        <div className="bx--grid">
+        <div className="bx--grid introduction bx--no-gutter">
           <div className="bx--row section section__introduction">
             <div className="bx--col-md-4 bx--col-lg-5 left">
               <h1>Help keep healthcare workers' families safe</h1>
@@ -39,8 +39,8 @@ function App() {
               </p>
             </div>
             <div className="bx--offset-lg-1 left--gutter" />
-            <div className="bx--col-md-4 bx--col-lg-4 right border">
-              <div>
+            <div className="bx--col-md-4 bx--col-lg-6 right border light-purple">
+              <div className="card">
                 <h4>Healthcare workers</h4>
                 <h2>Looking for alternative housing?</h2>
                 <a href="#healthcare-workers">
@@ -48,7 +48,11 @@ function App() {
                   <ArrowRight16 />
                 </a>
               </div>
-              <div>
+              <div
+                className="divider black"
+                style={{ padding: 0, marginLeft: "-1rem", width: "50vw" }}
+              />
+              <div className="card">
                 <h4>Property owners</h4>
                 <h2>Have an available furnished suite?</h2>
                 <a href="#list-property">
@@ -137,7 +141,7 @@ function App() {
           </div>
           <div className="bx--row section" id="list-property">
             <div className="bx--col-md-4 bx--col-lg-12">
-              <div className="divider" />
+              <div className="divider grey" />
             </div>
           </div>
           <div className="bx--row section">
@@ -159,15 +163,15 @@ function App() {
                 <h4>I'd like to make a change to my listing.</h4>
                 <p>
                   If you need to amend your listing for any reason, email
-                  XXXXXXXX@gmail.com with the phrase “Listing Amendment” in the
-                  email subject line.
+                  vancouver@healthworkerhousing.ca with the phrase “Listing
+                  Amendment” in the email subject line.
                 </p>
               </div>
               <div>
                 <h4>My listing has been filled, how do I pull it?</h4>
                 <ol>
-                  <li>Email xxxx@gmail.com</li>
-                  <li>Put “ Listing Complete” in the email subject line.</li>
+                  <li>Email vancouver@healthworkerhousing.ca</li>
+                  <li>Put "Listing Complete" in the email subject line.</li>
                   <li>
                     Put your name in the body of the email, and the name of the
                     listing you'd like to remove.
