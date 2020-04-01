@@ -31,7 +31,7 @@ function App() {
         <div className="bx--grid">
           <div className="bx--row section section__introduction">
             <div className="bx--col-md-4 bx--col-lg-5 left">
-              <h1>Help keep healthcare workers families safe</h1>
+              <h1>Help keep healthcare workers' families safe</h1>
               <p style={{ maxWidth: "360px" }}>
                 This a volunteer project designed to connect property owners
                 with healthcare workers that are looking for short-term housing
@@ -44,15 +44,15 @@ function App() {
                 <h4>Healthcare workers</h4>
                 <h2>Looking for alternative housing?</h2>
                 <a href="#healthcare-workers">
-                  Browse available listings
+                  Apply for accomodation
                   <ArrowRight16 />
                 </a>
               </div>
               <div>
                 <h4>Property owners</h4>
                 <h2>Have an available furnished suite?</h2>
-                <a href="#property-owners">
-                  Browse available listings
+                <a href="#list-property">
+                  List your property
                   <ArrowRight16 />
                 </a>
               </div>
@@ -135,7 +135,7 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="bx--row section">
+          <div className="bx--row section" id="list-property">
             <div className="bx--col-md-4 bx--col-lg-12">
               <div className="divider" />
             </div>
