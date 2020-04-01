@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 .App {
   text-align: left;
   .bx--row {
@@ -114,5 +117,13 @@ ol {
   .divider {
     height: 1px;
     box-shadow: 0 -1px 0 #d8d8d8;
+  }
+
+  &__header {
+    height: 4rem;
+    align-items: center;
+    a {
+      color: black;
+    }
   }
 }

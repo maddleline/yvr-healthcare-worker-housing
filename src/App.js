@@ -11,6 +11,24 @@ function App() {
       {process.env.NODE_ENV === "development" && <GridHelper />}
       <div className="App">
         <div className="bx--grid">
+          <div className="bx--row section section__header">
+            <div className="bx--col-md-4 bx--col-lg-4">
+              <h4>Vancouver Healthcare Worker Housing</h4>
+            </div>
+            <div className="bx--offset-lg-2" />
+            <div className="bx--col-md-2 bx--col-lg-2">
+              <a href="#healthcare-workers">For healthcare workers</a>
+            </div>
+            <div className="bx--col-md-2 bx--col-lg-2">
+              <a href="#property-owners">For property owners</a>
+            </div>
+            <div className="bx--col-md-2 bx--col-lg-2">
+              <a href="#about">About</a>
+            </div>
+          </div>
+        </div>
+
+        <div className="bx--grid">
           <div className="bx--row section section__introduction">
             <div className="bx--col-md-4 bx--col-lg-5 left">
               <h1>Help keep healthcare workers families safe</h1>
@@ -25,7 +43,7 @@ function App() {
               <div>
                 <h4>Healthcare workers</h4>
                 <h2>Looking for alternative housing?</h2>
-                <a href="#">
+                <a href="#healthcare-workers">
                   Browse available listings
                   <ArrowRight16 />
                 </a>
@@ -33,7 +51,7 @@ function App() {
               <div>
                 <h4>Property owners</h4>
                 <h2>Have an available furnished suite?</h2>
-                <a href="#">
+                <a href="#property-owners">
                   Browse available listings
                   <ArrowRight16 />
                 </a>
@@ -42,7 +60,7 @@ function App() {
           </div>
         </div>
 
-        <div className="bx--grid">
+        <div className="bx--grid" id="healthcare-workers">
           <div className="bx--row section">
             <div className="bx--col-md-4 bx--col-lg-5 left">
               <h3>Healthcare Workers</h3>
@@ -77,7 +95,7 @@ function App() {
           </div>
         </div>
 
-        <div className="bx--grid light-purple">
+        <div className="bx--grid light-purple" id="property-owners">
           <div className="bx--row section">
             <div className="bx--col-md-4 bx--col-lg-5 left">
               <h3>Property owners</h3>
