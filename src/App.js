@@ -1,6 +1,13 @@
 import "./App.scss";
 
 import { ArrowRight16, Launch16 } from "@carbon/icons-react/es";
+import {
+  Link,
+  Redirect,
+  Route,
+  BrowserRouter as Router,
+  Switch,
+} from "react-router-dom";
 import React, { useState } from "react";
 
 import GridHelper from "./components/GridHelper";
@@ -267,4 +274,15 @@ function App() {
   );
 }
 
-export default App;
+export default function AppWithRouter() {
+  return (
+    <Router>
+      <Switch>
+        <Redirect exact from="/" to="/vancouver" />
+        <Route path="/vancouver">
+          <App />
+        </Route>
+      </Switch>
+    </Router>
+  );
+}
