@@ -1,6 +1,6 @@
 import "./App.scss";
 
-import { ArrowRight16, Launch16 } from "@carbon/icons-react/es";
+import { ArrowRight16, Launch16, Warning32 } from "@carbon/icons-react/es";
 import React, { useState } from "react";
 import {
   Redirect,
@@ -43,8 +43,8 @@ function App() {
               <h1>Help keep healthcare workers' families safe</h1>
               <p>
                 This a volunteer project designed to connect property owners
-                with healthcare workers that are looking for short-term housing
-                during the Covid-19 outbreak in Vancouver.
+                with healthcare workers that are looking for low-cost,
+                short-term housing during the COVID-19 outbreak in Vancouver.
               </p>
             </div>
             <div className="right">
@@ -87,10 +87,9 @@ function App() {
               <h3>Healthcare Workers</h3>
               <h2>Find temporary alternative housing</h2>
               <p>
-                To receive the spreadsheet with available listings, you just
-                need to fill out a form. Someone from this team will send you
-                the available listings with the information we have on those
-                properties.
+                To request access to our listings, submit the form at the link
+                below. Once we've confirmed your information, a link to our
+                available listings will be sent to your email.
               </p>
               <div
                 className="link"
@@ -100,6 +99,15 @@ function App() {
               >
                 Request access to listings
                 <ArrowRight16 />
+              </div>
+              <div className="warning">
+                <Warning32 />
+                <p>
+                  Please note the team running this service has not done any due
+                  diligence on any of the offers. We are simply an information
+                  service and it is up to each party to meet and screen anyone
+                  they would like to enter into a rental agreement with.
+                </p>
               </div>
             </div>
             <div className="bx--offset-lg-1" />
@@ -116,12 +124,6 @@ function App() {
                   <li>Email address</li>
                 </ul>
                 <br />
-                <p>
-                  <em>
-                    For flexibility, we recommend that you connect with
-                    coworkers who you could rent a suite with.
-                  </em>
-                </p>
               </div>
             </div>
           </div>
@@ -137,13 +139,10 @@ function App() {
                 suites they can offer at low- or no-cost.
               </p>
               <p>
-                We suggest rent to be pro-rated weekly to avoid putting a burden
-                on healthcare workers that are having to pay for their regular
-                mortgage or rent in addition to the cost of separate housing.
-              </p>
-              <p>
-                The cost is a compromise between market rent, and the price that
-                staff can reasonably afford.
+                We ask that you set the rental price below market rent, and
+                pro-rate it weekly. This is to alleviate the financial burden on
+                healthcare workers that are having bear the cost of alternative
+                housing in addition to their standing mortgage or rent payments.
               </p>
             </div>
             <div className="bx--offset-lg-1" />
@@ -154,6 +153,7 @@ function App() {
                   <li>Separate entry</li>
                   <li>Wifi</li>
                   <li>On-site laundry</li>
+                  <li>Washroom</li>
                   <li>Kitchen or kitchenette</li>
                 </ul>
               </div>
@@ -168,9 +168,10 @@ function App() {
             <div className="bx--col-md-4 bx--col-lg-5">
               <h4>How do I list my property?</h4>
               <p>
-                Fill in this Google Form with your pertinent property
-                information. Your listing and contact information will be shared
-                with essential workers in need of affordable accomodation.
+                To list your property, fill out Google Form at the link below
+                with your property information. Your listing and contact
+                information will only be shared with essential workers in need
+                of affordable accomodation.
               </p>
               <a
                 href="https://docs.google.com/forms/d/e/1FAIpQLSeoDudR3nhYv8KvutU6osarBFqdnNBUq303LI_k2qf0CiRAnQ/viewform?usp=pp_url"
@@ -210,9 +211,9 @@ function App() {
             <div className="bx--col-md-8 bx--offset-lg-1 bx--col-lg-7">
               <div className="thank-you-message">
                 <p>
-                  To the property owners who made their property available: You
-                  are providing a critical service to our front-line healthcare
-                  staff to protect the entire Vancouver community.
+                  To the property owners who have made their property available:
+                  You are providing a critical service to our frontline
+                  healthcare workers to protect the entire Vancouver community.
                 </p>
               </div>
             </div>
@@ -230,9 +231,9 @@ function App() {
                 <p>
                   This service is primarily for healthcare workers who carry the
                   highest risk of contracting COVID-19. However, we understand
-                  that all essential workers are at risk and might be seeking
-                  temporary, low-cost housing. If you are concerned about
-                  exposing your household to COVID-19, we encourage you to
+                  that all essential workers carry some risk and might be
+                  seeking temporary, low-cost housing. If you are concerned
+                  about exposing your household to COVID-19, we encourage you to
                   apply.
                 </p>
               </div>

@@ -69,6 +69,16 @@ a,
 
 .link {
   font-size: 1rem;
+  padding-bottom: 1rem;
+}
+
+.warning {
+  margin-top: 2rem;
+  font-style: italic;
+  color: #556265;
+  svg {
+    fill: #7f7f7f;
+  }
 }
 
 ol {
