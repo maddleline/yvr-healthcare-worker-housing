@@ -1,7 +1,8 @@
 import "./App.scss";
 
-import { ArrowRight16 } from "@carbon/icons-react/es";
 import GridHelper from "./components/GridHelper";
+import HealthWorkerModalWrapper from "./components/HealthWorkerModalWrapper";
+import PropertyOwnerLink from "./components/PropertyOwnerLink";
 import React from "react";
 
 function App() {
@@ -16,13 +17,13 @@ function App() {
               <h4>Vancouver Healthcare Worker Housing</h4>
             </div>
             <div className="bx--offset-lg-2" />
-            <div className="bx--col-md-2 bx--col-lg-2">
+            <div className="bx--col-sm-0 bx--col-md-2 bx--col-lg-2">
               <a href="#healthcare-workers">For healthcare workers</a>
             </div>
-            <div className="bx--col-md-2 bx--col-lg-2">
+            <div className="bx--col-sm-0 bx--col-md-2 bx--col-lg-2">
               <a href="#property-owners">For property owners</a>
             </div>
-            <div className="bx--col-md-2 bx--col-lg-2">
+            <div className="bx--col-sm-0 bx--col-md-0 bx--col-lg-2">
               <a href="#about">About</a>
             </div>
           </div>
@@ -40,25 +41,16 @@ function App() {
             </div>
             <div className="bx--offset-lg-1 left--gutter" />
             <div className="bx--col-md-4 bx--col-lg-6 right border light-purple">
-              <div className="card">
+              <div className="card container">
                 <h4>Healthcare workers</h4>
                 <h2>Looking for alternative housing?</h2>
-                <a href="#healthcare-workers">
-                  Apply for accomodation
-                  <ArrowRight16 />
-                </a>
+                <HealthWorkerModalWrapper />
               </div>
-              <div
-                className="divider black"
-                style={{ padding: 0, marginLeft: "-1rem", width: "50vw" }}
-              />
-              <div className="card">
+              <div className="divider black" />
+              <div className="card container">
                 <h4>Property owners</h4>
                 <h2>Have an available furnished suite?</h2>
-                <a href="#list-property">
-                  List your property
-                  <ArrowRight16 />
-                </a>
+                <PropertyOwnerLink />
               </div>
             </div>
           </div>
@@ -75,20 +67,24 @@ function App() {
                 the available listings with the information we have on those
                 properties.
               </p>
-              <a href="#">
-                Receive available listings
-                <ArrowRight16 />
-              </a>
+              <HealthWorkerModalWrapper />
             </div>
             <div className="bx--offset-lg-1 left--gutter" />
             <div className="bx--col-md-4 bx--col-lg-3 right">
-              <div className="eyebrow">
-                <div>
-                  <h4>Information requested on the form</h4>
-                  <p>Name</p>
-                  <p>Email address</p>
+              <div className="eyebrow container">
+                <div className="container">
+                  <h4>
+                    In order to verify those requesting access to our listings,
+                    we ask for the following personal information:
+                  </h4>
+                  <ul>
+                    <li>Name</li>
+                    <li>Occupation</li>
+                    <li>Place of work</li>
+                    <li>Email address</li>
+                  </ul>
                 </div>
-                <div>
+                <div className="container">
                   <p>
                     For flexibility, we recommend that you connect with
                     coworkers who you could rent a suite with.
@@ -110,7 +106,7 @@ function App() {
               </p>
               <p>
                 We suggest rent to be pro-rated weekly to avoid putting a burden
-                on health care workers that are having to pay for their regular
+                on healthcare workers that are having to pay for their regular
                 mortgage or rent in addition to the cost of separate housing.
               </p>
               <p>
@@ -123,18 +119,15 @@ function App() {
             </div>
             <div className="bx--offset-lg-1 left--gutter" />
             <div className="bx--col-md-4 bx--col-lg-3 right">
-              <div className="eyebrow">
-                <div>
-                  <h4>Property requirements</h4>
-                  <p>Separate Entry</p>
-                  <p>Wifi</p>
-                </div>
-                <div>
-                  <p style={{ fontStyle: "italic" }}>
-                    Ideally, suites also have:
-                  </p>
-                  <p>Laundry on site</p>
-                  <p>A short commute to a major healthcare facility</p>
+              <div className="eyebrow container">
+                <div className="container">
+                  <h4>Ideal properties will have the following amenities:</h4>
+                  <ul>
+                    <li>Separate entry</li>
+                    <li>Wifi</li>
+                    <li>On-site laundry</li>
+                    <li>Kitchen or kitchenette</li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -149,25 +142,14 @@ function App() {
               <h4>How do I list my property?</h4>
               <p>
                 Fill in this Google Form with your pertinent property
-                information and wait for calls or emails from health care
-                workers.
+                information. Your listing and contact information will be shared
+                with essential workers in need of affordable accomodation.
               </p>
-              <a href="#">
-                List my property for healthcare workers
-                <ArrowRight16 />
-              </a>
+              <PropertyOwnerLink />
             </div>
             <div className="bx--offset-lg-1 left--gutter" />
             <div className="bx--col-md-4 bx--col-lg-5 right">
-              <div>
-                <h4>I'd like to make a change to my listing.</h4>
-                <p>
-                  If you need to amend your listing for any reason, email
-                  vancouver@healthworkerhousing.ca with the phrase “Listing
-                  Amendment” in the email subject line.
-                </p>
-              </div>
-              <div>
+              <div className="container">
                 <h4>My listing has been filled, how do I pull it?</h4>
                 <ol>
                   <li>Email vancouver@healthworkerhousing.ca</li>
@@ -177,7 +159,7 @@ function App() {
                     listing you'd like to remove.
                     <br />
                     <br />
-                    That's it! Thank you for helping to keep a health care
+                    That's it! Thank you for helping to keep a healthcare
                     worker's family safe.
                   </li>
                 </ol>
@@ -192,10 +174,10 @@ function App() {
               <h2>Thank you!</h2>
             </div>
             <div className="bx--col-md-4 bx--offset-lg-1 bx--col-lg-7 right">
-              <div className="thank-you-message">
+              <div className="thank-you-message container">
                 <p>
                   To the property owners who made their property available:  You
-                  are providing a critical service to our front-line health care
+                  are providing a critical service to our front-line healthcare
                   staff to protect the entire Vancouver community.
                 </p>
               </div>
