@@ -22,11 +22,11 @@ function App() {
             <div className="bx--col-sm-0 bx--col-md-2 bx--col-lg-2">
               <a href="#healthcare-workers">For healthcare workers</a>
             </div>
-            <div className="bx--col-sm-0 bx--col-md-2 bx--col-lg-2">
+            <div className="bx--col-sm-0 bx--col-md-1 bx--col-lg-2">
               <a href="#property-owners">For property owners</a>
             </div>
-            <div className="bx--col-sm-0 bx--col-md-0 bx--col-lg-2">
-              <a href="#about">FAQs</a>
+            <div className="bx--col-sm-0 bx--col-md-1 bx--col-lg-2">
+              <a href="#faqs">FAQs</a>
             </div>
           </div>
         </div>
@@ -205,9 +205,58 @@ function App() {
             <div className="bx--col-md-8 bx--offset-lg-1 bx--col-lg-7">
               <div className="thank-you-message">
                 <p>
-                  To the property owners who made their property available:  You
+                  To the property owners who made their property available: You
                   are providing a critical service to our front-line healthcare
                   staff to protect the entire Vancouver community.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="bx--grid" id="faqs">
+          <div className="bx--row section section__faqs">
+            <div className="bx--col-sm-4 bx--col-md-8 bx--col-lg-12">
+              <h2>Frequently Asked Questions</h2>
+            </div>
+            <div className="bx--col-sm-4 bx--col-md-7 bx--col-lg-5">
+              <div className="question">
+                <h4>I'm not a healthcare worker, can I apply for housing?</h4>
+                <p>
+                  This service is primarily for healthcare workers who carry the
+                  highest risk of contracting COVID-19. However, we understand
+                  that all essential workers are at risk and might be seeking
+                  temporary, low-cost housing. If you are concerned for the
+                  health of your household, we encourage you to apply.
+                </p>
+              </div>
+              <div className="question">
+                <h4>Can I email you to say thank you?</h4>
+                <p>
+                  Please refrain from any other communications to our email
+                  address provided to allow us to effectively administer
+                  requests and offers! If you like, you can share this link on
+                  social media and thank us there.
+                </p>
+              </div>
+            </div>
+            <div className="bx--offset-lg-1" />
+            <div className="bx--col-sm-4 bx--col-md-7 bx--col-lg-5">
+              <div className="question">
+                <h4>Why wouldn't I just use Craigslist or Airbnb?</h4>
+                <p>
+                  Unlike more general platforms, our service caters specifically
+                  to healthcare and other essential workers during the COVID-19
+                  outbreak in Vancouver. We vet those who apply for housing to
+                  ensure their need is legitimate, so that low-cost housing
+                  offers are not taken advantage of.
+                </p>
+              </div>
+              <div className="question">
+                <h4>Can I start this in my city?</h4>
+                <p>
+                  Yes! Email carehousingvictoria@gmail.com with "New City" in
+                  the subject line, and we will help you get started.
                 </p>
               </div>
             </div>

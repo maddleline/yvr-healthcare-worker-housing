@@ -253,4 +253,10 @@ ul {
       }
     }
   }
+
+  &__faqs {
+    .question {
+      padding-bottom: 1rem;
+    }
+  }
 }
