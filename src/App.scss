@@ -54,7 +54,10 @@ p {
   margin-bottom: 1rem;
 }
 
-a {
+a,
+.card,
+.link {
+  cursor: pointer;
   color: #6f5cb6;
   text-decoration: none;
   svg {
@@ -62,6 +65,10 @@ a {
     padding-top: 4px;
     margin-left: 0.25rem;
   }
+}
+
+.link {
+  font-size: 1rem;
 }
 
 ol {
@@ -128,7 +135,6 @@ ul {
       width: 50vw;
       border-left: 1px solid #000;
       .card {
-        cursor: pointer;
         padding-left: 1rem;
         padding-right: 1rem;
         padding-top: 3rem;

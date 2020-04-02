@@ -1,25 +1,36 @@
-import { ModalWrapper, TextInput } from "carbon-components-react";
+import { Modal, TextInput } from "carbon-components-react";
 
-import { ArrowRight16 } from "@carbon/icons-react/es";
 import React from "react";
 
-const HealthWorkerModalWrapper = () => {
+const HealthWorkerModal = ({ isOpen, setIsOpen }) => {
   return (
-    <ModalWrapper
-      buttonTriggerText="Request listings"
+    <Modal
       className="health-worker-modal"
-      disabled={false}
-      handleSubmit={() => {}}
-      id="input-modal"
       modalHeading="Request listings"
       modalLabel="Healthcare Workers"
       primaryButtonText="Submit"
-      renderTriggerButtonIcon={ArrowRight16}
       secondaryButtonText="Cancel"
       selectorPrimaryFocus="[data-modal-primary-focus]"
-      shouldCloseAfterSubmit
-      triggerButtonIconDescription="Right arrow"
-      triggerButtonKind="tertiary"
+      hasScrollingContent={false}
+      iconDescription="Close the modal"
+      modalAriaLabel="Modal for healthcare workers to submit their information"
+      onBlur={() => {}}
+      onClick={() => {}}
+      onFocus={() => {}}
+      onKeyDown={() => {}}
+      onRequestClose={() => {
+        setIsOpen(false);
+      }}
+      onRequestSubmit={() => {
+        setIsOpen(false);
+      }}
+      onSecondarySubmit={() => {
+        setIsOpen(false);
+      }}
+      open={isOpen}
+      passiveModal={false}
+      primaryButtonDisabled={false}
+      size={undefined}
     >
       <div style={{ display: "flex" }}>
         <TextInput
@@ -62,8 +73,8 @@ const HealthWorkerModalWrapper = () => {
         placeholder=""
         type="text"
       />
-    </ModalWrapper>
+    </Modal>
   );
 };
 
-export default HealthWorkerModalWrapper;
+export default HealthWorkerModal;

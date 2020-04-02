@@ -1,14 +1,16 @@
 import "./App.scss";
 
+import { ArrowRight16, Launch16 } from "@carbon/icons-react/es";
+import React, { useState } from "react";
+
 import GridHelper from "./components/GridHelper";
-import HealthWorkerModalWrapper from "./components/HealthWorkerModalWrapper";
-import PropertyOwnerLink from "./components/PropertyOwnerLink";
-import React from "react";
+import HealthWorkerModal from "./components/HealthWorkerModal";
 
 function App() {
-  console.log(`Application is running in ${process.env.NODE_ENV} mode.`);
+  const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <>
+      <HealthWorkerModal isOpen={isModalOpen} setIsOpen={setIsModalOpen} />
       {process.env.NODE_ENV === "development" && <GridHelper />}
       <div className="App">
         <div className="bx--grid header">
@@ -40,17 +42,35 @@ function App() {
               </p>
             </div>
             <div className="right">
-              <div className="card" style={{ borderBottom: "1px solid black" }}>
+              <div
+                className="card"
+                onClick={() => {
+                  setIsModalOpen(true);
+                }}
+                style={{ borderBottom: "1px solid black" }}
+              >
                 <h4>Healthcare workers</h4>
                 <h2>Looking for alternative housing?</h2>
-                <HealthWorkerModalWrapper />
+                <div className="link">
+                  Request listings
+                  <ArrowRight16 />
+                </div>
               </div>
               <div className="divider black" />
-              <div className="card">
-                <h4>Property owners</h4>
-                <h2>Have an available furnished suite?</h2>
-                <PropertyOwnerLink />
-              </div>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSeoDudR3nhYv8KvutU6osarBFqdnNBUq303LI_k2qf0CiRAnQ/viewform?usp=pp_url"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="card">
+                  <h4>Property owners</h4>
+                  <h2>Have an available furnished suite?</h2>
+                  <div className="link">
+                    List your property
+                    <Launch16 />
+                  </div>
+                </div>
+              </a>
             </div>
           </div>
         </div>
@@ -66,10 +86,18 @@ function App() {
                 the available listings with the information we have on those
                 properties.
               </p>
-              <HealthWorkerModalWrapper />
+              <div
+                className="link"
+                onClick={() => {
+                  setIsModalOpen(true);
+                }}
+              >
+                Request listings
+                <ArrowRight16 />
+              </div>
             </div>
             <div className="bx--offset-lg-1" />
-            <div className="bx--col-sm-2 bx--col-md-4 bx--col-lg-3">
+            <div className="bx--col-sm-3 bx--col-md-4 bx--col-lg-3">
               <div className="eyebrow">
                 <h4>
                   In order to verify those requesting access to our listings, we
@@ -114,7 +142,7 @@ function App() {
               </p>
             </div>
             <div className="bx--offset-lg-1" />
-            <div className="bx--col-sm-2 bx--col-md-4 bx--col-lg-3">
+            <div className="bx--col-sm-3 bx--col-md-4 bx--col-lg-3">
               <div className="eyebrow">
                 <h4>Ideal properties will have the following amenities:</h4>
                 <ul>
@@ -139,7 +167,15 @@ function App() {
                 information. Your listing and contact information will be shared
                 with essential workers in need of affordable accomodation.
               </p>
-              <PropertyOwnerLink />
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSeoDudR3nhYv8KvutU6osarBFqdnNBUq303LI_k2qf0CiRAnQ/viewform?usp=pp_url"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="link"
+              >
+                List your property
+                <Launch16 />
+              </a>
             </div>
             <div className="bx--offset-lg-1" />
             <div className="bx--col-sm-4 bx--col-md-0 spacer" />
