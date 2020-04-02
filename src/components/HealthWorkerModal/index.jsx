@@ -6,7 +6,7 @@ const HealthWorkerModal = ({ isOpen, setIsOpen }) => {
   return (
     <Modal
       className="health-worker-modal"
-      modalHeading="Request listings"
+      modalHeading="Request access to listings"
       modalLabel="Healthcare Workers"
       primaryButtonText="Submit"
       secondaryButtonText="Cancel"
@@ -52,16 +52,16 @@ const HealthWorkerModal = ({ isOpen, setIsOpen }) => {
       <br />
       <TextInput
         helperText=""
-        id="workplace-text-input"
-        labelText="Place of work:"
+        id="occupation-text-input"
+        labelText="Occupation:"
         placeholder=""
         type="text"
       />
       <br />
       <TextInput
         helperText=""
-        id="occupation-text-input"
-        labelText="Occupation:"
+        id="workplace-text-input"
+        labelText="Place of work:"
         placeholder=""
         type="text"
       />

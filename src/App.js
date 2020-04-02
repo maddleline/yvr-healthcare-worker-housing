@@ -1,14 +1,13 @@
 import "./App.scss";
 
 import { ArrowRight16, Launch16 } from "@carbon/icons-react/es";
+import React, { useState } from "react";
 import {
-  Link,
   Redirect,
   Route,
   BrowserRouter as Router,
   Switch,
 } from "react-router-dom";
-import React, { useState } from "react";
 
 import GridHelper from "./components/GridHelper";
 import HealthWorkerModal from "./components/HealthWorkerModal";
@@ -59,7 +58,7 @@ function App() {
                 <h4>Healthcare workers</h4>
                 <h2>Looking for alternative housing?</h2>
                 <div className="link">
-                  Request listings
+                  Request access to listings
                   <ArrowRight16 />
                 </div>
               </div>
@@ -86,7 +85,7 @@ function App() {
           <div className="bx--row section">
             <div className="bx--col-md-4 bx--col-lg-5">
               <h3>Healthcare Workers</h3>
-              <h2>Find temporary alternate housing</h2>
+              <h2>Find temporary alternative housing</h2>
               <p>
                 To receive the spreadsheet with available listings, you just
                 need to fill out a form. Someone from this team will send you
@@ -99,7 +98,7 @@ function App() {
                   setIsModalOpen(true);
                 }}
               >
-                Request listings
+                Request access to listings
                 <ArrowRight16 />
               </div>
             </div>
@@ -118,8 +117,10 @@ function App() {
                 </ul>
                 <br />
                 <p>
-                  For flexibility, we recommend that you connect with coworkers
-                  who you could rent a suite with.
+                  <em>
+                    For flexibility, we recommend that you connect with
+                    coworkers who you could rent a suite with.
+                  </em>
                 </p>
               </div>
             </div>
@@ -133,7 +134,7 @@ function App() {
               <h2>House a healthcare worker</h2>
               <p>
                 We are looking for property owners that have available furnished
-                suites.
+                suites they can offer at low- or no-cost.
               </p>
               <p>
                 We suggest rent to be pro-rated weekly to avoid putting a burden
@@ -142,10 +143,7 @@ function App() {
               </p>
               <p>
                 The cost is a compromise between market rent, and the price that
-                staff can reasonably afford. Our suggested guideline for cost is
-                $1000/month for a place that has two beds, inclusive of all
-                utilities. In this example, it could house two healthcare
-                workers at a cost of $500 each per month.
+                staff can reasonably afford.
               </p>
             </div>
             <div className="bx--offset-lg-1" />
@@ -233,15 +231,16 @@ function App() {
                   This service is primarily for healthcare workers who carry the
                   highest risk of contracting COVID-19. However, we understand
                   that all essential workers are at risk and might be seeking
-                  temporary, low-cost housing. If you are concerned for the
-                  health of your household, we encourage you to apply.
+                  temporary, low-cost housing. If you are concerned about
+                  exposing your household to COVID-19, we encourage you to
+                  apply.
                 </p>
               </div>
               <div className="question">
                 <h4>Can I email you to say thank you?</h4>
                 <p>
-                  Please refrain from any other communications to our email
-                  address provided to allow us to effectively administer
+                  Please refrain from any other communications to the email
+                  addresses provided to allow us to effectively administer
                   requests and offers! If you like, you can share this link on
                   social media and thank us there.
                 </p>
@@ -260,10 +259,12 @@ function App() {
                 </p>
               </div>
               <div className="question">
-                <h4>Can I start this in my city?</h4>
+                <h4>Can I start this in another city?</h4>
                 <p>
                   Yes! Email carehousingvictoria@gmail.com with "New City" in
-                  the subject line, and we will help you get started.
+                  the subject line, and we will help you get started. You only
+                  need know how to use email and Google Forms to act as a city
+                  coordinator.
                 </p>
               </div>
             </div>
