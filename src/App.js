@@ -136,7 +136,7 @@ function App() {
               <h2>House a healthcare worker</h2>
               <p>
                 We are looking for property owners that have available furnished
-                suites they can offer at low- or no-cost.
+                suites they can offer at low or no cost.
               </p>
               <p>
                 We ask that you set the rental price below market rent, and
@@ -169,10 +169,10 @@ function App() {
             <div className="bx--col-md-4 bx--col-lg-5">
               <h4>How do I list my property?</h4>
               <p>
-                To list your property, fill out Google Form at the link below
-                with your property information. Your listing and contact
-                information will only be shared with essential workers in need
-                of affordable accomodation.
+                To list your property, fill out the Google Form at the link
+                below with your property information. Your listing and contact
+                information will only be shared with essential workers who have
+                a legitimate need for affordable accomodation.
               </p>
               <a
                 href="https://docs.google.com/forms/d/e/1FAIpQLSeoDudR3nhYv8KvutU6osarBFqdnNBUq303LI_k2qf0CiRAnQ/viewform?usp=pp_url"
@@ -190,7 +190,7 @@ function App() {
               <h4>My listing has been filled, how do I pull it?</h4>
               <ol>
                 <li>Email vancouver@healthworkerhousing.ca</li>
-                <li>Put "Listing Complete" in the email subject line.</li>
+                <li>Put "Listing Complete" in the email subject line</li>
                 <li>Include your name in the body of the email</li>
                 <br />
               </ol>
