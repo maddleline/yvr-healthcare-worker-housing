@@ -210,8 +210,8 @@ function App() {
               <div className="thank-you-message">
                 <p>
                   To the property owners who have made their property available:
-                  You are providing a critical service to our frontline
-                  healthcare workers to protect the entire Vancouver community.
+                  You are providing a critical service to our frontline workers,
+                  and helping to protect the entire Vancouver community.
                 </p>
               </div>
             </div>
@@ -242,6 +242,29 @@ function App() {
                   addresses provided to allow us to effectively administer
                   requests and offers! If you like, you can share this link on
                   social media and thank us there.
+                </p>
+              </div>
+              <div className="question">
+                <h4>Is this service available in other cities?</h4>
+                <p>
+                  Yes! You can find the site for Victoria{" "}
+                  <a
+                    href="http://www.yyjlocalsforlocals.com/healthcare/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    here
+                  </a>
+                  {", "}
+                  and the site for Toronto{" "}
+                  <a
+                    href="https://www.yyzhealthcarehousing.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    here
+                  </a>
+                  .
                 </p>
               </div>
             </div>

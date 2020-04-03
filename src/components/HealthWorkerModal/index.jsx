@@ -25,12 +25,23 @@ const HealthWorkerModal = ({ isOpen, setIsOpen }) => {
     window.emailjs
       .send("default_service", templateId, variables)
       .then((res) => {
+        console.log("Email successfully sent!", variables);
         alert(
           "Your request has been received! We'll contact you shortly by email."
         );
-        console.log("Email successfully sent!", variables);
       })
-      .catch((err) => console.error("Email failed to send.", err));
+      .catch((err) => {
+        console.error("Email failed to send.", err);
+        if (err.status === 412) {
+          alert(
+            "Whoops-- we weren't able to process your request.  Please try again with a valid email."
+          );
+        } else {
+          alert(
+            "Whoops-- we weren't able to process your request.  Please try again later."
+          );
+        }
+      });
   };
 
   return (
@@ -111,10 +122,12 @@ const HealthWorkerModal = ({ isOpen, setIsOpen }) => {
       <br />
       <TextInput
         helperText=""
+        invalid={email.length === 0}
+        invalidText="This value is required"
         id="email-text-input"
         labelText="Email:"
         placeholder=""
-        type="text"
+        type="email"
         onChange={(e) => {
           setEmail(e.target.value);
         }}
