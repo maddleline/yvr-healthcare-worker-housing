@@ -7,6 +7,8 @@ const HealthWorkerModal = ({ isOpen, setIsOpen }) => {
   const [occupation, setOccupation] = useState("");
   const [workplace, setWorkplace] = useState("");
   const [email, setEmail] = useState("");
+  const [feedback, setFeedback] = useState("");
+  const [formIsSubmitted, setFormIsSubmitted] = useState(false);
 
   const handleSubmit = (event) => {
     const templateId = "health_worker_housing_yvr";
@@ -25,19 +27,20 @@ const HealthWorkerModal = ({ isOpen, setIsOpen }) => {
     window.emailjs
       .send("default_service", templateId, variables)
       .then((res) => {
+        setFormIsSubmitted(true);
         console.log("Email successfully sent!", variables);
-        alert(
+        setFeedback(
           "Your request has been received! We'll contact you shortly by email."
         );
       })
       .catch((err) => {
         console.error("Email failed to send.", err);
         if (err.status === 412) {
-          alert(
+          setFeedback(
             "Whoops-- we weren't able to process your request.  Please try again with a valid email."
           );
         } else {
-          alert(
+          setFeedback(
             "Whoops-- we weren't able to process your request.  Please try again later."
           );
         }
@@ -49,100 +52,99 @@ const HealthWorkerModal = ({ isOpen, setIsOpen }) => {
       className="health-worker-modal"
       modalHeading="Request access to listings"
       modalLabel="Healthcare Workers"
-      primaryButtonText="Submit"
-      secondaryButtonText="Cancel"
       selectorPrimaryFocus="[data-modal-primary-focus]"
-      hasScrollingContent={false}
       iconDescription="Close the modal"
       modalAriaLabel="Modal for healthcare workers to submit their information"
-      passiveModal={false}
+      passiveModal={true}
       hasForm={true}
-      onBlur={() => {}}
-      onClick={() => {}}
-      onFocus={() => {}}
-      onKeyDown={() => {}}
       onRequestClose={() => {
         setIsOpen(false);
       }}
-      onRequestSubmit={() => {
-        handleSubmit();
-        setIsOpen(false);
-      }}
-      onSecondarySubmit={() => {
-        setIsOpen(false);
-      }}
       open={isOpen}
-      primaryButtonDisabled={false}
-      size={undefined}
     >
-      <Form>
-        <div style={{ display: "flex" }}>
-          <TextInput
-            helperText=""
-            id="first-name-text-input"
-            labelText="First name:"
-            placeholder=""
-            type="text"
-            onChange={(e) => {
-              setFirstName(e.target.value);
-            }}
-          />
-          <div className="spacer" style={{ width: "2rem" }} />
-          <TextInput
-            helperText=""
-            id="last-name-text-input"
-            labelText="Last name:"
-            placeholder=""
-            type="text"
-            onChange={(e) => {
-              setLastName(e.target.value);
-            }}
-          />
-        </div>
-        <br />
-        <TextInput
-          helperText=""
-          id="occupation-text-input"
-          labelText="Occupation:"
-          placeholder=""
-          type="text"
-          onChange={(e) => {
-            setOccupation(e.target.value);
+      {formIsSubmitted ? (
+        <div className="feedback">{feedback}</div>
+      ) : (
+        <Form
+          className="request-for-listings-form"
+          onSubmit={(e) => {
+            e.preventDefault();
+            handleSubmit();
           }}
-        />
-        <br />
-        <TextInput
-          helperText=""
-          id="workplace-text-input"
-          labelText="Place of work:"
-          placeholder=""
-          type="text"
-          onChange={(e) => {
-            setWorkplace(e.target.value);
-          }}
-        />
-        <br />
-        <TextInput
-          helperText=""
-          required
-          id="email-text-input"
-          labelText="Email:"
-          placeholder=""
-          type="email"
-          onChange={(e) => {
-            setEmail(e.target.value);
-          }}
-        />
-        <Button
-          className="some-class"
-          disabled={false}
-          kind="primary"
-          tabIndex={0}
-          type="submit"
         >
-          Submit
-        </Button>
-      </Form>
+          <div style={{ display: "flex" }}>
+            <TextInput
+              required
+              helperText=""
+              id="first-name-text-input"
+              labelText="First name:"
+              placeholder=""
+              type="text"
+              onChange={(e) => {
+                setFirstName(e.target.value);
+              }}
+            />
+            <div className="spacer" style={{ width: "2rem" }} />
+            <TextInput
+              required
+              helperText=""
+              id="last-name-text-input"
+              labelText="Last name:"
+              placeholder=""
+              type="text"
+              onChange={(e) => {
+                setLastName(e.target.value);
+              }}
+            />
+          </div>
+          <br />
+          <TextInput
+            required
+            helperText=""
+            id="occupation-text-input"
+            labelText="Occupation:"
+            placeholder=""
+            type="text"
+            onChange={(e) => {
+              setOccupation(e.target.value);
+            }}
+          />
+          <br />
+          <TextInput
+            required
+            helperText=""
+            id="workplace-text-input"
+            labelText="Place of work:"
+            placeholder=""
+            type="text"
+            onChange={(e) => {
+              setWorkplace(e.target.value);
+            }}
+          />
+          <br />
+          <TextInput
+            required
+            helperText=""
+            id="email-text-input"
+            labelText="Email:"
+            placeholder=""
+            type="email"
+            onChange={(e) => {
+              setEmail(e.target.value);
+            }}
+          />
+          <br />
+          <Button
+            className="submit-request-for-listings"
+            kind="primary"
+            size="default"
+            tabIndex={0}
+            type="submit"
+          >
+            Submit
+          </Button>
+        </Form>
+      )}
     </Modal>
   );
 };
