@@ -42,8 +42,8 @@ function App() {
             <div className="left">
               <h1>Help keep healthcare workers' families safe</h1>
               <p>
-                This a volunteer project designed to connect property owners
-                with healthcare workers that are looking for low-cost,
+                This a humanitarian initiative designed to connect property
+                owners with healthcare workers that are looking for low-cost,
                 short-term housing during the COVID-19 outbreak in Vancouver.
               </p>
             </div>
@@ -153,7 +153,7 @@ function App() {
                   <li>Separate entry</li>
                   <li>Wifi</li>
                   <li>On-site laundry</li>
-                  <li>Washroom</li>
+                  <li>Private washroom</li>
                   <li>Kitchen or kitchenette</li>
                 </ul>
               </div>
@@ -190,15 +190,13 @@ function App() {
               <ol>
                 <li>Email vancouver@healthworkerhousing.ca</li>
                 <li>Put "Listing Complete" in the email subject line.</li>
-                <li>
-                  Put your name in the body of the email, and the name of the
-                  listing you'd like to remove.
-                  <br />
-                  <br />
-                  That's it! Thank you for helping to keep a healthcare worker's
-                  family safe.
-                </li>
+                <li>Include your name in the body of the email</li>
+                <br />
               </ol>
+              <p>
+                That's it! Thank you for helping to keep a healthcare worker's
+                family safe.
+              </p>
             </div>
           </div>
         </div>
