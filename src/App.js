@@ -190,7 +190,7 @@ function App() {
               <h4>My listing has been filled, how do I pull it?</h4>
               <ol>
                 <li>Email vancouver@healthworkerhousing.ca</li>
-                <li>Put "Listing Complete" in the email subject line</li>
+                <li>Put "Listing Complete" in the subject line</li>
                 <li>Include your name in the body of the email</li>
                 <br />
               </ol>
@@ -279,6 +279,14 @@ function App() {
                   outbreak in Vancouver. We vet those who apply for housing to
                   ensure their need is legitimate, so that low-cost housing
                   offers are not taken advantage of.
+                </p>
+              </div>
+              <div className="question">
+                <h4>Can I contact you for media inquiries?</h4>
+                <p>
+                  Yes! For media inquiries, please email
+                  vancouver@healthworkerhousing.ca with "Media Inquiry" in the
+                  subject line.
                 </p>
               </div>
               <div className="question">
