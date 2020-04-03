@@ -260,10 +260,10 @@ function App() {
               <div className="question">
                 <h4>Can I start this in another city?</h4>
                 <p>
-                  Yes! Email carehousingvictoria@gmail.com with "New City" in
-                  the subject line, and we will help you get started. You only
-                  need know how to use email and Google Forms to act as a city
-                  coordinator.
+                  Yes! Email housing4frontlinehealth@gmail.com with "New City"
+                  in the subject line, and we will help you get started. You
+                  only need know how to use email and Google Forms to act as a
+                  city coordinator.
                 </p>
               </div>
             </div>
