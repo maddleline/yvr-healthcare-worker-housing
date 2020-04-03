@@ -42,9 +42,9 @@ function App() {
             <div className="left">
               <h1>Help keep healthcare workers' families safe</h1>
               <p>
-                This a humanitarian initiative designed to connect property
-                owners with healthcare workers in need of low-cost, short-term
-                housing during the COVID-19 outbreak in Vancouver.
+                This a volunteer initiative designed to connect property owners
+                with healthcare workers in need of low-cost, short-term housing
+                during the COVID-19 outbreak in Vancouver.
               </p>
             </div>
             <div className="right">

@@ -1,4 +1,4 @@
-import { Modal, TextInput } from "carbon-components-react";
+import { Button, Form, Modal, TextInput } from "carbon-components-react";
 import React, { useState } from "react";
 
 const HealthWorkerModal = ({ isOpen, setIsOpen }) => {
@@ -55,6 +55,8 @@ const HealthWorkerModal = ({ isOpen, setIsOpen }) => {
       hasScrollingContent={false}
       iconDescription="Close the modal"
       modalAriaLabel="Modal for healthcare workers to submit their information"
+      passiveModal={false}
+      hasForm={true}
       onBlur={() => {}}
       onClick={() => {}}
       onFocus={() => {}}
@@ -70,68 +72,77 @@ const HealthWorkerModal = ({ isOpen, setIsOpen }) => {
         setIsOpen(false);
       }}
       open={isOpen}
-      passiveModal={false}
       primaryButtonDisabled={false}
       size={undefined}
     >
-      <div style={{ display: "flex" }}>
+      <Form>
+        <div style={{ display: "flex" }}>
+          <TextInput
+            helperText=""
+            id="first-name-text-input"
+            labelText="First name:"
+            placeholder=""
+            type="text"
+            onChange={(e) => {
+              setFirstName(e.target.value);
+            }}
+          />
+          <div className="spacer" style={{ width: "2rem" }} />
+          <TextInput
+            helperText=""
+            id="last-name-text-input"
+            labelText="Last name:"
+            placeholder=""
+            type="text"
+            onChange={(e) => {
+              setLastName(e.target.value);
+            }}
+          />
+        </div>
+        <br />
         <TextInput
           helperText=""
-          id="first-name-text-input"
-          labelText="First name:"
+          id="occupation-text-input"
+          labelText="Occupation:"
           placeholder=""
           type="text"
           onChange={(e) => {
-            setFirstName(e.target.value);
+            setOccupation(e.target.value);
           }}
         />
-        <div className="spacer" style={{ width: "2rem" }} />
+        <br />
         <TextInput
           helperText=""
-          id="last-name-text-input"
-          labelText="Last name:"
+          id="workplace-text-input"
+          labelText="Place of work:"
           placeholder=""
           type="text"
           onChange={(e) => {
-            setLastName(e.target.value);
+            setWorkplace(e.target.value);
           }}
         />
-      </div>
-      <br />
-      <TextInput
-        helperText=""
-        id="occupation-text-input"
-        labelText="Occupation:"
-        placeholder=""
-        type="text"
-        onChange={(e) => {
-          setOccupation(e.target.value);
-        }}
-      />
-      <br />
-      <TextInput
-        helperText=""
-        id="workplace-text-input"
-        labelText="Place of work:"
-        placeholder=""
-        type="text"
-        onChange={(e) => {
-          setWorkplace(e.target.value);
-        }}
-      />
-      <br />
-      <TextInput
-        helperText=""
-        invalid={email.length === 0}
-        invalidText="This value is required"
-        id="email-text-input"
-        labelText="Email:"
-        placeholder=""
-        type="email"
-        onChange={(e) => {
-          setEmail(e.target.value);
-        }}
-      />
+        <br />
+        <TextInput
+          helperText=""
+          required
+          id="email-text-input"
+          labelText="Email:"
+          placeholder=""
+          type="email"
+          onChange={(e) => {
+            setEmail(e.target.value);
+          }}
+        />
+        <Button
+          className="some-class"
+          disabled={false}
+          kind="primary"
+          tabIndex={0}
+          type="submit"
+        >
+          Submit
+        </Button>
+      </Form>
     </Modal>
   );
 };
