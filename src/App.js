@@ -43,8 +43,8 @@ function App() {
               <h1>Help keep healthcare workers' families safe</h1>
               <p>
                 This a humanitarian initiative designed to connect property
-                owners with healthcare workers that are looking for low-cost,
-                short-term housing during the COVID-19 outbreak in Vancouver.
+                owners with healthcare workers in need of low-cost, short-term
+                housing during the COVID-19 outbreak in Vancouver.
               </p>
             </div>
             <div className="right">
@@ -141,8 +141,9 @@ function App() {
               <p>
                 We ask that you set the rental price below market rent, and
                 pro-rate it weekly. This is to alleviate the financial burden on
-                healthcare workers that are having bear the cost of alternative
-                housing in addition to their standing mortgage or rent payments.
+                healthcare workers that are having to bear the cost of
+                alternative housing in addition to their standing mortgage or
+                rent payments.
               </p>
             </div>
             <div className="bx--offset-lg-1" />
