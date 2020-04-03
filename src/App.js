@@ -189,7 +189,7 @@ function App() {
             <div className="bx--col-md-4 bx--col-lg-5">
               <h4>My listing has been filled, how do I pull it?</h4>
               <ol>
-                <li>Email vancouver@healthworkerhousing.ca</li>
+                <li>Email vancouver&#64;healthworkerhousing.ca</li>
                 <li>Put "Listing Complete" in the subject line</li>
                 <li>Include your name in the body of the email</li>
                 <br />
@@ -285,17 +285,17 @@ function App() {
                 <h4>Can I contact you for media inquiries?</h4>
                 <p>
                   Yes! For media inquiries, please email
-                  vancouver@healthworkerhousing.ca with "Media Inquiry" in the
-                  subject line.
+                  vancouver&#64;healthworkerhousing.ca with "Media Inquiry" in
+                  the subject line.
                 </p>
               </div>
               <div className="question">
                 <h4>Can I start this in another city?</h4>
                 <p>
-                  Yes! Email housing4frontlinehealth@gmail.com with "New City"
-                  in the subject line, and we will help you get started. You
-                  only need know how to use email and Google Forms to act as a
-                  city coordinator.
+                  Yes! Email housing4frontlinehealth&#64;gmail.com with "New
+                  City" in the subject line, and we will help you get started.
+                  You only need know how to use email and Google Forms to act as
+                  a city coordinator.
                 </p>
               </div>
             </div>
