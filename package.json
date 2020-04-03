@@ -2,6 +2,7 @@
   "name": "yvr-healthcare-workers-housing",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://www.healthworkerhousing.ca/vancouver",
   "dependencies": {
     "@carbon/grid": "^10.9.2",
     "@testing-library/jest-dom": "^4.2.4",
