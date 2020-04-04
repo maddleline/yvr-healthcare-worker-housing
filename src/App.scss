@@ -28,7 +28,7 @@ h3 {
 }
 
 h1 {
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
   font-size: 54px;
   line-height: 58px;
 }
@@ -120,6 +120,11 @@ ul {
 }
 
 .introduction-bx--grid.introduction {
+  .hero-image {
+    width: 50%;
+    float: right;
+    margin-right: 2rem;
+  }
   .section {
     display: flex;
     flex-direction: row;
@@ -128,13 +133,14 @@ ul {
     .left {
       width: 50vw;
       padding-top: 3rem;
-      padding-bottom: 3rem;
+      padding-bottom: 2rem;
       padding-left: 3rem;
       h1 {
         max-width: 83%;
       }
       p {
         max-width: 360px;
+        padding-right: 1rem;
       }
     }
     .right {
@@ -149,7 +155,6 @@ ul {
         padding-right: 1rem;
         padding-top: 3rem;
         padding-bottom: 3rem;
-        height: 50%;
       }
     }
   }
@@ -165,12 +170,6 @@ ul {
         width: 100vw;
         padding-left: 2rem;
         border-bottom: 1px solid #000;
-        h1 {
-          max-width: 83%;
-        }
-        p {
-          max-width: 360px;
-        }
       }
       .right {
         display: flex;

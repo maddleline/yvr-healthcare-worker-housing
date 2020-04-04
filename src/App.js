@@ -46,6 +46,11 @@ function App() {
                 with healthcare workers in need of low-cost, short-term housing
                 during the COVID-19 outbreak in Vancouver.
               </p>
+              <img
+                className="hero-image"
+                src={"/hero-image.png"}
+                alt="Illustration of a healthcare worker's household"
+              />
             </div>
             <div className="right">
               <div
@@ -53,7 +58,6 @@ function App() {
                 onClick={() => {
                   setIsModalOpen(true);
                 }}
-                style={{ borderBottom: "1px solid black" }}
               >
                 <h4>Healthcare workers</h4>
                 <h2>Looking for temporary housing?</h2>
@@ -62,13 +66,17 @@ function App() {
                   <ArrowRight16 />
                 </div>
               </div>
-              <div className="divider black" />
+              <div
+                className="divider black"
+                style={{ height: "1px", boxShadow: "0 1px 0 black" }}
+              />
               <a
                 href="https://docs.google.com/forms/d/e/1FAIpQLSeoDudR3nhYv8KvutU6osarBFqdnNBUq303LI_k2qf0CiRAnQ/viewform?usp=pp_url"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="card"
               >
-                <div className="card">
+                <div>
                   <h4>Property owners</h4>
                   <h2>Have an available furnished suite?</h2>
                   <div className="link">
