@@ -56,7 +56,7 @@ function App() {
                 style={{ borderBottom: "1px solid black" }}
               >
                 <h4>Healthcare workers</h4>
-                <h2>Looking for alternative housing?</h2>
+                <h2>Looking for temporary housing?</h2>
                 <div className="link">
                   Request access to listings
                   <ArrowRight16 />
@@ -85,7 +85,7 @@ function App() {
           <div className="bx--row section">
             <div className="bx--col-md-4 bx--col-lg-5">
               <h3>Healthcare Workers</h3>
-              <h2>Find temporary alternative housing</h2>
+              <h2>Find temporary housing</h2>
               <p>
                 To request access to our listings, submit the form at the link
                 below. Once we've confirmed your information, a link to our
@@ -151,7 +151,7 @@ function App() {
               <div className="eyebrow">
                 <h4>Ideal properties will have the following amenities:</h4>
                 <ul>
-                  <li>Separate entry</li>
+                  <li>Separate entrance</li>
                   <li>Wifi</li>
                   <li>On-site laundry</li>
                   <li>Private washroom</li>
@@ -282,9 +282,9 @@ function App() {
                 </p>
               </div>
               <div className="question">
-                <h4>Can I contact you for media inquiries?</h4>
+                <h4>Can I contact you for media enquiries?</h4>
                 <p>
-                  Yes! For media inquiries, please email
+                  Yes! For media enquiries, please email
                   vancouver&#64;healthworkerhousing.ca with "Media Inquiry" in
                   the subject line.
                 </p>
