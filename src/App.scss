@@ -131,9 +131,12 @@ ul {
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
     .left {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       width: 50vw;
       padding-top: 3rem;
-      padding-bottom: 2rem;
+      padding-bottom: 0;
       padding-left: 3rem;
       h1 {
         max-width: 83%;
@@ -141,6 +144,9 @@ ul {
       p {
         max-width: 360px;
         padding-right: 1rem;
+      }
+      img {
+        align-self: flex-end;
       }
     }
     .right {
