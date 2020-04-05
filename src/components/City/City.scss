@@ -13,7 +13,8 @@ $max-minus-1: calc(#{$max} - 1px);
 html {
   scroll-behavior: smooth;
 }
-.App {
+.City {
+  text-align: left;
   .bx--row {
     margin-left: 0;
     margin-right: 0;
