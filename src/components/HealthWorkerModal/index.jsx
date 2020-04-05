@@ -1,4 +1,12 @@
-import { Button, Form, Modal, TextInput } from "carbon-components-react";
+import "./HealthWorkerModal.scss";
+
+import {
+  Button,
+  Checkbox,
+  Form,
+  Modal,
+  TextInput,
+} from "carbon-components-react";
 import React, { useState } from "react";
 
 const HealthWorkerModal = ({ isOpen, setIsOpen }) => {
@@ -132,6 +140,36 @@ const HealthWorkerModal = ({ isOpen, setIsOpen }) => {
             onChange={(e) => {
               setEmail(e.target.value);
             }}
+          />
+          <br />
+          <Checkbox
+            className="checkbox"
+            id="checkbox-1"
+            required
+            labelText="I confirm I would be willing to pay a reasonable rate for a seperate, furnished suite."
+            name="checkbox-1"
+            onChange={() => {}}
+            value="standard"
+          />
+          <br />
+          <Checkbox
+            className="checkbox"
+            id="checkbox-2"
+            required
+            labelText="I confirm I am a healthcare or other essential worker at high risk of contracting COVID-19."
+            name="checkbox-2"
+            onChange={() => {}}
+            value="standard"
+          />
+          <br />
+          <Checkbox
+            className="checkbox"
+            id="checkbox-3"
+            required
+            labelText="I understand that it's my responsibility to contact suites to set up viewings and come up with a suitable rental agreement."
+            name="checkbox-3"
+            onChange={() => {}}
+            value="standard"
           />
           <br />
           <Button
