@@ -51,7 +51,7 @@ const HealthWorkerModal = ({ isOpen, setIsOpen }) => {
     <Modal
       className="health-worker-modal"
       modalHeading="Request access to listings"
-      modalLabel="Healthcare Workers"
+      modalLabel="Health Workers"
       selectorPrimaryFocus="[data-modal-primary-focus]"
       iconDescription="Close the modal"
       modalAriaLabel="Modal for healthcare workers to submit their information"

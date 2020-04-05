@@ -22,7 +22,7 @@ function App() {
         <div className="bx--grid header">
           <div className="bx--row section section__header">
             <div className="bx--col-md-4 bx--col-lg-4">
-              <h4>Vancouver Healthcare Worker Housing</h4>
+              <h4>Vancouver Health Worker Housing</h4>
             </div>
             <div className="bx--offset-lg-2" />
             <div className="bx--col-sm-0 bx--col-md-2 bx--col-lg-2">
@@ -280,13 +280,12 @@ function App() {
             <div className="bx--offset-lg-1" />
             <div className="bx--col-sm-4 bx--col-md-7 bx--col-lg-5">
               <div className="question">
-                <h4>Why wouldn't I just use Craigslist or Airbnb?</h4>
+                <h4>Isn't Airbnb already doing this?</h4>
                 <p>
-                  Unlike more general platforms, our service caters specifically
-                  to healthcare and other essential workers during the COVID-19
-                  outbreak in Vancouver. We vet those who apply for housing to
-                  ensure their need is legitimate, so that low-cost housing
-                  offers are not taken advantage of.
+                  Listing a property on Airbnb is an involved process that takes
+                  a number of few steps. We offer a simpler and less formal
+                  process so that property owners can be connected with
+                  healthcare workers faster.
                 </p>
               </div>
               <div className="question">
