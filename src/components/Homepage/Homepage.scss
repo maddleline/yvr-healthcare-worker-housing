@@ -10,7 +10,7 @@ $lg-minus-1: calc(#{$lg} - 1px);
 $xl-minus-1: calc(#{$xl} - 1px);
 $max-minus-1: calc(#{$max} - 1px);
 
-.City {
+.Homepage {
   a,
   .card,
   .link {
@@ -21,20 +21,6 @@ $max-minus-1: calc(#{$max} - 1px);
       fill: #6f5cb6;
       padding-top: 4px;
       margin-left: 0.25rem;
-    }
-  }
-
-  .link {
-    font-size: 1rem;
-    padding-bottom: 1rem;
-  }
-
-  .warning {
-    margin-top: 2rem;
-    font-style: italic;
-    color: #556265;
-    svg {
-      fill: #7f7f7f;
     }
   }
 
@@ -108,43 +94,5 @@ $max-minus-1: calc(#{$max} - 1px);
     flex-wrap: wrap;
     margin-right: 0;
     margin-left: 0;
-  }
-
-  .divider--grey {
-    height: 1px;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    box-shadow: 0 -1px 0 #d8d8d8;
-  }
-
-  @media (max-width: $md-minus-1) {
-    .spacer {
-      height: 3rem;
-    }
-  }
-
-  .section {
-    .eyebrow {
-      padding-top: 3rem;
-      h4 {
-        box-shadow: 0 -1px 0 #d8d8d8;
-        padding-top: 1rem;
-      }
-    }
-
-    &__thank-you {
-      .thank-you-message {
-        p {
-          font-size: 21px;
-          line-height: 32px;
-        }
-      }
-    }
-
-    &__faqs {
-      .question {
-        padding-bottom: 1rem;
-      }
-    }
   }
 }

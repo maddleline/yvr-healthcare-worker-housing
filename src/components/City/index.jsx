@@ -1,3 +1,5 @@
+import "./City.scss";
+
 import { ArrowRight16, Launch16, Warning32 } from "@carbon/icons-react/es";
 import React, { useState } from "react";
 
@@ -30,8 +32,8 @@ const City = () => {
           </div>
         </div>
 
-        <div className="introduction-bx--grid introduction">
-          <div className="introduction-bx--row section section__introduction">
+        <div className="lead-bx--grid">
+          <div className="lead-bx--row section">
             <div className="left">
               <h1>Help keep healthcare workers' families safe</h1>
               <p>

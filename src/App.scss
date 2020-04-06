@@ -1,22 +1,30 @@
-$sm: 320px;
-$md: 672px;
-$lg: 1056px;
-$xl: 1312px;
-$max: 1584px;
-
-$sm-minus-1: calc(#{$sm} - 1px);
-$md-minus-1: calc(#{$md} - 1px);
-$lg-minus-1: calc(#{$lg} - 1px);
-$xl-minus-1: calc(#{$xl} - 1px);
-$max-minus-1: calc(#{$max} - 1px);
-
 html {
   scroll-behavior: smooth;
 }
-.App {
+
+.bx--grid {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.bx--row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.bx--grid.header {
+  padding-top: 0;
+  padding-bottom: 0;
+  box-shadow: 0 1px 0 #000;
   .bx--row {
-    margin-left: 0;
-    margin-right: 0;
+    height: 4rem;
+    align-items: center;
+    h4 {
+      padding-bottom: 0;
+    }
+    a {
+      color: black;
+    }
   }
 }
 
@@ -31,53 +39,31 @@ h1 {
   font-size: 54px;
   line-height: 58px;
 }
+
 h1 + p {
   color: #556265;
 }
+
 h2 {
   padding-bottom: 2rem;
 }
+
 h3 {
   padding-bottom: 2rem;
   font-weight: bold;
   font-size: 20px;
   line-height: 22px;
 }
+
 h4 {
   padding-bottom: 0.5rem;
   font-weight: bold;
   font-size: 16px;
   line-height: 22px;
 }
+
 p {
   margin-bottom: 1rem;
-}
-
-a,
-.card,
-.link {
-  cursor: pointer;
-  color: #6f5cb6;
-  text-decoration: none;
-  svg {
-    fill: #6f5cb6;
-    padding-top: 4px;
-    margin-left: 0.25rem;
-  }
-}
-
-.link {
-  font-size: 1rem;
-  padding-bottom: 1rem;
-}
-
-.warning {
-  margin-top: 2rem;
-  font-style: italic;
-  color: #556265;
-  svg {
-    fill: #7f7f7f;
-  }
 }
 
 ol {
@@ -108,109 +94,6 @@ ul {
   }
 }
 
-.bx--grid {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
-.bx--grid.header {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
-.introduction-bx--grid.introduction {
-  .hero-image {
-    width: 50%;
-    margin-right: 2rem;
-  }
-  .section {
-    display: flex;
-    flex-direction: row;
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
-    .left {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      width: 50vw;
-      padding-top: 3rem;
-      padding-bottom: 0;
-      padding-left: 3rem;
-      h1 {
-        max-width: 83%;
-      }
-      p {
-        max-width: 360px;
-        padding-right: 1rem;
-      }
-      img {
-        align-self: flex-end;
-      }
-    }
-    .right {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      background-color: #f9f8ff;
-      width: 50vw;
-      border-left: 1px solid #000;
-      .card {
-        padding-left: 1rem;
-        padding-right: 1rem;
-        padding-top: 3rem;
-        padding-bottom: 3rem;
-      }
-    }
-  }
-}
-
-@media (max-width: $md-minus-1) {
-  .introduction-bx--grid.introduction {
-    .section {
-      flex-direction: column;
-      border-top: 1px solid #000;
-      border-bottom: 1px solid #000;
-      .left {
-        width: 100vw;
-        padding-left: 2rem;
-        border-bottom: 1px solid #000;
-      }
-      .right {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        background-color: #f9f8ff;
-        width: 100vw;
-        border-left: none;
-        .card {
-          padding-left: 2rem;
-          padding-right: 2rem;
-          height: 50%;
-        }
-      }
-    }
-  }
-}
-
-.bx--grid.header {
-  box-shadow: 0 1px 0 #000;
-}
-
-.introduction-bx--grid {
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 99rem;
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.introduction-bx--row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: 0;
-  margin-left: 0;
-}
-
 .light-purple {
   background-color: #f9f8ff;
 }
@@ -222,54 +105,5 @@ ul {
   h2,
   h3 {
     color: white;
-  }
-}
-
-.divider--grey {
-  height: 1px;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-  box-shadow: 0 -1px 0 #d8d8d8;
-}
-
-@media (max-width: $md-minus-1) {
-  .spacer {
-    height: 3rem;
-  }
-}
-
-.section {
-  .eyebrow {
-    padding-top: 3rem;
-    h4 {
-      box-shadow: 0 -1px 0 #d8d8d8;
-      padding-top: 1rem;
-    }
-  }
-
-  &__header {
-    height: 4rem;
-    align-items: center;
-    h4 {
-      padding-bottom: 0;
-    }
-    a {
-      color: black;
-    }
-  }
-
-  &__thank-you {
-    .thank-you-message {
-      p {
-        font-size: 21px;
-        line-height: 32px;
-      }
-    }
-  }
-
-  &__faqs {
-    .question {
-      padding-bottom: 1rem;
-    }
   }
 }

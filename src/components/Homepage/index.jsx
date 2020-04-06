@@ -1,9 +1,11 @@
+import "./Homepage.scss";
+
 import { Link } from "react-router-dom";
 import React from "react";
 
 const Homepage = () => {
   return (
-    <>
+    <div className="Homepage">
       <div className="bx--grid header">
         <div className="bx--row section section__header">
           <div className="bx--col-md-4 bx--col-lg-4">
@@ -12,8 +14,8 @@ const Homepage = () => {
         </div>
       </div>
 
-      <div className="introduction-bx--grid introduction">
-        <div className="introduction-bx--row section section__introduction">
+      <div className="lead-bx--grid">
+        <div className="lead-bx--row section">
           <div className="left">
             <h1>Help keep healthcare workers' families safe</h1>
             <p>
@@ -27,7 +29,7 @@ const Homepage = () => {
               alt="Illustration of a healthcare worker's household"
             />
           </div>
-          <div className="right">
+          <div className="right light-purple">
             <div className="card">
               <h4>
                 Health Worker Housing is available in the following cities:
@@ -56,7 +58,7 @@ const Homepage = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
