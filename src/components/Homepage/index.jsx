@@ -1,5 +1,6 @@
 import "./Homepage.scss";
 
+import { ArrowRight16 } from "@carbon/icons-react/es";
 import { Link } from "react-router-dom";
 import React from "react";
 
@@ -40,11 +41,17 @@ const Homepage = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <p>Victoria</p>
+                <p>
+                  Victoria
+                  <ArrowRight16 />
+                </p>
               </a>
               <br />
               <Link to="/vancouver">
-                <p>Vancouver</p>
+                <p>
+                  Vancouver
+                  <ArrowRight16 />
+                </p>
               </Link>
               <br />
               <a
@@ -52,7 +59,10 @@ const Homepage = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <p>Toronto</p>
+                <p>
+                  Toronto
+                  <ArrowRight16 />
+                </p>
               </a>
             </div>
           </div>
