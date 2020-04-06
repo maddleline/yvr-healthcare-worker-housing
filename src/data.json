@@ -2,16 +2,25 @@
   {
     "name": "Vancouver",
     "url": "vancouver",
+    "email": "vancouver@healthworkerhousing.ca",
     "propertyOwnerLink": "https://docs.google.com/forms/d/e/1FAIpQLSeoDudR3nhYv8KvutU6osarBFqdnNBUq303LI_k2qf0CiRAnQ/viewform"
   },
   {
     "name": "Victoria",
     "url": "victoria",
+    "email": "victoria@healthworkerhousing.ca",
     "propertyOwnerLink": "https://docs.google.com/forms/d/e/1FAIpQLSddFOvO6BPBu6SMoragPLbPEkGF6oLBrDTMdSgOSGUnMRvt1Q/viewform"
   },
   {
     "name": "Toronto",
     "url": "toronto",
+    "email": "toronto@healthworkerhousing.ca",
     "propertyOwnerLink": "https://www.yyzhealthcarehousing.com/#propertyownerform"
+  },
+  {
+    "name": "Kingston",
+    "url": "kingston",
+    "email": "kingston@healthworkerhousing.ca",
+    "propertyOwnerLink": "https://docs.google.com/forms/d/1E9wPtx6IogtOSZP6EGjxi-vao-QEFv_YkmdcPj8IgRA/viewform?edit_requested=true"
   }
 ]

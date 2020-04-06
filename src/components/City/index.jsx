@@ -41,7 +41,7 @@ const City = (props) => {
               <p>
                 Health Worker Housing is a volunteer initiative to connect
                 property owners with healthcare workers in need of low-cost,
-                short-term housing during the COVID-19 outbreak in Vancouver.
+                short-term housing during the COVID-19 pandemic.
               </p>
               <img
                 className="hero-image"
