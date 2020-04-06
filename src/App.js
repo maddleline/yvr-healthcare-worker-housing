@@ -25,7 +25,7 @@ const App = () => {
                   propertyOwnerLink={currentCity.propertyOwnerLink}
                 >
                   <Select
-                    className="some-class"
+                    className="city-selector"
                     defaultValue={currentCity.url}
                     disabled={false}
                     id="select-1"
@@ -57,7 +57,7 @@ const App = () => {
           <Route path="/">
             <City>
               <Select
-                className="some-class"
+                className="city-selector"
                 defaultValue="placeholder-item"
                 disabled={false}
                 id="select-1"

@@ -11,6 +11,13 @@ $xl-minus-1: calc(#{$xl} - 1px);
 $max-minus-1: calc(#{$max} - 1px);
 
 .City {
+  .city-selector {
+    margin-top: 1rem;
+    label {
+      display: none;
+    }
+  }
+
   a,
   .card,
   .link {
