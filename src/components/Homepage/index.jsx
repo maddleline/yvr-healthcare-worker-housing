@@ -17,9 +17,9 @@ const Homepage = () => {
           <div className="left">
             <h1>Help keep healthcare workers' families safe</h1>
             <p>
-              This a volunteer initiative designed to connect property owners
-              with healthcare workers in need of low-cost, short-term housing
-              during the COVID-19 outbreak in Canada.
+              Health Worker Housing is a volunteer initiative designed to
+              connect property owners with healthcare workers in need of
+              low-cost, short-term housing during the COVID-19 pandemic.
             </p>
             <img
               className="hero-image"
@@ -38,17 +38,19 @@ const Homepage = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Victoria
+                <p>Victoria</p>
               </a>
               <br />
-              <Link to="/vancouver">Vancouver</Link>
+              <Link to="/vancouver">
+                <p>Vancouver</p>
+              </Link>
               <br />
               <a
                 href="https://www.yyzhealthcarehousing.com/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Toronto
+                <p>Toronto</p>
               </a>
             </div>
           </div>

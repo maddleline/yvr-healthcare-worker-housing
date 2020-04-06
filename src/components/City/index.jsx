@@ -35,9 +35,10 @@ const City = () => {
             <div className="left">
               <h1>Help keep healthcare workers' families safe</h1>
               <p>
-                This a volunteer initiative designed to connect property owners
-                with healthcare workers in need of low-cost, short-term housing
-                during the COVID-19 outbreak in Vancouver.
+                Health Worker Housing is a volunteer initiative designed to
+                connect property owners with healthcare workers in need of
+                low-cost, short-term housing during the COVID-19 outbreak in
+                Vancouver.
               </p>
               <img
                 className="hero-image"
@@ -276,9 +277,9 @@ const City = () => {
                 <h4>Isn't Airbnb already doing this?</h4>
                 <p>
                   Listing a property on Airbnb is an involved process that takes
-                  a number of few steps. We offer a simpler and less formal
-                  process so that property owners can be connected with
-                  healthcare workers faster.
+                  a number of steps. We offer a simpler and less formal process
+                  so that property owners can be connected with healthcare
+                  workers faster.
                 </p>
               </div>
               <div className="question">
