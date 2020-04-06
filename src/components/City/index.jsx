@@ -17,7 +17,9 @@ const City = (props) => {
         cityName={props.cityName}
         contactName={props.contactName}
         linkToListings={props.linkToListings}
-      />
+      >
+        {props.children}
+      </HealthWorkerModal>
       <div className="City">
         <div className="bx--grid header">
           <div className="bx--row section section__header">

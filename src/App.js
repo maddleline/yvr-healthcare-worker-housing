@@ -35,6 +35,7 @@ const App = () => {
                     inline={false}
                     invalid={false}
                     invalidText="A valid value is required"
+                    labelText="Select city"
                     light={false}
                     onChange={(e) => {
                       history.push(`/${e.target.value}`);
@@ -67,6 +68,7 @@ const App = () => {
                 inline={false}
                 invalid={false}
                 invalidText="A valid value is required"
+                labelText="Select city"
                 light={false}
                 onChange={(e) => {
                   history.push(`/${e.target.value}`);

@@ -10,12 +10,13 @@ import {
 import React, { useState } from "react";
 
 const HealthWorkerModal = ({
+  children,
+  cityName,
+  contactName,
   isOpen,
+  linkToListings,
   setIsOpen,
   senderEmail,
-  contactName,
-  cityName,
-  linkToListings,
 }) => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -91,6 +92,8 @@ const HealthWorkerModal = ({
             handleSubmit();
           }}
         >
+          {children}
+          <br />
           <div style={{ display: "flex" }}>
             <TextInput
               required
