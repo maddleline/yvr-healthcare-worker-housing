@@ -21,8 +21,11 @@ const App = () => {
             return (
               <Route key={currentCity.url} path={`/${currentCity.url}`}>
                 <City
+                  email={currentCity.email}
                   cityName={currentCity.name}
-                  propertyOwnerLink={currentCity.propertyOwnerLink}
+                  contactName={currentCity.contact}
+                  linkToPropertyForm={currentCity.linkToPropertyForm}
+                  linkToListings={currentCity.linkToListings}
                 >
                   <Select
                     className="city-selector"

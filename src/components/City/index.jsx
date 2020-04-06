@@ -10,7 +10,14 @@ const City = (props) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <>
-      <HealthWorkerModal isOpen={isModalOpen} setIsOpen={setIsModalOpen} />
+      <HealthWorkerModal
+        isOpen={isModalOpen}
+        setIsOpen={setIsModalOpen}
+        senderEmail={props.email}
+        cityName={props.cityName}
+        contactName={props.contactName}
+        linkToListings={props.linkToListings}
+      />
       <div className="City">
         <div className="bx--grid header">
           <div className="bx--row section section__header">
@@ -68,7 +75,7 @@ const City = (props) => {
                 style={{ height: "1px", boxShadow: "0 1px 0 black" }}
               />
               <a
-                href={props.propertyOwnerLink}
+                href={props.linkToPropertyForm}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="card"
@@ -180,7 +187,7 @@ const City = (props) => {
                 a legitimate need for affordable accomodation.
               </p>
               <a
-                href={props.propertyOwnerLink}
+                href={props.linkToPropertyForm}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="link"
