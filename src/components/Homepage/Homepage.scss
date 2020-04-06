@@ -26,7 +26,7 @@ $max-minus-1: calc(#{$max} - 1px);
   .lead-bx--grid {
     margin-right: auto;
     margin-left: auto;
-    max-width: 99rem;
+    max-width: unset;
     padding-left: 0;
     padding-right: 0;
   }
