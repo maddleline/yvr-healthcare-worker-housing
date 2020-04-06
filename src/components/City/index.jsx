@@ -48,7 +48,7 @@ const City = () => {
                 alt="Illustration of a healthcare worker's household"
               />
             </div>
-            <div className="right">
+            <div className="right light-purple">
               <div
                 className="card"
                 onClick={() => {

@@ -39,6 +39,21 @@ $max-minus-1: calc(#{$max} - 1px);
   }
 
   .lead-bx--grid {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 99rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .lead-bx--row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .lead-bx--grid {
     .hero-image {
       width: 50%;
     }
@@ -69,7 +84,14 @@ $max-minus-1: calc(#{$max} - 1px);
         width: 50vw;
         border-left: 1px solid #000;
         .card {
+          flex-grow: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
           padding: 3rem 1rem;
+          .link {
+            padding-bottom: 0;
+          }
         }
       }
     }
@@ -93,21 +115,6 @@ $max-minus-1: calc(#{$max} - 1px);
         }
       }
     }
-  }
-
-  .lead-bx--grid {
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 99rem;
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .lead-bx--row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: 0;
-    margin-left: 0;
   }
 
   .divider--grey {

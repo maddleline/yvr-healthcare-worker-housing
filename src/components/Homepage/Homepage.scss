@@ -14,7 +14,6 @@ $max-minus-1: calc(#{$max} - 1px);
   a,
   .card,
   .link {
-    cursor: pointer;
     color: #6f5cb6;
     text-decoration: none;
     svg {
@@ -22,6 +21,21 @@ $max-minus-1: calc(#{$max} - 1px);
       padding-top: 4px;
       margin-left: 0.25rem;
     }
+  }
+
+  .lead-bx--grid {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 99rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .lead-bx--row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 0;
+    margin-left: 0;
   }
 
   .lead-bx--grid {
@@ -49,9 +63,6 @@ $max-minus-1: calc(#{$max} - 1px);
         }
       }
       .right {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
         width: 50vw;
         border-left: 1px solid #000;
         .card {
@@ -79,20 +90,5 @@ $max-minus-1: calc(#{$max} - 1px);
         }
       }
     }
-  }
-
-  .lead-bx--grid {
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 99rem;
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .lead-bx--row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: 0;
-    margin-left: 0;
   }
 }
