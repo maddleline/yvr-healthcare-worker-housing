@@ -155,20 +155,20 @@ const HealthWorkerModal = ({
           <br />
           <Checkbox
             className="checkbox"
-            id="checkbox-1"
+            id="checkbox-2"
             required
-            labelText="I confirm I would be willing to pay a reasonable rate for a seperate, furnished suite."
-            name="checkbox-1"
+            labelText="I confirm I am a healthcare or other essential worker at high risk of contracting COVID-19."
+            name="checkbox-2"
             onChange={() => {}}
             value="standard"
           />
           <br />
           <Checkbox
             className="checkbox"
-            id="checkbox-2"
+            id="checkbox-1"
             required
-            labelText="I confirm I am a healthcare or other essential worker at high risk of contracting COVID-19."
-            name="checkbox-2"
+            labelText="I confirm I would be willing to pay a reasonable rate for a seperate, furnished suite."
+            name="checkbox-1"
             onChange={() => {}}
             value="standard"
           />
