@@ -48,7 +48,7 @@ const City = (props) => {
                 available listings will be sent to your email.
               </p>
               <p>
-                <span>
+                <span className="italic">
                   Please note the team running this service has not done any due
                   diligence on any of the offers. We are simpl an information
                   service and it is up to each party to meet and screen anyone

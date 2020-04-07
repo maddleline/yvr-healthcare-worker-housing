@@ -1,6 +1,6 @@
 .Homepage {
   .bx--grid.lead {
-    box-shadow: 0 1px 0 #000;
+    border-bottom: 1px solid #7f7f84;
     .left {
       display: flex;
       flex-direction: column;
@@ -26,8 +26,10 @@
       width: 2.75rem;
       height: 2.75rem;
       margin-left: 6rem;
+      fill: #f74300;
     }
     &:hover {
+      color: #f74300;
       svg {
         display: initial;
       }
