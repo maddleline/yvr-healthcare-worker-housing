@@ -9,7 +9,7 @@ const Homepage = ({ cities }) => {
     <div className="Homepage">
       <div className="bx--grid lead">
         <div className="bx--row section section__lead">
-          <div className="bx--offset-lg-1 bx--col-lg-4 left">
+          <div className="bx--offset-lg-1 bx--col-lg-4 bx--col-md-3 bx--col-sm-4 left">
             <div>
               <h1>Help keep healthcare workers' families safe</h1>
               <p>
@@ -20,7 +20,7 @@ const Homepage = ({ cities }) => {
             </div>
             <h3>Select your city below:</h3>
           </div>
-          <div className="bx--col-lg-5 right">
+          <div className="bx--col-lg-5 bx--offset-md-0 bx--col-md-5 bx--offset-sm-1 bx--col-sm-3 right">
             <img
               className="hero-image"
               src={require("./cropped-hero-image.png")}

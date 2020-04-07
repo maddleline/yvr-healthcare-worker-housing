@@ -39,7 +39,7 @@ export default function App() {
                   </Link>
                 </div>
               </div>
-              <div className="bx--col-lg-2" />
+              <div className="bx--col-sm-0 bx--col-md-0 bx--col-lg-2" />
             </div>
           </div>
 
