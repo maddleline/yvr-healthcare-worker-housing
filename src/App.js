@@ -13,11 +13,7 @@ export default function App() {
   const cityRoutes = cities.map((city) => {
     return (
       <Route key={city.url} path={`/${city.url}`}>
-        <City
-          city={city.name}
-          province={city.province}
-          linkToPropertyForm={city.linkToPropertyForm}
-        />
+        <City {...city} />
       </Route>
     );
   });

@@ -9,23 +9,34 @@ import {
 } from "carbon-components-react";
 import React, { useState } from "react";
 
-const HealthWorkerModal = ({ isOpen, setIsOpen }) => {
+const HealthWorkerModal = ({
+  name,
+  linkToListings,
+  contact,
+  email,
+  isOpen,
+  setIsOpen,
+}) => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [occupation, setOccupation] = useState("");
   const [workplace, setWorkplace] = useState("");
-  const [email, setEmail] = useState("");
+  const [userEmail, setUserEmail] = useState("");
   const [feedback, setFeedback] = useState("");
   const [formIsSubmitted, setFormIsSubmitted] = useState(false);
 
   const handleSubmit = (event) => {
-    const templateId = "health_worker_housing_yvr";
+    const templateId = "canada_health_worker_housing_template";
 
     sendFeedback(templateId, {
       firstName,
       lastName,
       occupation,
       workplace,
+      userEmail,
+      name,
+      linkToListings,
+      contact,
       email,
     });
     return true;
@@ -138,7 +149,7 @@ const HealthWorkerModal = ({ isOpen, setIsOpen }) => {
             placeholder=""
             type="email"
             onChange={(e) => {
-              setEmail(e.target.value);
+              setUserEmail(e.target.value);
             }}
           />
           <br />

@@ -18,7 +18,7 @@ const City = (props) => {
         <div className="bx--grid">
           <div className="bx--row">
             <div className="bx--offset-lg-1 bx--col-lg-11">
-              <h3>{props.city}</h3>
+              <h3>{props.name}</h3>
               <h4>{props.province}, Canada</h4>
             </div>
           </div>
