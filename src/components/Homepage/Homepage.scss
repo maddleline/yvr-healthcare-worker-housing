@@ -21,6 +21,9 @@
     line-height: normal;
     letter-spacing: normal;
     color: #2c2c2c;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     svg {
       display: none;
       width: 2.75rem;
@@ -28,9 +31,16 @@
       margin-left: 6rem;
       fill: #f74300;
     }
+    span {
+      display: none;
+      font-size: 14px;
+      font-style: italic;
+      color: #f74300;
+    }
     &:hover {
       color: #f74300;
-      svg {
+      svg,
+      span {
         display: initial;
       }
     }

@@ -33,19 +33,23 @@ const Homepage = ({ cities }) => {
 
       <div className="bx--grid list">
         <div className="bx--row section section__list">
-          <div className="bx--offset-lg-1 bx--col-lg-11">
+          <div className="bx--offset-lg-1 bx--col-lg-9">
             {cities.map((city) => {
               return (
                 <div key={city.url}>
                   <Link to={`/${city.url}`}>
-                    {city.name}
-                    <ArrowRight16 />
+                    <div className="foo">
+                      {city.name}
+                      <ArrowRight16 />
+                    </div>
+                    <span className="action">{city.action}</span>
                   </Link>
                   <br />
                 </div>
               );
             })}
           </div>
+          <div className="bx--col-lg-2" />
         </div>
       </div>
     </div>

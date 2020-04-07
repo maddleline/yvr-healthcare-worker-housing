@@ -18,13 +18,15 @@ $max-minus-1: calc(#{$max} - 1px);
     margin-bottom: 25px;
   }
   .link {
-    color: #0f62fe;
+    display: flex;
+    align-items: center;
     text-decoration: none;
     padding: 1rem;
     margin-left: -1rem;
+    color: #f74300;
     cursor: pointer;
     svg {
-      fill: #0f62fe;
+      fill: #f74300;
       margin-left: 1rem;
     }
   }

@@ -52,7 +52,7 @@ export default function App() {
             <div className="bx--row section section__footer">
               <div className="bx--col-sm-3 bx--col-md-6 bx--offset-lg-1 bx--col-lg-5">
                 <p>
-                  <span className="bold">
+                  <span className="bold inline-icon">
                     Created by volunteers with{" "}
                     <img src={require("./heart.svg")} alt="heart" />
                   </span>
