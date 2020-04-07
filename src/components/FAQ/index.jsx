@@ -7,10 +7,14 @@ const FAQ = () => {
     <div className="FAQ">
       <div className="bx--grid faq">
         <div className="bx--row section section__faq">
-          <div className="bx--col-sm-4 bx--col-md-8 bx--col-lg-12">
+          <div className="bx--col-sm-4 bx--col-md-8 bx--offset-lg-1 bx--col-lg-10">
             <h2>Frequently Asked Questions</h2>
           </div>
-          <div className="bx--col-sm-4 bx--col-md-7 bx--col-lg-5">
+          <div className="bx--col-lg-1" />
+          <div
+            className="bx--col-sm-4 bx--col-md-7 bx--offset-lg-1 bx--col-lg-5"
+            style={{ paddingRight: "3rem" }}
+          >
             <div className="question">
               <h4>I'm not a healthcare worker, can I apply for housing?</h4>
               <p>
@@ -31,31 +35,18 @@ const FAQ = () => {
               </p>
             </div>
             <div className="question">
-              <h4>Is this service available in other cities?</h4>
+              <h4>Can I contact you for media enquiries?</h4>
               <p>
-                Yes! You can find the site for Victoria{" "}
-                <a
-                  href="http://www.yyjlocalsforlocals.com/healthcare/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  here
-                </a>
-                {", "}
-                and the site for Toronto{" "}
-                <a
-                  href="https://www.yyzhealthcarehousing.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  here
-                </a>
-                .
+                Yes! For media enquiries, please email
+                housing4frontline&#64;gmail.com with "Media Inquiry" in the
+                subject line.
               </p>
             </div>
           </div>
-          <div className="bx--offset-lg-1" />
-          <div className="bx--col-sm-4 bx--col-md-7 bx--col-lg-5">
+          <div
+            className="bx--col-sm-4 bx--col-md-7 bx--col-lg-5"
+            style={{ paddingRight: "3rem" }}
+          >
             <div className="question">
               <h4>Isn't Airbnb already doing this?</h4>
               <p>
@@ -63,14 +54,6 @@ const FAQ = () => {
                 number of steps. We offer a simpler and less formal process so
                 that property owners can be connected with healthcare workers
                 faster.
-              </p>
-            </div>
-            <div className="question">
-              <h4>Can I contact you for media enquiries?</h4>
-              <p>
-                Yes! For media enquiries, please email
-                vancouver&#64;healthworkerhousing.ca with "Media Inquiry" in the
-                subject line.
               </p>
             </div>
             <div className="question">
@@ -83,6 +66,7 @@ const FAQ = () => {
               </p>
             </div>
           </div>
+          <div className="bx--col-lg-1" />
         </div>
       </div>
     </div>
