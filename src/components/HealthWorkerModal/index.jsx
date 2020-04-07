@@ -9,24 +9,36 @@ import {
 } from "carbon-components-react";
 import React, { useState } from "react";
 
-const HealthWorkerModal = ({ isOpen, setIsOpen }) => {
+const HealthWorkerModal = ({
+  children,
+  cityName,
+  contactName,
+  isOpen,
+  linkToListings,
+  setIsOpen,
+  senderEmail,
+}) => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [occupation, setOccupation] = useState("");
   const [workplace, setWorkplace] = useState("");
-  const [email, setEmail] = useState("");
+  const [userEmail, setUserEmail] = useState("");
   const [feedback, setFeedback] = useState("");
   const [formIsSubmitted, setFormIsSubmitted] = useState(false);
 
   const handleSubmit = (event) => {
-    const templateId = "health_worker_housing_yvr";
+    const templateId = "canada_health_worker_housing_template";
 
     sendFeedback(templateId, {
       firstName,
       lastName,
       occupation,
       workplace,
-      email,
+      userEmail,
+      senderEmail,
+      contactName,
+      cityName,
+      linkToListings,
     });
     return true;
   };
@@ -80,6 +92,8 @@ const HealthWorkerModal = ({ isOpen, setIsOpen }) => {
             handleSubmit();
           }}
         >
+          {children}
+          <br />
           <div style={{ display: "flex" }}>
             <TextInput
               required
@@ -138,7 +152,7 @@ const HealthWorkerModal = ({ isOpen, setIsOpen }) => {
             placeholder=""
             type="email"
             onChange={(e) => {
-              setEmail(e.target.value);
+              setUserEmail(e.target.value);
             }}
           />
           <br />

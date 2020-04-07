@@ -6,11 +6,20 @@ import React, { useState } from "react";
 import HealthWorkerModal from "../HealthWorkerModal";
 import { Link } from "react-router-dom";
 
-const City = () => {
+const City = (props) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <>
-      <HealthWorkerModal isOpen={isModalOpen} setIsOpen={setIsModalOpen} />
+      <HealthWorkerModal
+        isOpen={isModalOpen}
+        setIsOpen={setIsModalOpen}
+        senderEmail={props.email}
+        cityName={props.cityName}
+        contactName={props.contactName}
+        linkToListings={props.linkToListings}
+      >
+        {props.children}
+      </HealthWorkerModal>
       <div className="City">
         <div className="bx--grid header">
           <div className="bx--row section section__header">
@@ -35,11 +44,13 @@ const City = () => {
         <div className="lead-bx--grid">
           <div className="lead-bx--row section">
             <div className="left">
-              <h1>Help keep healthcare workers' families safe</h1>
+              <h1>
+                Help keep healthcare workers' families safe in {props.children}
+              </h1>
               <p>
                 Health Worker Housing is a volunteer initiative to connect
                 property owners with healthcare workers in need of low-cost,
-                short-term housing during the COVID-19 outbreak in Vancouver.
+                short-term housing during the COVID-19 pandemic.
               </p>
               <img
                 className="hero-image"
@@ -66,7 +77,7 @@ const City = () => {
                 style={{ height: "1px", boxShadow: "0 1px 0 black" }}
               />
               <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSeoDudR3nhYv8KvutU6osarBFqdnNBUq303LI_k2qf0CiRAnQ/viewform?usp=pp_url"
+                href={props.linkToPropertyForm}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="card"
@@ -178,7 +189,7 @@ const City = () => {
                 a legitimate need for affordable accomodation.
               </p>
               <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSeoDudR3nhYv8KvutU6osarBFqdnNBUq303LI_k2qf0CiRAnQ/viewform?usp=pp_url"
+                href={props.linkToPropertyForm}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="link"
