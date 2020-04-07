@@ -8,7 +8,7 @@ const FAQ = () => {
       <div className="bx--grid faq">
         <div className="bx--row section section__faq">
           <div className="bx--col-sm-4 bx--col-md-8 bx--offset-lg-1 bx--col-lg-10">
-            <h2>Frequently Asked Questions</h2>
+            <h1>Frequently Asked Questions</h1>
           </div>
           <div className="bx--col-lg-1" />
           <div
@@ -16,7 +16,7 @@ const FAQ = () => {
             style={{ paddingRight: "3rem" }}
           >
             <div className="question">
-              <h4>I'm not a healthcare worker, can I apply for housing?</h4>
+              <h3>I'm not a healthcare worker, can I apply for housing?</h3>
               <p>
                 This service is primarily for healthcare workers who carry the
                 highest risk of contracting COVID-19. However, we understand
@@ -26,7 +26,7 @@ const FAQ = () => {
               </p>
             </div>
             <div className="question">
-              <h4>Can I email you to say thank you?</h4>
+              <h3>Can I email you to say thank you?</h3>
               <p>
                 Please refrain from any other communications to the email
                 addresses provided to allow us to effectively administer
@@ -35,7 +35,7 @@ const FAQ = () => {
               </p>
             </div>
             <div className="question">
-              <h4>Can I contact you for media enquiries?</h4>
+              <h3>Can I contact you for media enquiries?</h3>
               <p>
                 Yes! For media enquiries, please email
                 housing4frontline&#64;gmail.com with "Media Inquiry" in the
@@ -48,7 +48,7 @@ const FAQ = () => {
             style={{ paddingRight: "3rem" }}
           >
             <div className="question">
-              <h4>Isn't Airbnb already doing this?</h4>
+              <h3>Isn't Airbnb already doing this?</h3>
               <p>
                 Listing a property on Airbnb is an involved process that takes a
                 number of steps. We offer a simpler and less formal process so
@@ -57,7 +57,7 @@ const FAQ = () => {
               </p>
             </div>
             <div className="question">
-              <h4>Can I start this in another city?</h4>
+              <h3>Can I start this in another city?</h3>
               <p>
                 Yes! Email housing4frontlinehealth&#64;gmail.com with "New FAQ"
                 in the subject line, and we will help you get started. You only

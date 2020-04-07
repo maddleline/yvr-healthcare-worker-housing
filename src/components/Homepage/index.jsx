@@ -11,14 +11,14 @@ const Homepage = ({ cities }) => {
         <div className="bx--row section section__lead">
           <div className="bx--offset-lg-1 bx--col-lg-4 left">
             <div>
-              <h3>Help keep healthcare workers' families safe</h3>
+              <h1>Help keep healthcare workers' families safe</h1>
               <p>
                 Health Worker Housing is a volunteer initiative to connect
                 property owners with healthcare workers in need of low-cost,
                 short-term housing during the COVID-19 pandemic.
               </p>
             </div>
-            <h4>Select your city below:</h4>
+            <h3>Select your city below:</h3>
           </div>
           <div className="bx--col-lg-6 right">
             <img

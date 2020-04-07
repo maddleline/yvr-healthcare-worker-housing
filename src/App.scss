@@ -19,12 +19,13 @@ html {
   .bx--grid.header {
     padding-top: 0;
     padding-bottom: 0;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #7f7f84;
     .bx--row {
       height: 4rem;
       align-items: center;
-      h4 {
-        padding-bottom: 0;
+      h3 {
+        font-family: IBMPlexSans;
+        font-weight: 500;
       }
       a {
         text-decoration: none;
@@ -33,63 +34,44 @@ html {
     }
   }
 
-  h1 {
-    padding-bottom: 2rem;
-    font-size: 54px;
-    line-height: 58px;
-  }
-
-  h1 + p {
-    color: #556265;
-  }
-
+  h1,
   h2 {
-    padding-bottom: 2rem;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: normal;
+    margin-bottom: 1rem;
+    span {
+      font-weight: normal;
+    }
   }
 
-  h3 {
-    padding-bottom: 2rem;
+  h3,
+  h4 {
+    font-size: 14px;
     font-weight: bold;
-    font-size: 20px;
-    line-height: 22px;
+    line-height: normal;
   }
 
   h4 {
-    padding-bottom: 0.5rem;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 22px;
+    margin-bottom: 0.5rem;
+    max-width: 300px;
   }
 
   p {
+    font-size: 14px;
+    line-height: normal;
     margin-bottom: 1rem;
-  }
-
-  ol {
-    margin-left: 1rem;
-    li {
-      list-style: decimal;
-      font-size: 1rem;
-      font-weight: 400;
-      line-height: 1.5rem;
-      letter-spacing: 0;
-      color: #161616;
-      padding-bottom: 0.5rem;
-      padding-left: 1rem;
+    span {
+      font-style: italic;
     }
   }
 
   ul {
-    margin-left: 1rem;
+    margin-bottom: 1rem;
     li {
       list-style: disc;
-      font-size: 1rem;
-      font-weight: 400;
-      line-height: 1.5rem;
-      letter-spacing: 0;
       color: #161616;
       padding-bottom: 0.5rem;
-      padding-left: 1rem;
     }
   }
 }

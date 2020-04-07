@@ -15,16 +15,19 @@ const City = (props) => {
         setIsOpen={setIsModalOpen}
       />
       <div className="City">
-        <div className="bx--grid">
+        <div className="bx--grid city-name">
           <div className="bx--row">
             <div className="bx--offset-lg-1 bx--col-lg-11">
-              <h3>{props.name}</h3>
-              <h4>{props.province}, Canada</h4>
+              <h1>
+                {props.name},
+                <br />
+                <span>{props.province}, Canada</span>
+              </h1>
             </div>
           </div>
         </div>
 
-        <div className="bx--grid">
+        <div className="bx--grid" style={{ borderBottom: "1px solid #7f7f84" }}>
           <div className="bx--row">
             <div className="bx--offset-lg-1 bx--col-lg-4">
               <div
@@ -36,19 +39,21 @@ const City = (props) => {
                 }}
               />
             </div>
-            <div className="bx--col-lg-5">
-              <h3>Find temporary housing</h3>
-              <h5>Healthcare workers</h5>
+            <div className="bx--col-lg-4">
+              <h2>Find temporary housing</h2>
+              <h3>Healthcare workers</h3>
               <p>
                 To request access to our listings, submit the form at the link
                 below. Once your request has been approved, a link to our
                 available listings will be sent to your email.
               </p>
               <p>
-                Please note the team running this service has not done any due
-                diligence on any of the offers. We are simpl an information
-                service and it is up to each party to meet and screen anyone
-                they would like to enter into a rental agreement with.
+                <span>
+                  Please note the team running this service has not done any due
+                  diligence on any of the offers. We are simpl an information
+                  service and it is up to each party to meet and screen anyone
+                  they would like to enter into a rental agreement with.
+                </span>
               </p>
               <div
                 className="link"
@@ -60,7 +65,7 @@ const City = (props) => {
                 <ArrowRight16 />
               </div>
             </div>
-            <div className="bx--col-lg-2" />
+            <div className="bx--col-lg-3" />
           </div>
         </div>
 
@@ -76,9 +81,9 @@ const City = (props) => {
                 }}
               />
             </div>
-            <div className="bx--col-lg-5">
-              <h3>House a healthcare worker</h3>
-              <h5>Property owners</h5>
+            <div className="bx--col-lg-4">
+              <h2>House a healthcare worker</h2>
+              <h3>Property owners</h3>
               <p>
                 We are looking for property owners that have available furnished
                 suites the can offer at low or no cost.
@@ -93,10 +98,10 @@ const City = (props) => {
               <h4>Ideal properties will have the following amenities:</h4>
               <ul>
                 <li>Separate entrance</li>
-                <li>Wifi</li>
                 <li>On-site laundry</li>
                 <li>Private washroom</li>
                 <li>Kitchen or kitchenette</li>
+                <li>Wifi</li>
               </ul>
               <a
                 href={props.linkToPropertyForm}
@@ -108,7 +113,7 @@ const City = (props) => {
                 <Launch16 />
               </a>
             </div>
-            <div className="bx--offset-lg-2" />
+            <div className="bx--offset-lg-3" />
           </div>
         </div>
       </div>
