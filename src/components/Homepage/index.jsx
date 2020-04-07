@@ -38,11 +38,11 @@ const Homepage = ({ cities }) => {
               return (
                 <div key={city.url}>
                   <Link to={`/${city.url}`}>
-                    <div className="foo">
+                    <div>
                       {city.name}
                       <ArrowRight16 />
                     </div>
-                    <span className="action">{city.action}</span>
+                    <span>{city.action}</span>
                   </Link>
                   <br />
                 </div>

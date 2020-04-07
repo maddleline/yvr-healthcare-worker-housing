@@ -20,14 +20,33 @@ $max-minus-1: calc(#{$max} - 1px);
   .link {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     text-decoration: none;
     padding: 1rem;
     margin-left: -1rem;
     color: #f74300;
     cursor: pointer;
+    div {
+      display: flex;
+    }
+    span {
+      opacity: 0;
+      font-size: 14px;
+      font-style: italic;
+      color: #f74300;
+      svg {
+        margin-left: 0.25rem;
+        width: 14px;
+      }
+    }
     svg {
       fill: #f74300;
       margin-left: 1rem;
+    }
+    &:hover {
+      span {
+        opacity: 1;
+      }
     }
   }
 }

@@ -1,6 +1,6 @@
 import "./City.scss";
 
-import { ArrowRight16, Launch16 } from "@carbon/icons-react/es";
+import { ArrowRight16, Launch16, View16 } from "@carbon/icons-react/es";
 import React, { useState } from "react";
 
 import HealthWorkerModal from "../HealthWorkerModal";
@@ -61,8 +61,14 @@ const City = (props) => {
                   setIsModalOpen(true);
                 }}
               >
-                Request access to listings
-                <ArrowRight16 />
+                <div>
+                  Request access to listings
+                  <ArrowRight16 />
+                </div>
+                <span>
+                  <View16 />
+                  <View16 />
+                </span>
               </div>
             </div>
             <div className="bx--col-lg-3" />
@@ -109,8 +115,11 @@ const City = (props) => {
                 rel="noopener noreferrer"
                 className="link"
               >
-                List your property
-                <Launch16 />
+                <div>
+                  List your property
+                  <Launch16 />
+                </div>
+                <span>Thanks!</span>
               </a>
             </div>
             <div className="bx--offset-lg-3" />

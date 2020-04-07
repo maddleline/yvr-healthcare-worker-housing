@@ -25,14 +25,14 @@
     align-items: center;
     justify-content: space-between;
     svg {
-      display: none;
+      opacity: 0;
       width: 2.75rem;
       height: 2.75rem;
       margin-left: 6rem;
       fill: #f74300;
     }
     span {
-      display: none;
+      opacity: 0;
       font-size: 14px;
       font-style: italic;
       color: #f74300;
@@ -41,7 +41,7 @@
       color: #f74300;
       svg,
       span {
-        display: initial;
+        opacity: 1;
       }
     }
   }

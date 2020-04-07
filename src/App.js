@@ -4,6 +4,7 @@ import { Link, Route, BrowserRouter as Router, Switch } from "react-router-dom";
 
 import City from "./components/City";
 import FAQ from "./components/FAQ";
+import { FavoriteFilled16 } from "@carbon/icons-react/es";
 import GridHelper from "./components/GridHelper";
 import Homepage from "./components/Homepage";
 import React from "react";
@@ -31,11 +32,14 @@ export default function App() {
                   <h3>Health Worker Housing</h3>
                 </Link>
               </div>
-              <div className="bx--col-sm-1 bx--col-md-2 bx--offset-lg-3 bx--col-lg-3">
-                <Link to="/faq">
-                  <h3>FAQ</h3>
-                </Link>
+              <div className="bx--col-sm-1 bx--col-md-2 bx--offset-lg-3 bx--col-lg-1">
+                <div style={{ float: "right" }}>
+                  <Link to="/faq">
+                    <h3>FAQ</h3>
+                  </Link>
+                </div>
               </div>
+              <div className="bx--col-lg-2" />
             </div>
           </div>
 
@@ -53,8 +57,8 @@ export default function App() {
               <div className="bx--col-sm-3 bx--col-md-6 bx--offset-lg-1 bx--col-lg-5">
                 <p>
                   <span className="bold inline-icon">
-                    Created by volunteers with{" "}
-                    <img src={require("./heart.svg")} alt="heart" />
+                    Created by volunteers with
+                    <FavoriteFilled16 />
                   </span>
                 </p>
                 <p>vancouver@healthworkerhousing.ca</p>
