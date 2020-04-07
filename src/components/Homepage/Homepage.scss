@@ -11,83 +11,29 @@ $xl-minus-1: calc(#{$xl} - 1px);
 $max-minus-1: calc(#{$max} - 1px);
 
 .Homepage {
-  a,
-  .card,
-  .link {
-    color: #6f5cb6;
-    text-decoration: none;
-    svg {
-      fill: #6f5cb6;
-      padding-top: 4px;
-      margin-left: 0.25rem;
-    }
-  }
-
-  .lead-bx--grid {
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 99rem;
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .lead-bx--row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: 0;
-    margin-left: 0;
-  }
-
-  .lead-bx--grid {
-    .hero-image {
-      width: 50%;
-    }
-    .section {
+  background-color: #eeeeee;
+  .bx--grid.lead {
+    box-shadow: 0 1px 0 #000;
+    .left {
       display: flex;
-      border-top: 1px solid #000;
-      border-bottom: 1px solid #000;
-      .left {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 50vw;
-        padding: 3rem 2rem 0 3rem;
-        h1 {
-          max-width: 84%;
-        }
-        p {
-          max-width: 360px;
-        }
-        img {
-          align-self: flex-end;
-        }
-      }
-      .right {
-        width: 50vw;
-        border-left: 1px solid #000;
-        .card {
-          padding: 3rem 1rem;
-        }
-      }
+      flex-direction: column;
+      justify-content: space-between;
     }
   }
-
-  @media (max-width: $md-minus-1) {
-    .lead-bx--grid {
-      .section {
-        flex-direction: column;
-        .left {
-          width: 100vw;
-          padding: 3rem 2rem 0 2rem;
-          border-bottom: 1px solid #000;
-        }
-        .right {
-          width: 100vw;
-          border-left: none;
-          .card {
-            padding: 3rem 2rem;
-          }
-        }
+  a {
+    color: black;
+    text-decoration: none;
+    font-size: 4rem;
+    line-height: 5rem;
+    svg {
+      display: none;
+      width: 4rem;
+      height: 4rem;
+      margin-left: 6rem;
+    }
+    &:hover {
+      svg {
+        display: initial;
       }
     }
   }

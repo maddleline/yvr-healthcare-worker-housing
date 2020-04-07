@@ -11,7 +11,7 @@ import cities from "./data.json";
 export default function App() {
   const cityRoutes = cities.map((city) => {
     return (
-      <Route path={`/${city.url}`}>
+      <Route key={city.url} path={`/${city.url}`}>
         <City cityName={city.name} />
       </Route>
     );
@@ -24,7 +24,7 @@ export default function App() {
           <Switch>
             {cityRoutes}
             <Route path="/">
-              <Homepage />
+              <Homepage cities={cities} />
             </Route>
           </Switch>
         </Router>

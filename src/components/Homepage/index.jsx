@@ -4,7 +4,7 @@ import { ArrowRight16 } from "@carbon/icons-react/es";
 import { Link } from "react-router-dom";
 import React from "react";
 
-const Homepage = () => {
+const Homepage = ({ cities }) => {
   return (
     <div className="Homepage">
       <div className="bx--grid header">
@@ -15,56 +15,44 @@ const Homepage = () => {
         </div>
       </div>
 
-      <div className="lead-bx--grid">
-        <div className="lead-bx--row section">
-          <div className="left">
-            <h1>Help keep healthcare workers' families safe</h1>
-            <p>
-              Health Worker Housing is a volunteer initiative to connect
-              property owners with healthcare workers in need of low-cost,
-              short-term housing during the COVID-19 pandemic.
-            </p>
+      <div className="bx--grid lead">
+        <div className="bx--row section section__lead">
+          <div className="bx--col-lg-4 left">
+            <div>
+              <h3>Help keep healthcare workers' families safe</h3>
+              <p>
+                Health Worker Housing is a volunteer initiative to connect
+                property owners with healthcare workers in need of low-cost,
+                short-term housing during the COVID-19 pandemic.
+              </p>
+            </div>
+            <h4>Select your city below:</h4>
+          </div>
+          <div className="bx--offset-lg-1 bx--col-lg-6 right">
             <img
               className="hero-image"
-              src={"/hero-image.png"}
+              src={require("./cropped-hero-image.png")}
               alt="Illustration of a healthcare worker's household"
             />
           </div>
-          <div className="right light-purple">
-            <div className="card">
-              <h4>
-                Health Worker Housing is available in the following cities:
-              </h4>
-              <br />
-              <a
-                href="http://www.yyjlocalsforlocals.com/healthcare/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <p>
-                  Victoria
-                  <ArrowRight16 />
-                </p>
-              </a>
-              <br />
-              <Link to="/vancouver">
-                <p>
-                  Vancouver
-                  <ArrowRight16 />
-                </p>
-              </Link>
-              <br />
-              <a
-                href="https://www.yyzhealthcarehousing.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <p>
-                  Toronto
-                  <ArrowRight16 />
-                </p>
-              </a>
-            </div>
+          <div className="bx--col-lg-1" />
+        </div>
+      </div>
+
+      <div className="bx--grid list">
+        <div className="bx--row section section__list">
+          <div className="bx--col-lg-12">
+            {cities.map((city) => {
+              return (
+                <div key={city.url}>
+                  <Link to={`/${city.url}`}>
+                    {city.name}
+                    <ArrowRight16 />
+                  </Link>
+                  <br />
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>

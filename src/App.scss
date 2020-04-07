@@ -29,12 +29,6 @@ html {
     }
   }
 
-  h1,
-  h2,
-  h3 {
-    color: #6f5cb6;
-  }
-
   h1 {
     padding-bottom: 2rem;
     font-size: 54px;
@@ -92,20 +86,6 @@ html {
       color: #161616;
       padding-bottom: 0.5rem;
       padding-left: 1rem;
-    }
-  }
-
-  .light-purple {
-    background-color: #f9f8ff;
-  }
-
-  .dark-purple {
-    background-color: #5e3ed6;
-    p,
-    h1,
-    h2,
-    h3 {
-      color: white;
     }
   }
 }
