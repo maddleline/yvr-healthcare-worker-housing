@@ -6,7 +6,7 @@ import React, { useState } from "react";
 import HealthWorkerModal from "../HealthWorkerModal";
 import { Link } from "react-router-dom";
 
-const City = () => {
+const City = (props) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <>
@@ -39,7 +39,8 @@ const City = () => {
               <p>
                 Health Worker Housing is a volunteer initiative to connect
                 property owners with healthcare workers in need of low-cost,
-                short-term housing during the COVID-19 outbreak in Vancouver.
+                short-term housing during the COVID-19 outbreak in{" "}
+                {props.cityName}.
               </p>
               <img
                 className="hero-image"
@@ -215,7 +216,7 @@ const City = () => {
                 <p>
                   To the property owners who have made their property available:
                   You are providing a critical service to our frontline workers,
-                  and helping to protect the entire Vancouver community.
+                  and helping to protect the entire {props.cityName} community.
                 </p>
               </div>
             </div>
