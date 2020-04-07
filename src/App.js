@@ -24,7 +24,7 @@ export default function App() {
         <div className="App">
           <div className="bx--grid header">
             <div className="bx--row section section__header">
-              <div className="bx--col-sm-3 bx--col-md-6 bx--col-lg-6">
+              <div className="bx--col-sm-3 bx--col-md-6 bx--offset-lg-1 bx--col-lg-5">
                 <Link to="/">
                   <h4>Health Worker Housing</h4>
                 </Link>
