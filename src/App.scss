@@ -4,6 +4,7 @@ html {
 
 .App {
   font-family: "Karla", serif;
+  background-color: #eeeeee;
   .bx--grid {
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -17,7 +18,7 @@ html {
   .bx--grid.header {
     padding-top: 0;
     padding-bottom: 0;
-    box-shadow: 0 1px 0 #000;
+    border-bottom: 1px solid black;
     .bx--row {
       height: 4rem;
       align-items: center;
@@ -25,6 +26,7 @@ html {
         padding-bottom: 0;
       }
       a {
+        text-decoration: none;
         color: black;
       }
     }

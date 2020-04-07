@@ -7,14 +7,6 @@ import React from "react";
 const Homepage = ({ cities }) => {
   return (
     <div className="Homepage">
-      <div className="bx--grid header">
-        <div className="bx--row section section__header">
-          <div className="bx--col-md-4 bx--col-lg-4">
-            <h4>Health Worker Housing</h4>
-          </div>
-        </div>
-      </div>
-
       <div className="bx--grid lead">
         <div className="bx--row section section__lead">
           <div className="bx--col-lg-4 left">

@@ -59,7 +59,6 @@ $max-minus-1: calc(#{$max} - 1px);
     }
     .section {
       display: flex;
-      border-top: 1px solid #000;
       border-bottom: 1px solid #000;
       .left {
         display: flex;

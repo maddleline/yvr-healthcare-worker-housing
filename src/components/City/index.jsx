@@ -12,26 +12,6 @@ const City = (props) => {
     <>
       <HealthWorkerModal isOpen={isModalOpen} setIsOpen={setIsModalOpen} />
       <div className="City">
-        <div className="bx--grid header">
-          <div className="bx--row section section__header">
-            <div className="bx--col-md-4 bx--col-lg-4">
-              <Link to="/">
-                <h4>Health Worker Housing</h4>
-              </Link>
-            </div>
-            <div className="bx--offset-lg-2" />
-            <div className="bx--col-sm-0 bx--col-md-2 bx--col-lg-2">
-              <a href="#healthcare-workers">For healthcare workers</a>
-            </div>
-            <div className="bx--col-sm-0 bx--col-md-1 bx--col-lg-2">
-              <a href="#property-owners">For property owners</a>
-            </div>
-            <div className="bx--col-sm-0 bx--col-md-1 bx--col-lg-2">
-              <a href="#faqs">FAQs</a>
-            </div>
-          </div>
-        </div>
-
         <div className="lead-bx--grid">
           <div className="lead-bx--row section">
             <div className="left">
