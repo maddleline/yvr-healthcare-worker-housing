@@ -20,14 +20,14 @@ const Homepage = ({ cities }) => {
             </div>
             <h3>Select your city below:</h3>
           </div>
-          <div className="bx--col-lg-6 right">
+          <div className="bx--col-lg-5 right">
             <img
               className="hero-image"
               src={require("./cropped-hero-image.png")}
               alt="Illustration of a healthcare worker's household"
             />
           </div>
-          <div className="bx--col-lg-1" />
+          <div className="bx--col-lg-2" />
         </div>
       </div>
 
