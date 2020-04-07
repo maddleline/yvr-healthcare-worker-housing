@@ -6,17 +6,20 @@ import React, { useState } from "react";
 import HealthWorkerModal from "../HealthWorkerModal";
 
 const City = (props) => {
-  console.log(props);
   const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <>
-      <HealthWorkerModal isOpen={isModalOpen} setIsOpen={setIsModalOpen} />
+      <HealthWorkerModal
+        {...props}
+        isOpen={isModalOpen}
+        setIsOpen={setIsModalOpen}
+      />
       <div className="City">
         <div className="bx--grid">
           <div className="bx--row">
             <div className="bx--offset-lg-1 bx--col-lg-11">
-              <h3>Vancouver</h3>
-              <h4>BC, Canada</h4>
+              <h3>{props.city}</h3>
+              <h4>{props.province}, Canada</h4>
             </div>
           </div>
         </div>
@@ -96,7 +99,7 @@ const City = (props) => {
                 <li>Kitchen or kitchenette</li>
               </ul>
               <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSeoDudR3nhYv8KvutU6osarBFqdnNBUq303LI_k2qf0CiRAnQ/viewform?usp=pp_url"
+                href={props.linkToPropertyForm}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="link"

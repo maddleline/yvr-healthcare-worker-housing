@@ -1,6 +1,7 @@
 [
   {
     "name": "Victoria",
+    "province": "British Columbia",
     "url": "victoria",
     "contact": "Emmanuelle",
     "email": "victoria@healthworkerhousing.ca",
@@ -9,6 +10,7 @@
   },
   {
     "name": "Vancouver",
+    "province": "British Columbia",
     "url": "vancouver",
     "contact": "Madeline",
     "email": "vancouver@healthworkerhousing.ca",
@@ -17,6 +19,7 @@
   },
   {
     "name": "Toronto",
+    "province": "Ontario",
     "url": "toronto",
     "contact": "Sohail",
     "email": "toronto@healthworkerhousing.ca",
@@ -25,6 +28,7 @@
   },
   {
     "name": "Kingston",
+    "province": "Ontario",
     "url": "kingston",
     "contact": "Sheila",
     "email": "kingston@healthworkerhousing.ca",
@@ -33,6 +37,7 @@
   },
   {
     "name": "Ottawa",
+    "province": "Ontario",
     "url": "ottawa",
     "contact": "Ryan",
     "email": "ottawa@healthworkerhousing.ca",
@@ -41,6 +46,7 @@
   },
   {
     "name": "St. John's",
+    "province": "Newfoundland",
     "url": "st-johns",
     "contact": "Beth",
     "email": "stjohns@healthworkerhousing.ca",

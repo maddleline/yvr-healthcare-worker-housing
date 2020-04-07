@@ -13,7 +13,11 @@ export default function App() {
   const cityRoutes = cities.map((city) => {
     return (
       <Route key={city.url} path={`/${city.url}`}>
-        <City cityName={city.name} />
+        <City
+          city={city.name}
+          province={city.province}
+          linkToPropertyForm={city.linkToPropertyForm}
+        />
       </Route>
     );
   });
@@ -29,7 +33,7 @@ export default function App() {
                   <h4>Health Worker Housing</h4>
                 </Link>
               </div>
-              <div className="bx--col-sm-1 bx--col-md-2 bx--offset-lg-4 bx--col-lg-2">
+              <div className="bx--col-sm-1 bx--col-md-2 bx--offset-lg-3 bx--col-lg-3">
                 <Link to="/faq">
                   <h4>FAQ</h4>
                 </Link>
