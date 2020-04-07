@@ -10,7 +10,7 @@ const FAQ = () => {
           <div className="bx--col-sm-4 bx--col-md-8 bx--offset-lg-1 bx--col-lg-11">
             <h1>Frequently Asked Questions</h1>
           </div>
-          <div className="bx--col-sm-4 bx--col-md-7 bx--offset-lg-1 bx--col-lg-5">
+          <div className="bx--col-sm-4 bx--col-md-7 bx--offset-lg-1 bx--col-lg-4">
             <div className="question">
               <h2>I'm not a healthcare worker, can I apply for housing?</h2>
               <p>
@@ -48,7 +48,7 @@ const FAQ = () => {
               </p>
             </div>
           </div>
-          <div className="bx--col-sm-4 bx--col-md-7 bx--col-lg-5">
+          <div className="bx--col-sm-4 bx--col-md-7 bx--offset-lg-1 bx--col-lg-4">
             <div className="question">
               <h2>Isn't Airbnb already doing this?</h2>
               <p>
