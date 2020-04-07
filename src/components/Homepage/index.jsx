@@ -9,7 +9,7 @@ const Homepage = ({ cities }) => {
     <div className="Homepage">
       <div className="bx--grid lead">
         <div className="bx--row section section__lead">
-          <div className="bx--col-lg-4 left">
+          <div className="bx--offset-lg-1 bx--col-lg-4 left">
             <div>
               <h3>Help keep healthcare workers' families safe</h3>
               <p>
@@ -20,7 +20,7 @@ const Homepage = ({ cities }) => {
             </div>
             <h4>Select your city below:</h4>
           </div>
-          <div className="bx--offset-lg-1 bx--col-lg-6 right">
+          <div className="bx--col-lg-6 right">
             <img
               className="hero-image"
               src={require("./cropped-hero-image.png")}
@@ -33,7 +33,7 @@ const Homepage = ({ cities }) => {
 
       <div className="bx--grid list">
         <div className="bx--row section section__list">
-          <div className="bx--col-lg-12">
+          <div className="bx--offset-lg-1 bx--col-lg-11">
             {cities.map((city) => {
               return (
                 <div key={city.url}>
