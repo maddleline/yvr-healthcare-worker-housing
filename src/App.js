@@ -3,7 +3,7 @@ import "./App.scss";
 import { Link, Route, BrowserRouter as Router, Switch } from "react-router-dom";
 
 import City from "./components/City";
-import FAQpage from "./components/Homepage";
+import FAQ from "./components/FAQ";
 import GridHelper from "./components/GridHelper";
 import Homepage from "./components/Homepage";
 import React from "react";
@@ -39,11 +39,11 @@ export default function App() {
 
           <Switch>
             {cityRoutes}
+            <Route path="/faq">
+              <FAQ />
+            </Route>
             <Route path="/">
               <Homepage cities={cities} />
-            </Route>
-            <Route path="/faq">
-              <FAQpage />
             </Route>
           </Switch>
         </div>

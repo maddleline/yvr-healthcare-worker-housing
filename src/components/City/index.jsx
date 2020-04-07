@@ -12,59 +12,6 @@ const City = (props) => {
     <>
       <HealthWorkerModal isOpen={isModalOpen} setIsOpen={setIsModalOpen} />
       <div className="City">
-        <div className="lead-bx--grid">
-          <div className="lead-bx--row section">
-            <div className="left">
-              <h1>Help keep healthcare workers' families safe</h1>
-              <p>
-                Health Worker Housing is a volunteer initiative to connect
-                property owners with healthcare workers in need of low-cost,
-                short-term housing during the COVID-19 outbreak in{" "}
-                {props.cityName}.
-              </p>
-              <img
-                className="hero-image"
-                src={"/hero-image.png"}
-                alt="Illustration of a healthcare worker's household"
-              />
-            </div>
-            <div className="right light-purple">
-              <div
-                className="card"
-                onClick={() => {
-                  setIsModalOpen(true);
-                }}
-              >
-                <h4>Healthcare workers</h4>
-                <h2>Looking for temporary housing?</h2>
-                <div className="link">
-                  Request access to listings
-                  <ArrowRight16 />
-                </div>
-              </div>
-              <div
-                className="divider black"
-                style={{ height: "1px", boxShadow: "0 1px 0 black" }}
-              />
-              <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSeoDudR3nhYv8KvutU6osarBFqdnNBUq303LI_k2qf0CiRAnQ/viewform?usp=pp_url"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="card"
-              >
-                <div>
-                  <h4>Property owners</h4>
-                  <h2>Have an available furnished suite?</h2>
-                  <div className="link">
-                    List your property
-                    <Launch16 />
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-
         <div className="bx--grid" id="healthcare-workers">
           <div className="bx--row section">
             <div className="bx--col-md-4 bx--col-lg-5">
@@ -113,7 +60,7 @@ const City = (props) => {
           </div>
         </div>
 
-        <div className="bx--grid light-purple" id="property-owners">
+        <div className="bx--grid" id="property-owners">
           <div className="bx--row section">
             <div className="bx--col-md-4 bx--col-lg-5">
               <h3>Property owners</h3>
@@ -182,23 +129,6 @@ const City = (props) => {
                 That's it! Thank you for helping to keep a healthcare worker's
                 family safe.
               </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="bx--grid dark-purple">
-          <div className="bx--row section section__thank-you">
-            <div className="bx--col-md-8 bx--offset-lg-1 bx--col-lg-2">
-              <h2>Thank you!</h2>
-            </div>
-            <div className="bx--col-md-8 bx--offset-lg-1 bx--col-lg-7">
-              <div className="thank-you-message">
-                <p>
-                  To the property owners who have made their property available:
-                  You are providing a critical service to our frontline workers,
-                  and helping to protect the entire {props.cityName} community.
-                </p>
-              </div>
             </div>
           </div>
         </div>
