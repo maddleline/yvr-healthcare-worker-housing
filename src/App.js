@@ -7,6 +7,7 @@ import FAQ from "./components/FAQ";
 import GridHelper from "./components/GridHelper";
 import Homepage from "./components/Homepage";
 import React from "react";
+import ScrollToTop from "./components/ScrollToTop";
 import cities from "./data.json";
 
 export default function App() {
@@ -21,6 +22,7 @@ export default function App() {
     <>
       {process.env.NODE_ENV === "development" && <GridHelper />}
       <Router>
+        <ScrollToTop />
         <div className="App">
           <div className="bx--grid header">
             <div className="bx--row section section__header">
