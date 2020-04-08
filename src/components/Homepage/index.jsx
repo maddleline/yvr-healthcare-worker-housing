@@ -18,7 +18,7 @@ const Homepage = ({ cities }) => {
                 short-term housing during the COVID-19 pandemic in Canada.
               </p>
             </div>
-            <h3>Select your city below:</h3>
+            <h3 className="select-your-city">Select your city below:</h3>
           </div>
           <div className="bx--col-lg-5 bx--offset-md-0 bx--col-md-5 bx--offset-sm-1 bx--col-sm-3 right">
             <img
