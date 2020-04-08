@@ -27,51 +27,7 @@ const City = (props) => {
           </div>
         </div>
 
-        <div className="bx--grid health-workers">
-          <div className="bx--row">
-            <div className="bx--offset-lg-1 bx--col-lg-4 bx--col-md-3">
-              <img
-                src={require("./health-workers.png")}
-                alt="Illustration of health workers"
-              />
-            </div>
-            <div className="bx--col-lg-4 bx--col-md-4">
-              <h2>Find temporary housing</h2>
-              <h3>Healthcare workers</h3>
-              <p>
-                To request access to our listings, submit the form at the link
-                below. Once your request has been approved, a link to our
-                available listings will be sent to your email.
-              </p>
-              <p>
-                <span className="italic">
-                  Please note the team running this service has not done any due
-                  diligence on any of the offers. We are simply an information
-                  service and it is up to each party to meet and screen anyone
-                  they would like to enter into a rental agreement with.
-                </span>
-              </p>
-              <div
-                className="link"
-                onClick={() => {
-                  setIsModalOpen(true);
-                }}
-              >
-                <div>
-                  Request access to listings
-                  <ArrowRight16 />
-                </div>
-                <span>
-                  <View16 />
-                  <View16 />
-                </span>
-              </div>
-            </div>
-            <div className="bx--col-lg-3" />
-          </div>
-        </div>
-
-        <div className="bx--grid">
+        <div className="bx--grid property-owners">
           <div className="bx--row">
             <div className="bx--offset-lg-1 bx--col-lg-4 bx--col-md-3">
               <img
@@ -115,6 +71,50 @@ const City = (props) => {
               </a>
             </div>
             <div className="bx--offset-lg-3" />
+          </div>
+        </div>
+
+        <div className="bx--grid health-workers">
+          <div className="bx--row">
+            <div className="bx--offset-lg-1 bx--col-lg-4 bx--col-md-3">
+              <img
+                src={require("./health-workers.png")}
+                alt="Illustration of health workers"
+              />
+            </div>
+            <div className="bx--col-lg-4 bx--col-md-4">
+              <h2>Find temporary housing</h2>
+              <h3>Healthcare workers</h3>
+              <p>
+                To request access to our listings, submit the form at the link
+                below. Once your request has been approved, a link to our
+                available listings will be sent to your email.
+              </p>
+              <p>
+                <span className="italic">
+                  Please note the team running this service has not done any due
+                  diligence on any of the offers. We are simply an information
+                  service and it is up to each party to meet and screen anyone
+                  they would like to enter into a rental agreement with.
+                </span>
+              </p>
+              <div
+                className="link"
+                onClick={() => {
+                  setIsModalOpen(true);
+                }}
+              >
+                <div>
+                  Request access to listings
+                  <ArrowRight16 />
+                </div>
+                <span>
+                  <View16 />
+                  <View16 />
+                </span>
+              </div>
+            </div>
+            <div className="bx--col-lg-3" />
           </div>
         </div>
       </div>
