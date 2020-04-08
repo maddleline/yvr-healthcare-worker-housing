@@ -1,8 +1,10 @@
 html {
-  scroll-behavior: smooth;
+  background-color: #f2f1ed;
 }
 
 .App {
+  font-family: "Karla", serif;
+  background-color: #f2f1ed;
   .bx--grid {
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -14,98 +16,85 @@ html {
   }
 
   .bx--grid.header {
-    padding-top: 0;
-    padding-bottom: 0;
-    box-shadow: 0 1px 0 #000;
+    border-bottom: 1px solid #7f7f84;
     .bx--row {
       height: 4rem;
       align-items: center;
-      h4 {
-        padding-bottom: 0;
+      h3 {
+        font-family: IBMPlexSans;
+        font-weight: 500;
       }
       a {
+        text-decoration: none;
         color: black;
       }
     }
   }
 
+  .bx--grid.footer {
+    border-top: 1px solid #7f7f84;
+    .bx--row {
+      height: 7.5rem;
+      align-items: center;
+    }
+    svg {
+      height: 1rem;
+      width: 1rem;
+      margin-left: 0.5rem;
+      fill: #f74300;
+    }
+  }
+
+  .bx--grid.header,
+  .bx--grid.footer {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
   h1,
-  h2,
-  h3 {
-    color: #6f5cb6;
-  }
-
-  h1 {
-    padding-bottom: 2rem;
-    font-size: 54px;
-    line-height: 58px;
-  }
-
-  h1 + p {
-    color: #556265;
-  }
-
   h2 {
-    padding-bottom: 2rem;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: normal;
+    margin-bottom: 1rem;
+    span {
+      font-weight: normal;
+    }
   }
 
-  h3 {
-    padding-bottom: 2rem;
+  h3,
+  h4 {
+    font-size: 14px;
     font-weight: bold;
-    font-size: 20px;
-    line-height: 22px;
+    line-height: normal;
   }
 
   h4 {
-    padding-bottom: 0.5rem;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 22px;
+    margin-bottom: 0.5rem;
+    max-width: 300px;
   }
 
   p {
+    font-size: 14px;
+    line-height: normal;
     margin-bottom: 1rem;
-  }
-
-  ol {
-    margin-left: 1rem;
-    li {
-      list-style: decimal;
-      font-size: 1rem;
-      font-weight: 400;
-      line-height: 1.5rem;
-      letter-spacing: 0;
-      color: #161616;
-      padding-bottom: 0.5rem;
-      padding-left: 1rem;
+    span.italic {
+      font-style: italic;
+    }
+    span.bold {
+      font-weight: bold;
+    }
+    span.inline-icon {
+      display: flex;
     }
   }
 
   ul {
-    margin-left: 1rem;
+    margin-bottom: 1rem;
     li {
       list-style: disc;
-      font-size: 1rem;
-      font-weight: 400;
-      line-height: 1.5rem;
-      letter-spacing: 0;
       color: #161616;
       padding-bottom: 0.5rem;
-      padding-left: 1rem;
-    }
-  }
-
-  .light-purple {
-    background-color: #f9f8ff;
-  }
-
-  .dark-purple {
-    background-color: #5e3ed6;
-    p,
-    h1,
-    h2,
-    h3 {
-      color: white;
     }
   }
 }

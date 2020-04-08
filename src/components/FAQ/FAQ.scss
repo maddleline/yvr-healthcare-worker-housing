@@ -1,0 +1,26 @@
+$lg: 1056px;
+$lg-minus-1: 1055px;
+
+.FAQ {
+  h1 {
+    margin-bottom: 3.75rem;
+  }
+  .question {
+    margin-bottom: 3rem;
+  }
+  img {
+    height: 19rem;
+    width: 19rem;
+    border-radius: 19rem;
+    margin-bottom: 3rem;
+    background-color: #006f83;
+    object-fit: contain;
+    padding: 1rem;
+    @media (max-width: $lg-minus-1) {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 0;
+    }
+  }
+}

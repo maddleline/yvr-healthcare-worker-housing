@@ -9,23 +9,34 @@ import {
 } from "carbon-components-react";
 import React, { useState } from "react";
 
-const HealthWorkerModal = ({ isOpen, setIsOpen }) => {
+const HealthWorkerModal = ({
+  name,
+  linkToListings,
+  contact,
+  email,
+  isOpen,
+  setIsOpen,
+}) => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [occupation, setOccupation] = useState("");
   const [workplace, setWorkplace] = useState("");
-  const [email, setEmail] = useState("");
+  const [userEmail, setUserEmail] = useState("");
   const [feedback, setFeedback] = useState("");
   const [formIsSubmitted, setFormIsSubmitted] = useState(false);
 
   const handleSubmit = (event) => {
-    const templateId = "health_worker_housing_yvr";
+    const templateId = "canada_health_worker_housing_template";
 
     sendFeedback(templateId, {
       firstName,
       lastName,
       occupation,
       workplace,
+      userEmail,
+      name,
+      linkToListings,
+      contact,
       email,
     });
     return true;
@@ -138,7 +149,7 @@ const HealthWorkerModal = ({ isOpen, setIsOpen }) => {
             placeholder=""
             type="email"
             onChange={(e) => {
-              setEmail(e.target.value);
+              setUserEmail(e.target.value);
             }}
           />
           <br />
@@ -146,7 +157,7 @@ const HealthWorkerModal = ({ isOpen, setIsOpen }) => {
             className="checkbox"
             id="checkbox-1"
             required
-            labelText="I confirm I would be willing to pay a reasonable rate for a seperate, furnished suite."
+            labelText="I confirm I am a healthcare or other essential worker at high risk of contracting COVID-19."
             name="checkbox-1"
             onChange={() => {}}
             value="standard"
@@ -156,7 +167,7 @@ const HealthWorkerModal = ({ isOpen, setIsOpen }) => {
             className="checkbox"
             id="checkbox-2"
             required
-            labelText="I confirm I am a healthcare or other essential worker at high risk of contracting COVID-19."
+            labelText="I confirm I am willing to pay a reasonable rate for a seperate, furnished suite."
             name="checkbox-2"
             onChange={() => {}}
             value="standard"
@@ -168,6 +179,16 @@ const HealthWorkerModal = ({ isOpen, setIsOpen }) => {
             required
             labelText="I understand that it's my responsibility to contact suites to set up viewings and come up with a suitable rental agreement."
             name="checkbox-3"
+            onChange={() => {}}
+            value="standard"
+          />
+          <br />
+          <Checkbox
+            className="checkbox"
+            id="checkbox-4"
+            required
+            labelText="I understand that I may be asked to show my work identification to property owners before entering into a rental agreement."
+            name="checkbox-4"
             onChange={() => {}}
             value="standard"
           />
