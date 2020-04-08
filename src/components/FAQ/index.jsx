@@ -26,7 +26,7 @@ const FAQ = () => {
               <p>
                 Please refrain from any other communications to the email
                 addresses provided to allow us to effectively administer
-                requests and offers! If you like, you can share this link on
+                requests and offers! If you like, you can share our site on
                 social media and thank us there.
               </p>
             </div>
@@ -58,15 +58,18 @@ const FAQ = () => {
                 faster.
               </p>
             </div>
-            <div
+            <img
               style={{
                 height: "19rem",
                 width: "19rem",
-                marginTop: "3rem",
+                borderRadius: "19rem",
                 marginBottom: "3rem",
                 backgroundColor: "#006f83",
-                borderRadius: "19rem",
+                objectFit: "contain",
+                padding: "1rem",
               }}
+              src={"/hero-image.png"}
+              alt="Illustration of health workers"
             />
           </div>
           <div className="bx--col-lg-1" />
