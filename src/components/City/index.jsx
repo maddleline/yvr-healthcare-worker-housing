@@ -30,13 +30,14 @@ const City = (props) => {
         <div className="bx--grid" style={{ borderBottom: "1px solid #7f7f84" }}>
           <div className="bx--row">
             <div className="bx--offset-lg-1 bx--col-lg-4">
-              <div
+              <img
                 style={{
                   height: "19rem",
                   width: "19rem",
-                  backgroundColor: "slategrey",
                   borderRadius: "19rem",
                 }}
+                src={require("./health-workers.png")}
+                alt="Illustration of health workers"
               />
             </div>
             <div className="bx--col-lg-4">
@@ -78,13 +79,14 @@ const City = (props) => {
         <div className="bx--grid">
           <div className="bx--row">
             <div className="bx--offset-lg-1 bx--col-lg-4">
-              <div
+              <img
                 style={{
                   height: "19rem",
                   width: "19rem",
-                  backgroundColor: "mintcream",
                   borderRadius: "19rem",
                 }}
+                src={require("./property-owners.png")}
+                alt="Illustration of health workers"
               />
             </div>
             <div className="bx--col-lg-4">
@@ -94,7 +96,7 @@ const City = (props) => {
                 We are looking for property owners that have available furnished
                 suites the can offer at low or no cost.
               </p>
-              <p>
+              <p style={{ marginBottom: "25px" }}>
                 We ask that you set the rental price below market rent, and
                 pro-rate it weekly. This is to alleviate the financial burden on
                 healthcare workers that are having to bear the cost of

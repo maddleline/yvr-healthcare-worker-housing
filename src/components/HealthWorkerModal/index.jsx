@@ -167,7 +167,7 @@ const HealthWorkerModal = ({
             className="checkbox"
             id="checkbox-1"
             required
-            labelText="I confirm I would be willing to pay a reasonable rate for a seperate, furnished suite."
+            labelText="I confirm I am willing to pay a reasonable rate for a seperate, furnished suite."
             name="checkbox-1"
             onChange={() => {}}
             value="standard"

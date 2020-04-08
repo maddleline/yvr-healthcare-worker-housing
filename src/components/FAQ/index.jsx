@@ -34,7 +34,7 @@ const FAQ = () => {
               <h2>Can I contact you for media enquiries?</h2>
               <p>
                 Yes! For media enquiries, please email
-                housing4frontline&#64;gmail.com with "Media Inquiry" in the
+                victoria&#64;healthworkerhousing.ca with "Media Inquiry" in the
                 subject line.
               </p>
             </div>
