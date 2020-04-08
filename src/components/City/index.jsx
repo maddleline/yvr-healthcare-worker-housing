@@ -17,7 +17,7 @@ const City = (props) => {
       <div className="City">
         <div className="bx--grid city-name">
           <div className="bx--row">
-            <div className="bx--offset-lg-1 bx--col-lg-11">
+            <div className="bx--offset-lg-1 bx--col-lg-11 bx--col-md-8">
               <h1>
                 {props.name},
                 <br />
@@ -27,20 +27,15 @@ const City = (props) => {
           </div>
         </div>
 
-        <div className="bx--grid" style={{ borderBottom: "1px solid #7f7f84" }}>
+        <div className="bx--grid health-workers">
           <div className="bx--row">
-            <div className="bx--offset-lg-1 bx--col-lg-4">
+            <div className="bx--offset-lg-1 bx--col-lg-4 bx--col-md-3">
               <img
-                style={{
-                  height: "19rem",
-                  width: "19rem",
-                  borderRadius: "19rem",
-                }}
                 src={require("./health-workers.png")}
                 alt="Illustration of health workers"
               />
             </div>
-            <div className="bx--col-lg-4">
+            <div className="bx--col-lg-4 bx--col-md-4">
               <h2>Find temporary housing</h2>
               <h3>Healthcare workers</h3>
               <p>
@@ -78,18 +73,13 @@ const City = (props) => {
 
         <div className="bx--grid">
           <div className="bx--row">
-            <div className="bx--offset-lg-1 bx--col-lg-4">
+            <div className="bx--offset-lg-1 bx--col-lg-4 bx--col-md-3">
               <img
-                style={{
-                  height: "19rem",
-                  width: "19rem",
-                  borderRadius: "19rem",
-                }}
                 src={require("./property-owners.png")}
                 alt="Illustration of health workers"
               />
             </div>
-            <div className="bx--col-lg-4">
+            <div className="bx--col-lg-4 bx--col-md-4">
               <h2>House a healthcare worker</h2>
               <h3>Property owners</h3>
               <p>

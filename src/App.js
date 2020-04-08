@@ -61,7 +61,7 @@ export default function App() {
                     <FavoriteFilled16 />
                   </span>
                 </p>
-                <p>vancouver&#64;healthworkerhousing.ca</p>
+                <p>victoria&#64;healthworkerhousing.ca</p>
               </div>
             </div>
           </div>

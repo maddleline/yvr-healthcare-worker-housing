@@ -34,14 +34,14 @@ const FAQ = () => {
               <h2>Can I contact you for media enquiries?</h2>
               <p>
                 Yes! For media enquiries, please email
-                victoria&#64;healthworkerhousing.ca with "Media Inquiry" in the
+                victoria&#64;healthworkerhousing.ca with "Media Enquiry" in the
                 subject line.
               </p>
             </div>
             <div className="question">
               <h2>Can I start this in another city?</h2>
               <p>
-                Yes! Email housing4frontlinehealth&#64;gmail.com with "New FAQ"
+                Yes! Email victoria&#64;healthworkerhousing.ca with "New City"
                 in the subject line, and we will help you get started. You only
                 need know how to use email and Google Forms to act as a city
                 coordinator.
@@ -58,19 +58,7 @@ const FAQ = () => {
                 faster.
               </p>
             </div>
-            <img
-              style={{
-                height: "19rem",
-                width: "19rem",
-                borderRadius: "19rem",
-                marginBottom: "3rem",
-                backgroundColor: "#006f83",
-                objectFit: "contain",
-                padding: "1rem",
-              }}
-              src={"/hero-image.png"}
-              alt="Illustration of health workers"
-            />
+            <img src={"/hero-image.png"} alt="Illustration of health workers" />
           </div>
           <div className="bx--col-lg-1" />
         </div>
