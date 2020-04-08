@@ -94,7 +94,7 @@ const City = (props) => {
               <h3>Property owners</h3>
               <p>
                 We are looking for property owners that have available furnished
-                suites the can offer at low or no cost.
+                suites they can offer at low or no cost.
               </p>
               <p style={{ marginBottom: "25px" }}>
                 We ask that you set the rental price below market rent, and
