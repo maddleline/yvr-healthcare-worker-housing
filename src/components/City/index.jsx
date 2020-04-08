@@ -46,7 +46,7 @@ const City = (props) => {
               <p>
                 <span className="italic">
                   Please note the team running this service has not done any due
-                  diligence on any of the offers. We are simpl an information
+                  diligence on any of the offers. We are simply an information
                   service and it is up to each party to meet and screen anyone
                   they would like to enter into a rental agreement with.
                 </span>
