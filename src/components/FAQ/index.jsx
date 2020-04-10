@@ -58,9 +58,15 @@ const FAQ = () => {
                 faster.
               </p>
             </div>
-            <img src={"/hero-image.png"} alt="Illustration of health workers" />
+            <div className="faq-image-hidden-sm-md">
+              <div className="aspect-ratio-box faq-image" />
+            </div>
           </div>
           <div className="bx--col-lg-1" />
+          <div className="bx--offset-sm-1 bx--col-sm-2 bx--offset-md-2 bx--col-md-4 bx--col-lg-0">
+            <div className="aspect-ratio-box faq-image" />
+          </div>
+          <div className="bx--col-sm-1 bx--col-md-2 bx--col-lg-0" />
         </div>
       </div>
     </div>
