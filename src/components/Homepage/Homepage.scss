@@ -1,3 +1,15 @@
+$sm: 320px;
+$md: 672px;
+$lg: 1056px;
+$xl: 1312px;
+$max: 1584px;
+
+$sm-minus-1: calc(#{$sm} - 1px);
+$md-minus-1: calc(#{$md} - 1px);
+$lg-minus-1: calc(#{$lg} - 1px);
+$xl-minus-1: calc(#{$xl} - 1px);
+$max-minus-1: calc(#{$max} - 1px);
+
 .Homepage {
   .bx--grid.lead {
     border-bottom: 1px solid #7f7f84;
@@ -40,11 +52,24 @@
       font-style: italic;
       color: #f74300;
     }
-    &:hover {
-      color: #f74300;
+    @media (max-width: $md-minus-1) {
+      svg {
+        margin-left: 3rem;
+      }
+    }
+    @media (hover: none) {
       svg,
       span {
-        opacity: 1;
+        display: none;
+      }
+    }
+    @media (hover: hover) {
+      &:hover {
+        color: #f74300;
+        svg,
+        span {
+          opacity: 1;
+        }
       }
     }
   }
