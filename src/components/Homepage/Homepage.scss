@@ -20,14 +20,15 @@ $max-minus-1: calc(#{$max} - 1px);
       div {
         max-width: 311px;
       }
-      .select-your-city {
-        margin-bottom: -1.5rem;
-      }
     }
     .right {
       img {
         width: 100%;
       }
+    }
+    .select-your-city {
+      margin-top: 0.75rem;
+      margin-bottom: -1.5rem;
     }
   }
   a {

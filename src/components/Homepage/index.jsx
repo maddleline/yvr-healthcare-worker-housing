@@ -18,7 +18,6 @@ const Homepage = ({ cities }) => {
                 short-term housing during the COVID-19 pandemic in Canada.
               </p>
             </div>
-            <h3 className="select-your-city">Select your city below:</h3>
           </div>
           <div className="bx--col-lg-5 bx--offset-md-0 bx--col-md-5 bx--offset-sm-1 bx--col-sm-3 right">
             <img
@@ -27,7 +26,11 @@ const Homepage = ({ cities }) => {
               alt="Illustration of a healthcare worker's household"
             />
           </div>
-          <div className="bx--col-lg-2" />
+          <div className="bx--col-lg-2 bx--col-md-0 bx--col-sm-0" />
+          <div className="bx--offset-lg-1 bx--col-lg-4 bx--col-md-3 bx--col-sm-4">
+            <h3 className="select-your-city">Select your city below:</h3>
+          </div>
+          <div className="bx--col-lg-7 bx--col-md-5 bx--col-sm-0" />
         </div>
       </div>
 
