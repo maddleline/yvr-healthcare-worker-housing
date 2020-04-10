@@ -27,6 +27,7 @@ $max-minus-1: calc(#{$max} - 1px);
     background-size: cover;
   }
   .faq-image {
+    background-color: #93d7bb;
     background-image: url(./Housing_4.svg);
   }
   @media (max-width: $lg-minus-1) {

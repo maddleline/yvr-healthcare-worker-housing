@@ -30,9 +30,11 @@ $max-minus-1: calc(#{$max} - 1px);
     background-size: cover;
   }
   .health-workers-image {
+    background-color: #fec720;
     background-image: url(./health-workers.svg);
   }
   .property-owners-image {
+    background-color: #f29483;
     background-image: url(./property-owners.svg);
   }
   .health-workers-text,
