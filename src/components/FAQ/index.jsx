@@ -1,5 +1,6 @@
 import "./FAQ.scss";
 
+import { FavoriteFilled16 } from "@carbon/icons-react/es";
 import React from "react";
 
 const FAQ = () => {
@@ -67,6 +68,20 @@ const FAQ = () => {
             <div className="aspect-ratio-box faq-image" />
           </div>
           <div className="bx--col-sm-1 bx--col-md-2 bx--col-lg-0" />
+        </div>
+      </div>
+
+      <div className="bx--grid footer">
+        <div className="bx--row section section__footer">
+          <div className="bx--col-sm-3 bx--col-md-6 bx--offset-lg-1 bx--col-lg-5">
+            <p>
+              <span className="bold inline-icon">
+                Created by volunteers with
+                <FavoriteFilled16 />
+              </span>
+            </p>
+            <p>victoria&#64;healthworkerhousing.ca</p>
+          </div>
         </div>
       </div>
     </div>
