@@ -29,13 +29,11 @@ const City = (props) => {
 
         <div className="bx--grid health-workers">
           <div className="bx--row">
-            <div className="bx--offset-lg-1 bx--col-lg-4 bx--col-md-3">
-              <img
-                src={require("./health-workers.png")}
-                alt="Illustration of health workers"
-              />
+            <div className="bx--offset-lg-1 bx--col-lg-4 bx--col-md-3 bx--offset-md-0 bx--offset-sm-1 bx--col-sm-2 health-workers-image-container">
+              <div className="aspect-ratio-box health-workers-image" />
             </div>
-            <div className="bx--col-lg-4 bx--col-md-4">
+            <div className="bx--col-lg-0 bx--col-md-0 bx--col-sm-1" />
+            <div className="bx--col-lg-4 bx--col-md-4 bx--col-sm-4 health-workers-text">
               <h2>Find temporary housing</h2>
               <h3>Healthcare workers</h3>
               <p>
@@ -73,13 +71,11 @@ const City = (props) => {
 
         <div className="bx--grid property-owners">
           <div className="bx--row">
-            <div className="bx--offset-lg-1 bx--col-lg-4 bx--col-md-3">
-              <img
-                src={require("./property-owners.png")}
-                alt="Illustration of health workers"
-              />
+            <div className="bx--offset-lg-1 bx--col-lg-4 bx--col-md-3 bx--offset-md-0 bx--offset-sm-1 bx--col-sm-2 property-owners-image-container">
+              <div className="aspect-ratio-box property-owners-image" />
             </div>
-            <div className="bx--col-lg-4 bx--col-md-4">
+            <div className="bx--col-lg-0 bx--col-md-0 bx--col-sm-1" />
+            <div className="bx--col-lg-4 bx--col-md-4 bx--col-sm-4 property-owners-text">
               <h2>House a healthcare worker</h2>
               <h3>Property owners</h3>
               <p>
