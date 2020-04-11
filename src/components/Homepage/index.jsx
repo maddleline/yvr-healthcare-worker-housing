@@ -25,11 +25,11 @@ const Homepage = ({ cities }) => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  plea made by a nurse
+                  nurse's plea
                 </a>{" "}
-                at the Royal Jubilee Hospital in Victoria. Within 24 hours, she
-                received over 75 offers of low-cost accommodation where she
-                could self-isolate.
+                for low-cost accommodation where she could self-isolate to
+                protect her family. Within 24 hours, she received over 75
+                offers.
               </p>
             </div>
           </div>
