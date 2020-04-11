@@ -27,7 +27,7 @@ export default {
     },
     {
       question: "Can I donate money or supplies to healthcare workers?",
-      answer: `Unfortunately, we do not have the capacity to accept or distribute donations.  We recommend making donations through other services, such as <a href="https://ca.gofundme.com/f/help-covid19-coming-together-vancouver" target="_blank" rel="noopener noreferrer">Coming Together Vancouver</a>.`,
+      answer: `Unfortunately, we do not have the capacity to accept or distribute donations.  We recommend making donations through other organizations, such as <a href="https://thehomefront.ca/" target="_blank" rel="noopener noreferrer">The Home Front</a> or the <a href="https://www.redcross.ca/" target="_blank" rel="noopener noreferrer">Canadian Red Cross</a>.`,
       tag: "other",
     },
     {
