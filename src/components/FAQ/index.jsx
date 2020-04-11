@@ -2,6 +2,8 @@ import "./FAQ.scss";
 
 import { FavoriteFilled16 } from "@carbon/icons-react/es";
 import React from "react";
+import ReactHtmlParser from "react-html-parser";
+import data from "./faqData.js";
 
 const FAQ = () => {
   return (
@@ -12,56 +14,40 @@ const FAQ = () => {
             <h1>Frequently Asked Questions</h1>
           </div>
           <div className="bx--col-sm-4 bx--col-md-7 bx--offset-lg-1 bx--col-lg-4">
-            <div className="question">
-              <h2>I'm not a healthcare worker, can I apply for housing?</h2>
-              <p>
-                This service is primarily for healthcare workers who carry the
-                highest risk of contracting COVID-19. However, we understand
-                that all essential workers carry some risk and might be seeking
-                temporary, low-cost housing. If you are concerned about exposing
-                your household to COVID-19, we encourage you to apply.
-              </p>
-            </div>
-            <div className="question">
-              <h2>Can I email you to say thank you?</h2>
-              <p>
-                Please refrain from any other communications to the email
-                addresses provided to allow us to effectively administer
-                requests and offers! If you like, you can share our site on
-                social media and thank us there.
-              </p>
-            </div>
-            <div className="question">
-              <h2>Can I contact you for media enquiries?</h2>
-              <p>
-                Yes! For media enquiries, please email
-                victoria&#64;healthworkerhousing.ca with "Media Enquiry" in the
-                subject line.
-              </p>
-            </div>
-            <div className="question">
-              <h2>Can I start this in another city?</h2>
-              <p>
-                Yes! Email victoria&#64;healthworkerhousing.ca with "New City"
-                in the subject line, and we will help you get started. You only
-                need know how to use email and Google Forms to act as a city
-                coordinator.
-              </p>
-            </div>
+            {data.faqs.map((faq, index) => {
+              if (index % 2 === 0) {
+                return (
+                  <div className="question" key={index}>
+                    <h2>{faq.question}</h2>
+                    <p>{ReactHtmlParser(faq.answer)}</p>
+                  </div>
+                );
+              }
+              return null;
+            })}
           </div>
           <div className="bx--col-sm-4 bx--col-md-7 bx--offset-lg-1 bx--col-lg-4">
-            <div className="question">
-              <h2>Isn't Airbnb already doing this?</h2>
-              <p>
-                Listing a property on Airbnb is an involved process that takes a
-                number of steps. We offer a simpler and less formal process so
-                that property owners can be connected with healthcare workers
-                faster.
-              </p>
-            </div>
-            <div className="faq-image-hidden-sm-md">
-              <div className="aspect-ratio-box faq-image" />
-            </div>
+            {data.faqs.map((faq, index) => {
+              if (index === 1) {
+                return [
+                  <div className="question" key={index}>
+                    <h2>{faq.question}</h2>
+                    <p>{ReactHtmlParser(faq.answer)}</p>
+                  </div>,
+                  <div key="faq-image" className="faq-image-hidden-sm-md">
+                    <div className="aspect-ratio-box faq-image" />
+                  </div>,
+                ];
+              } else if (index % 2 === 1) {
+                return (
+                  <div className="question" key={index}>
+                    <h2>{faq.question}</h2>
+                    <p>{ReactHtmlParser(faq.answer)}</p>
+                  </div>
+                );
+              }
+              return null;
+            })}
           </div>
           <div className="bx--col-lg-1" />
           <div className="bx--offset-sm-1 bx--col-sm-2 bx--offset-md-2 bx--col-md-4 bx--col-lg-0">

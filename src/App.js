@@ -8,7 +8,7 @@ import GridHelper from "./components/GridHelper";
 import Homepage from "./components/Homepage";
 import React from "react";
 import ScrollToTop from "./components/ScrollToTop";
-import cities from "./data.json";
+import cities from "./cityData.json";
 
 export default function App() {
   const cityRoutes = cities.map((city) => {
