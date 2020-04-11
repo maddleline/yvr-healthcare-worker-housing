@@ -31,45 +31,47 @@ $max-minus-1: calc(#{$max} - 1px);
       margin-bottom: -1.5rem;
     }
   }
-  a {
-    text-decoration: none;
-    font-size: 50px;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #2c2c2c;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    svg {
-      opacity: 0;
-      width: 2.75rem;
-      height: 2.75rem;
-      margin-left: 6rem;
-      fill: #f74300;
-    }
-    span {
-      opacity: 0;
-      font-size: 14px;
-      font-style: italic;
-      color: #f74300;
-    }
-    @media (max-width: $md-minus-1) {
+  .list {
+    a {
+      text-decoration: none;
+      font-size: 50px;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #2c2c2c;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
       svg {
-        margin-left: 3rem;
+        opacity: 0;
+        width: 2.75rem;
+        height: 2.75rem;
+        margin-left: 6rem;
+        fill: #f74300;
       }
-    }
-    @media (hover: none) {
-      svg,
       span {
-        display: none;
-      }
-    }
-    @media (hover: hover) {
-      &:hover {
+        opacity: 0;
+        font-size: 14px;
+        font-style: italic;
         color: #f74300;
+      }
+      @media (max-width: $md-minus-1) {
+        svg {
+          margin-left: 3rem;
+        }
+      }
+      @media (hover: none) {
         svg,
         span {
-          opacity: 1;
+          display: none;
+        }
+      }
+      @media (hover: hover) {
+        &:hover {
+          color: #f74300;
+          svg,
+          span {
+            opacity: 1;
+          }
         }
       }
     }

@@ -19,10 +19,17 @@ const Homepage = ({ cities }) => {
                 COVID-19 pandemic in Canada.
               </p>
               <p>
-                The initiative was inspired by a plea made by a nurse at the
-                Royal Jubilee Hospital in Victoria. Within 24 hours, she
-                received 75 offers of low-cost accommodation where she could
-                self-isolate.
+                The initiative was inspired by a{" "}
+                <a
+                  href="https://www.facebook.com/groups/MutualAidVictoria/permalink/909420306159725/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  plea made by a nurse
+                </a>{" "}
+                at the Royal Jubilee Hospital in Victoria. Within 24 hours, she
+                received over 75 offers of low-cost accommodation where she
+                could self-isolate.
               </p>
             </div>
           </div>
