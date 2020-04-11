@@ -13,7 +13,7 @@ export default {
       tag: "property",
     },
     {
-      question: "Can I use this service to find long-term, low-cost housing?",
+      question: "Can I use this service to find long-term housing?",
       answer:
         "Our service is only intended to support healthcare workers during the COVID-19 pandemic.  Property owners are listing their units at unprecedented rates in light of these extraordinary circumstances.  Please do not contact property owners with the intention of securing low-cost accommodation indefinitely.",
       tag: "healthcare",
