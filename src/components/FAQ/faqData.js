@@ -41,7 +41,7 @@ export default {
       question:
         "Aren’t hotels already offering free accommodation to healthcare workers?",
       answer:
-        "We applaud the generous offers made by these hotels and organizations! However, hotel rooms lack amenities that healthcare workers need, such as a kitchen/kitchenette and laundry facilities.  In addition, the hotels offering rooms are often located in the downtown core, and are not helpful to those who work farther out of town.",
+        "We applaud the generous offers made by these hotels and organizations! However, hotel rooms often lack amenities that healthcare workers need, such as a kitchen/kitchenette and laundry facilities.  In addition, most hotels offering rooms are located in the downtown core, and are therefore not helpful to those who work farther out of town.",
       tag: "other",
     },
     {
