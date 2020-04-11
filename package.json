@@ -12,6 +12,7 @@
     "carbon-icons": "^7.0.7",
     "emailjs-com": "^2.4.1",
     "express": "^4.17.1",
+    "heroku-ssl-redirect": "0.0.4",
     "husky": "^4.2.3",
     "lint-staged": "^10.1.1",
     "node-sass": "^4.13.1",
