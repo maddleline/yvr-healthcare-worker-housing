@@ -26,6 +26,12 @@ export default {
       tag: "property",
     },
     {
+      question: "Can I list my unfurnished suite?",
+      answer:
+        "At this time, we are only looking for furnished suites that healthcare workers can move into quickly and easily.  You're welcome to list your unfurnished suite and leave it up to the worker's discretion as to whether or not it suits their needs.",
+      tag: "property",
+    },
+    {
       question: "Can I donate money or supplies to healthcare workers?",
       answer: `Unfortunately, we do not have the capacity to accept or distribute donations.  We recommend making donations through other organizations, such as <a href="https://thehomefront.ca/" target="_blank" rel="noopener noreferrer">The Home Front</a> or the <a href="https://www.redcross.ca/" target="_blank" rel="noopener noreferrer">Canadian Red Cross</a>.`,
       tag: "other",
@@ -36,16 +42,16 @@ export default {
       tag: "other",
     },
     {
+      question: "Can I contact you for media enquiries?",
+      answer:
+        'Yes! For media enquiries, please email victoria&#64;healthworkerhousing.ca with "Media Enquiry" in the subject line.',
+      tag: "other",
+    },
+    {
       question:
         "Aren’t hotels already offering free accommodation to healthcare workers?",
       answer:
         "We applaud the generous offers made by these hotels and organizations! However, hotel rooms often lack amenities that healthcare workers need, such as a kitchen or kitchenette and laundry facilities.  In addition, most hotels offering rooms are located in the downtown core, and are therefore not helpful to those who work farther out of town.",
-      tag: "other",
-    },
-    {
-      question: "Can I contact you for media enquiries?",
-      answer:
-        'Yes! For media enquiries, please email victoria&#64;healthworkerhousing.ca with "Media Enquiry" in the subject line.',
       tag: "other",
     },
     {
