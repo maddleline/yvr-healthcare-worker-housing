@@ -51,7 +51,7 @@ const City = (props) => {
                   Please note the team running this service has not done any due
                   diligence on any of the offers. We are simply an information
                   service and it is up to each party to meet and screen anyone
-                  they would like to enter into a rental agreement with.
+                  they would like to enter into an agreement with.
                 </span>
               </p>
               <div
@@ -88,11 +88,10 @@ const City = (props) => {
                 suites they can offer at low or no cost.
               </p>
               <p style={{ marginBottom: "25px" }}>
-                We ask that you set the rental price below market rent, and
-                pro-rate it weekly. This is to alleviate the financial burden on
-                healthcare workers that are having to bear the cost of
-                alternative housing in addition to their standing mortage or
-                rent payments.
+                We ask that you set the cost below market rent, and pro-rate it
+                weekly. This is to alleviate the financial burden on healthcare
+                workers that are having to bear the cost of alternative housing
+                in addition to their standing mortage or rent payments.
               </p>
               <h4>Ideal properties will have the following amenities:</h4>
               <ul>

@@ -187,7 +187,7 @@ const HealthWorkerModal = ({
             className="checkbox"
             id="checkbox-4"
             required
-            labelText="I understand that I may be asked to show my work identification to property owners before entering into a rental agreement."
+            labelText="I understand that I may be asked to show my work identification to property owners before entering into an agreement."
             name="checkbox-4"
             onChange={() => {}}
             value="standard"
