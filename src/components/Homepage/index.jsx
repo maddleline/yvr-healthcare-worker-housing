@@ -15,8 +15,14 @@ const Homepage = ({ cities }) => {
               <h1>Help keep healthcare workers' families safe</h1>
               <p>
                 Health Worker Housing is a volunteer initiative to connect
-                property owners with healthcare workers in need of low-cost,
-                short-term housing during the COVID-19 pandemic in Canada.
+                healthcare workers with low-cost, short-term housing during the
+                COVID-19 pandemic in Canada.
+              </p>
+              <p>
+                The initiative was inspired by a plea made by a nurse at the
+                Royal Jubilee Hospital in Victoria. Within 24 hours, she
+                received 75 offers of low-cost accommodation where she could
+                self-isolate.
               </p>
             </div>
           </div>
