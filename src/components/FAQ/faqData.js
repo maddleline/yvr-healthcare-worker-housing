@@ -32,8 +32,7 @@ export default {
     },
     {
       question: "Isn't Airbnb already doing this?",
-      answer:
-        "Listing a property on Airbnb is an involved process that takes a number of steps. We offer a simpler and less formal process so that property owners can be connected with healthcare workers faster.",
+      answer: `Yes, Airbnb has started a <a href="https://www.airbnb.ca/openhomes/covid19relief" target="_blank" rel="noopener noreferrer">COVID-19 relief program</a> for healthcare workers and first responders.  Listing a property on Airbnb is an involved process that takes a number of steps. We offer a simpler and less formal process so that property owners can be connected with healthcare workers faster.`,
       tag: "other",
     },
     {
