@@ -97,7 +97,7 @@ const City = (props) => {
               <h4>Ideal properties will have the following amenities:</h4>
               <ul>
                 <li>Separate entrance</li>
-                <li>On-site laundry</li>
+                <li>In-suite laundry</li>
                 <li>Private washroom</li>
                 <li>Kitchen or kitchenette</li>
                 <li>Wifi</li>
