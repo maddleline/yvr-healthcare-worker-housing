@@ -27,9 +27,8 @@ const Homepage = ({ cities }) => {
                 >
                   nurse's plea
                 </a>{" "}
-                for low-cost accommodation where she could self-isolate to
-                protect her family. Within 24 hours, she received over 75
-                offers.
+                for low-cost accommodation where she could safely distance from
+                her family. Within 24 hours, she received over 75 offers.
               </p>
             </div>
           </div>
