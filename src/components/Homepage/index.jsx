@@ -4,12 +4,14 @@ import { ArrowRight16, FavoriteFilled16 } from "@carbon/icons-react/es";
 
 import { Link } from "react-router-dom";
 import React from "react";
+import ReactHtmlParser from "react-html-parser";
 
-const Homepage = ({ cities }) => {
+const Homepage = ({ cities, children, language }) => {
   return (
     <div className="Homepage">
       <div className="bx--grid lead">
         <div className="bx--row section section__lead">
+          <div className="bx--offset-lg-9 bx--col-lg-3">{children}</div>
           <div className="bx--offset-lg-1 bx--col-lg-4 bx--col-md-3 bx--col-sm-4 left">
             <div>
               <h1>Help keep healthcare workers' families safe</h1>
@@ -59,7 +61,7 @@ const Homepage = ({ cities }) => {
                   {index !== 0 && <br />}
                   <Link to={`/${city.url}`}>
                     <div>
-                      {city.name}
+                      {ReactHtmlParser(city.name)}
                       <ArrowRight16 />
                     </div>
                     <span>{city.action}</span>

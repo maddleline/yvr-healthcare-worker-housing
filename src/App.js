@@ -1,26 +1,45 @@
 import "./App.scss";
 
 import { Link, Route, BrowserRouter as Router, Switch } from "react-router-dom";
+import React, { useState } from "react";
 
 import City from "./components/City";
 import FAQ from "./components/FAQ";
 import GridHelper from "./components/GridHelper";
 import Homepage from "./components/Homepage";
-import React from "react";
 import ScrollToTop from "./components/ScrollToTop";
+import { Toggle } from "carbon-components-react";
 import data from "./cityData";
 
 export default function App() {
-  const cityRoutes = data.cities.map((city) => {
+  const [language, setLanguage] = useState("English");
+  let translatedData = language === "English" ? data.English : data.French;
+  const languageToggle = (
+    <Toggle
+      aria-label=""
+      className="language-toggle"
+      defaultToggled={language === "English" ? false : true}
+      id="language-toggle"
+      labelA="English"
+      labelB="French"
+      labelText=""
+      onChange={() => {}}
+      onToggle={() => {
+        language === "English" ? setLanguage("French") : setLanguage("English");
+      }}
+    />
+  );
+  const cityRoutes = translatedData.cities.map((city) => {
     if (city.isComingSoon) {
       return null;
     }
     return (
       <Route key={city.url} path={`/${city.url}`}>
-        <City {...city} />
+        <City {...city}>{languageToggle}</City>
       </Route>
     );
   });
+
   return (
     <>
       {process.env.NODE_ENV === "development" && <GridHelper />}
@@ -48,10 +67,12 @@ export default function App() {
           <Switch>
             {cityRoutes}
             <Route path="/faq">
-              <FAQ />
+              <FAQ>{languageToggle}</FAQ>
             </Route>
             <Route path="/">
-              <Homepage cities={data.cities} />
+              <Homepage language={language} cities={translatedData.cities}>
+                {languageToggle}
+              </Homepage>
             </Route>
           </Switch>
         </div>

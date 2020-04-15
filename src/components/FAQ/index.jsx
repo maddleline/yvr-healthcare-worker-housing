@@ -5,13 +5,16 @@ import React from "react";
 import ReactHtmlParser from "react-html-parser";
 import data from "./faqData.js";
 
-const FAQ = () => {
+const FAQ = (props) => {
   return (
     <div className="FAQ">
       <div className="bx--grid faq">
         <div className="bx--row section section__faq">
-          <div className="bx--col-sm-4 bx--col-md-8 bx--offset-lg-1 bx--col-lg-11">
+          <div className="bx--col-sm-4 bx--col-md-8 bx--offset-lg-1 bx--col-lg-5">
             <h1>Frequently Asked Questions</h1>
+          </div>
+          <div className="bx--offset-lg-3 bx--col-lg-3 bx--col-md-1">
+            {props.children}
           </div>
           <div className="bx--col-sm-4 bx--col-md-7 bx--offset-lg-1 bx--col-lg-4">
             {data.faqs.map((faq, index) => {

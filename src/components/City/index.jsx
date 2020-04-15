@@ -9,9 +9,13 @@ import {
 import React, { useState } from "react";
 
 import HealthWorkerModal from "../HealthWorkerModal";
+import ReactHtmlParser from "react-html-parser";
+import data from "./cityPageData";
 
 const City = (props) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  let translatedData =
+    props.language === "English" ? data.English : data.French;
   return (
     <>
       <HealthWorkerModal
@@ -22,12 +26,15 @@ const City = (props) => {
       <div className="City">
         <div className="bx--grid city-name">
           <div className="bx--row">
-            <div className="bx--offset-lg-1 bx--col-lg-11 bx--col-md-8">
+            <div className="bx--offset-lg-1 bx--col-lg-5 bx--col-md-7">
               <h1>
-                {props.name},
+                {ReactHtmlParser(props.name)},
                 <br />
-                <span>{props.province}, Canada</span>
+                <span>{ReactHtmlParser(props.province)}, Canada</span>
               </h1>
+            </div>
+            <div className="bx--offset-lg-3 bx--col-lg-3 bx--col-md-1">
+              {props.children}
             </div>
           </div>
         </div>
@@ -39,21 +46,11 @@ const City = (props) => {
             </div>
             <div className="bx--col-lg-0 bx--col-md-0 bx--col-sm-1" />
             <div className="bx--col-lg-4 bx--col-md-4 bx--col-sm-4 health-workers-text">
-              <h2>Find temporary housing</h2>
-              <h3>Healthcare workers</h3>
-              <p>
-                To request access to our listings, submit the form at the link
-                below. Once your request has been approved, a link to our
-                available listings will be sent to your email.
-              </p>
-              <p>
-                <span className="italic">
-                  Please note the team running this service has not done any due
-                  diligence on any of the offers. We are simply an information
-                  service and it is up to each party to meet and screen anyone
-                  they would like to enter into an agreement with.
-                </span>
-              </p>
+              <h2>{translatedData.healthcareWorkers.heading}</h2>
+              <h3>{translatedData.healthcareWorkers.subHeading}</h3>
+              {translatedData.healthcareWorkers.paragraphs.map((p, index) => {
+                return <p key={index}>{p}</p>;
+              })}
               <div
                 className="link"
                 onClick={() => {
@@ -61,7 +58,7 @@ const City = (props) => {
                 }}
               >
                 <div>
-                  Request access to listings
+                  {translatedData.healthcareWorkers.linkText}
                   <ArrowRight16 />
                 </div>
                 <span>
@@ -81,25 +78,18 @@ const City = (props) => {
             </div>
             <div className="bx--col-lg-0 bx--col-md-0 bx--col-sm-1" />
             <div className="bx--col-lg-4 bx--col-md-4 bx--col-sm-4 property-owners-text">
-              <h2>House a healthcare worker</h2>
-              <h3>Property owners</h3>
-              <p>
-                We are looking for property owners that have available furnished
-                suites they can offer at low or no cost.
-              </p>
-              <p style={{ marginBottom: "25px" }}>
-                We ask that you set the cost below market rent, and pro-rate it
-                weekly. This is to alleviate the financial burden on healthcare
-                workers that are having to bear the cost of alternative housing
-                in addition to their standing mortage or rent payments.
-              </p>
-              <h4>Ideal properties will have the following amenities:</h4>
+              <h2>{translatedData.propertyOwners.heading}</h2>
+              <h3>{translatedData.propertyOwners.subHeading}</h3>
+              {translatedData.propertyOwners.paragraphs.map((p, index) => {
+                return <p key={index}>{p}</p>;
+              })}
+              <h4>{translatedData.propertyOwners.listHeading}</h4>
               <ul>
-                <li>Separate entrance</li>
-                <li>In-suite laundry</li>
-                <li>Private washroom</li>
-                <li>Kitchen or kitchenette</li>
-                <li>Wifi</li>
+                {translatedData.propertyOwners.listItems.map(
+                  (listItem, index) => {
+                    return <li key={index}>{listItem}</li>;
+                  }
+                )}
               </ul>
               <a
                 href={props.linkToPropertyForm}
@@ -108,10 +98,10 @@ const City = (props) => {
                 className="link"
               >
                 <div>
-                  List your property
+                  {translatedData.propertyOwners.linkText}
                   <Launch16 />
                 </div>
-                <span>Thanks!</span>
+                <span>{translatedData.propertyOwners.linkHoverText}</span>
               </a>
             </div>
             <div className="bx--offset-lg-3" />
@@ -122,7 +112,7 @@ const City = (props) => {
             <div className="bx--col-sm-3 bx--col-md-6 bx--offset-lg-1 bx--col-lg-5">
               <p>
                 <span className="bold inline-icon">
-                  Created by volunteers with
+                  {translatedData.footer.text}
                   <FavoriteFilled16 />
                 </span>
               </p>
