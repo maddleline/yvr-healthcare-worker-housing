@@ -8,10 +8,13 @@ import GridHelper from "./components/GridHelper";
 import Homepage from "./components/Homepage";
 import React from "react";
 import ScrollToTop from "./components/ScrollToTop";
-import cities from "./cityData.json";
+import data from "./cityData";
 
 export default function App() {
-  const cityRoutes = cities.map((city) => {
+  const cityRoutes = data.cities.map((city) => {
+    if (city.isComingSoon) {
+      return null;
+    }
     return (
       <Route key={city.url} path={`/${city.url}`}>
         <City {...city} />
@@ -48,7 +51,7 @@ export default function App() {
               <FAQ />
             </Route>
             <Route path="/">
-              <Homepage cities={cities} />
+              <Homepage cities={data.cities} />
             </Route>
           </Switch>
         </div>

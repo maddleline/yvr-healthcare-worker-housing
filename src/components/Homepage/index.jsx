@@ -51,6 +51,9 @@ const Homepage = ({ cities }) => {
         <div className="bx--row section section__list">
           <div className="bx--offset-lg-1 bx--col-lg-9">
             {cities.map((city, index) => {
+              if (city.isComingSoon) {
+                return null;
+              }
               return (
                 <div key={city.url}>
                   {index !== 0 && <br />}
