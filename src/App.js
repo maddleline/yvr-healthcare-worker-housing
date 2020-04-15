@@ -20,8 +20,8 @@ export default function App() {
       className="language-toggle"
       defaultToggled={language === "English" ? false : true}
       id="language-toggle"
-      labelA="English"
-      labelB="French"
+      labelA=""
+      labelB=""
       labelText=""
       onChange={() => {}}
       onToggle={() => {
@@ -35,7 +35,7 @@ export default function App() {
     }
     return (
       <Route key={city.url} path={`/${city.url}`}>
-        <City {...city}>{languageToggle}</City>
+        <City {...city} languageToggle={languageToggle} />
       </Route>
     );
   });
@@ -67,12 +67,14 @@ export default function App() {
           <Switch>
             {cityRoutes}
             <Route path="/faq">
-              <FAQ>{languageToggle}</FAQ>
+              <FAQ languageToggle={languageToggle} />
             </Route>
             <Route path="/">
-              <Homepage language={language} cities={translatedData.cities}>
-                {languageToggle}
-              </Homepage>
+              <Homepage
+                language={language}
+                cities={translatedData.cities}
+                languageToggle={languageToggle}
+              />
             </Route>
           </Switch>
         </div>

@@ -13,8 +13,8 @@ const FAQ = (props) => {
           <div className="bx--col-sm-4 bx--col-md-8 bx--offset-lg-1 bx--col-lg-5">
             <h1>Frequently Asked Questions</h1>
           </div>
-          <div className="bx--offset-lg-3 bx--col-lg-3 bx--col-md-1">
-            {props.children}
+          <div className="bx--offset-lg-3 bx--col-lg-1 bx--col-md-1">
+            <div style={{ float: "right" }}>{props.languageToggle}</div>
           </div>
           <div className="bx--col-sm-4 bx--col-md-7 bx--offset-lg-1 bx--col-lg-4">
             {data.faqs.map((faq, index) => {

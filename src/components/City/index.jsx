@@ -33,8 +33,8 @@ const City = (props) => {
                 <span>{ReactHtmlParser(props.province)}, Canada</span>
               </h1>
             </div>
-            <div className="bx--offset-lg-3 bx--col-lg-3 bx--col-md-1">
-              {props.children}
+            <div className="bx--offset-lg-3 bx--col-lg-1 bx--col-md-1">
+              <div style={{ float: "right" }}>{props.languageToggle}</div>
             </div>
           </div>
         </div>

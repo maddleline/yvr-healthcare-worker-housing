@@ -6,12 +6,14 @@ import { Link } from "react-router-dom";
 import React from "react";
 import ReactHtmlParser from "react-html-parser";
 
-const Homepage = ({ cities, children, language }) => {
+const Homepage = ({ cities, languageToggle, language }) => {
   return (
     <div className="Homepage">
       <div className="bx--grid lead">
         <div className="bx--row section section__lead">
-          <div className="bx--offset-lg-9 bx--col-lg-3">{children}</div>
+          <div className="bx--offset-lg-9 bx--col-lg-1">
+            <div style={{ float: "right" }}>{languageToggle}</div>
+          </div>
           <div className="bx--offset-lg-1 bx--col-lg-4 bx--col-md-3 bx--col-sm-4 left">
             <div>
               <h1>Help keep healthcare workers' families safe</h1>

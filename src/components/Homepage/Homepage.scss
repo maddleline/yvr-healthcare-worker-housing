@@ -17,11 +17,15 @@ $max-minus-1: calc(#{$max} - 1px);
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      margin-top: -40px;
       div {
         max-width: 311px;
       }
     }
     .right {
+      @media (min-width: $md) {
+        margin-top: -40px;
+      }
       img {
         width: 100%;
       }
