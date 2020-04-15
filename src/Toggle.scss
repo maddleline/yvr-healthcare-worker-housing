@@ -1,0 +1,26 @@
+.language-toggle {
+  // opacity: 0;
+  // pointer-events: none;
+  .bx--toggle-input {
+  }
+  .bx--toggle-input__label {
+    .bx--toggle__switch {
+      .bx--toggle__text--off {
+      }
+      .bx--toggle__text--on {
+      }
+    }
+    .bx--toggle__switch::before {
+      border-radius: 0;
+      background-color: #fec720;
+    }
+    .bx--toggle__switch::after {
+      border-radius: 0;
+    }
+  }
+  .bx--toggle-input:checked
+    + .bx--toggle-input__label
+    > .bx--toggle__switch::before {
+    background-color: #f29483;
+  }
+}

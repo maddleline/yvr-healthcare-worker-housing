@@ -1,4 +1,5 @@
 import "./App.scss";
+import "./Toggle.scss";
 
 import { Link, Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import React, { useState } from "react";
