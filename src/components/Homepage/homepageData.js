@@ -4,12 +4,12 @@ export default {
   English: {
     heading: "Help keep healthcare workers' families safe",
     paragraphs: [
-      <p>
+      <p key="english-1">
         Health Worker Housing is a volunteer initiative to connect healthcare
         workers with low-cost, short-term housing during the COVID-19 pandemic
         in Canada.
       </p>,
-      <p>
+      <p key="english-2">
         The initiative was inspired by a{" "}
         <a
           href="https://www.facebook.com/groups/MutualAidVictoria/permalink/909420306159725/"
@@ -29,13 +29,13 @@ export default {
     heading:
       "Aidez-nous à protéger les familles des travailleur.e.s de la santé",
     paragraphs: [
-      <p>
+      <p key="french-1">
         Logements pour les Travailleur.e.s de la Santé est une initiative
         bénévole visant à mettre en relation les travailleur.e.s de la santé
         avec des propriétaires offrant du logement temporaire à faible coût
         pendant la pandémie de la COVID-19 au Canada.
       </p>,
-      <p>
+      <p key="french-2">
         Nous nous sommes inspiré de l'initiative d'une{" "}
         <a
           href="https://www.facebook.com/groups/MutualAidVictoria/permalink/909420306159725/"

@@ -1,13 +1,9 @@
 import "./City.scss";
 
-import {
-  ArrowRight16,
-  FavoriteFilled16,
-  Launch16,
-  View16,
-} from "@carbon/icons-react/es";
+import { ArrowRight16, Launch16, View16 } from "@carbon/icons-react/es";
 import React, { useState } from "react";
 
+import Footer from "../Footer/";
 import HealthWorkerModal from "../HealthWorkerModal";
 import ReactHtmlParser from "react-html-parser";
 import data from "./cityPageData";
@@ -102,19 +98,10 @@ const City = (props) => {
             <div className="bx--offset-lg-3" />
           </div>
         </div>
-        <div className="bx--grid footer">
-          <div className="bx--row section section__footer">
-            <div className="bx--col-sm-3 bx--col-md-6 bx--offset-lg-1 bx--col-lg-5">
-              <p>
-                <span className="bold inline-icon">
-                  {translatedData.footer.text}
-                  <FavoriteFilled16 />
-                </span>
-              </p>
-              <p>{props.url}&#64;healthworkerhousing.ca</p>
-            </div>
-          </div>
-        </div>
+        <Footer
+          text={translatedData.footer.text}
+          email={document.location.pathname.slice(1)}
+        />
       </div>
     </>
   );

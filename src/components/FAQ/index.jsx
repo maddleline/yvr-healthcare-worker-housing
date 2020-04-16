@@ -1,6 +1,6 @@
 import "./FAQ.scss";
 
-import { FavoriteFilled16 } from "@carbon/icons-react/es";
+import Footer from "../Footer/";
 import React from "react";
 import ReactHtmlParser from "react-html-parser";
 import data from "./faqData.js";
@@ -18,7 +18,7 @@ const FAQ = (props) => {
             <div style={{ float: "right" }}>{props.languageToggle}</div>
           </div>
           <div className="bx--col-sm-4 bx--col-md-7 bx--offset-lg-1 bx--col-lg-4">
-            {translatedData.map((faq, index) => {
+            {translatedData.faqs.map((faq, index) => {
               if (index % 2 === 0) {
                 return (
                   <div className="question" key={index}>
@@ -31,7 +31,7 @@ const FAQ = (props) => {
             })}
           </div>
           <div className="bx--col-sm-4 bx--col-md-7 bx--offset-lg-1 bx--col-lg-4">
-            {translatedData.map((faq, index) => {
+            {translatedData.faqs.map((faq, index) => {
               if (index === 1) {
                 return [
                   <div className="question" key={index}>
@@ -60,20 +60,10 @@ const FAQ = (props) => {
           <div className="bx--col-sm-1 bx--col-md-2 bx--col-lg-0" />
         </div>
       </div>
-
-      <div className="bx--grid footer">
-        <div className="bx--row section section__footer">
-          <div className="bx--col-sm-3 bx--col-md-6 bx--offset-lg-1 bx--col-lg-5">
-            <p>
-              <span className="bold inline-icon">
-                Created by volunteers with
-                <FavoriteFilled16 />
-              </span>
-            </p>
-            <p>victoria&#64;healthworkerhousing.ca</p>
-          </div>
-        </div>
-      </div>
+      <Footer
+        text={translatedData.footer.text}
+        email={props.language === "en" ? "victoria" : "montreal"}
+      />
     </div>
   );
 };
