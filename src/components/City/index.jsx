@@ -14,8 +14,7 @@ import data from "./cityPageData";
 
 const City = (props) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  let translatedData =
-    props.language === "English" ? data.English : data.French;
+  let translatedData = props.language === "en" ? data.English : data.French;
   return (
     <>
       <HealthWorkerModal

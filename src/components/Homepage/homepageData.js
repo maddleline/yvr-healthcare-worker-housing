@@ -30,10 +30,10 @@ export default {
       "Aidez-nous à protéger les familles des travailleur.e.s de la santé",
     paragraphs: [
       <p>
-        Logements pour les travailleur.e.s de la santé est une initiative
+        Logements pour les Travailleur.e.s de la Santé est une initiative
         bénévole visant à mettre en relation les travailleur.e.s de la santé
         avec des propriétaires offrant du logement temporaire à faible coût
-        pendant la pandémie de la COVID-19 au Québec.
+        pendant la pandémie de la COVID-19 au Canada.
       </p>,
       <p>
         Nous nous sommes inspiré de l'initiative d'une{" "}

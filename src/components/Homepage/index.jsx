@@ -8,7 +8,7 @@ import ReactHtmlParser from "react-html-parser";
 import data from "./homepageData";
 
 const Homepage = ({ cities, languageToggle, language }) => {
-  let translatedData = language === "English" ? data.English : data.French;
+  let translatedData = language === "en" ? data.English : data.French;
   return (
     <div className="Homepage">
       <div className="bx--grid lead">

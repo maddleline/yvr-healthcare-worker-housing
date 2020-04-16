@@ -13,20 +13,20 @@ import { Toggle } from "carbon-components-react";
 import data from "./cityData";
 
 export default function App() {
-  const [language, setLanguage] = useState("English");
-  let translatedData = language === "English" ? data.English : data.French;
+  const [language, setLanguage] = useState("en");
+  let translatedData = language === "en" ? data.English : data.French;
   const languageToggle = (
     <Toggle
       aria-label=""
       className="language-toggle"
-      defaultToggled={language === "English" ? false : true}
+      defaultToggled={language === "en" ? false : true}
       id="language-toggle"
       labelA=""
       labelB=""
       labelText=""
       onChange={() => {}}
       onToggle={() => {
-        language === "English" ? setLanguage("French") : setLanguage("English");
+        language === "en" ? setLanguage("fr") : setLanguage("en");
       }}
     />
   );
@@ -67,10 +67,10 @@ export default function App() {
 
           <Switch>
             {cityRoutes}
-            <Route path="/faq">
+            <Route path={`/faq`}>
               <FAQ languageToggle={null} />
             </Route>
-            <Route path="/">
+            <Route path={`/`}>
               <Homepage
                 language={language}
                 cities={translatedData.cities}

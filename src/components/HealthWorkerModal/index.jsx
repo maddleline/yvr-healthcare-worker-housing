@@ -28,7 +28,7 @@ const HealthWorkerModal = ({
   const [feedback, setFeedback] = useState("");
   const [formIsSubmitted, setFormIsSubmitted] = useState(false);
 
-  let translatedData = language === "English" ? data.English : data.French;
+  let translatedData = language === "en" ? data.English : data.French;
 
   const handleSubmit = (event) => {
     const templateId = "canada_health_worker_housing_template";
