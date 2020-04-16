@@ -5,8 +5,10 @@ import { ArrowRight16, FavoriteFilled16 } from "@carbon/icons-react/es";
 import { Link } from "react-router-dom";
 import React from "react";
 import ReactHtmlParser from "react-html-parser";
+import data from "./homepageData";
 
 const Homepage = ({ cities, languageToggle, language }) => {
+  let translatedData = language === "English" ? data.English : data.French;
   return (
     <div className="Homepage">
       <div className="bx--grid lead">
@@ -16,24 +18,8 @@ const Homepage = ({ cities, languageToggle, language }) => {
           </div>
           <div className="bx--offset-lg-1 bx--col-lg-4 bx--col-md-3 bx--col-sm-4 left">
             <div>
-              <h1>Help keep healthcare workers' families safe</h1>
-              <p>
-                Health Worker Housing is a volunteer initiative to connect
-                healthcare workers with low-cost, short-term housing during the
-                COVID-19 pandemic in Canada.
-              </p>
-              <p>
-                The initiative was inspired by a{" "}
-                <a
-                  href="https://www.facebook.com/groups/MutualAidVictoria/permalink/909420306159725/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  nurse's plea
-                </a>{" "}
-                for low-cost accommodation where she could safely distance from
-                her family. Within 24 hours, she received over 75 offers.
-              </p>
+              <h1>{translatedData.heading}</h1>
+              {translatedData.paragraphs}
             </div>
           </div>
           <div className="bx--col-lg-5 bx--offset-md-0 bx--col-md-5 bx--offset-sm-1 bx--col-sm-3 right">
@@ -45,7 +31,7 @@ const Homepage = ({ cities, languageToggle, language }) => {
           </div>
           <div className="bx--col-lg-2 bx--col-md-0 bx--col-sm-0" />
           <div className="bx--offset-lg-1 bx--col-lg-4 bx--col-md-3 bx--col-sm-4">
-            <h3 className="select-your-city">Select your city below:</h3>
+            <h3 className="select-your-city">{translatedData.cta}</h3>
           </div>
           <div className="bx--col-lg-7 bx--col-md-5 bx--col-sm-0" />
         </div>
