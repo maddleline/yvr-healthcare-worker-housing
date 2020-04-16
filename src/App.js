@@ -1,20 +1,23 @@
 import "./App.scss";
 import "./Toggle.scss";
 
-import { Link, Route, BrowserRouter as Router, Switch } from "react-router-dom";
-import React, { useState } from "react";
+import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 
 import City from "./components/City";
 import FAQ from "./components/FAQ";
 import GridHelper from "./components/GridHelper";
+import Header from "./components/Header";
 import Homepage from "./components/Homepage";
+import React from "react";
 import ScrollToTop from "./components/ScrollToTop";
 import { Toggle } from "carbon-components-react";
 import data from "./cityData";
+import queryString from "query-string";
 
 export default function App() {
-  const [language, setLanguage] = useState("en");
+  const language = queryString.parse(document.location.search).lang || "en";
   let translatedData = language === "en" ? data.English : data.French;
+
   const languageToggle = (
     <Toggle
       aria-label=""
@@ -26,7 +29,14 @@ export default function App() {
       labelText=""
       onChange={() => {}}
       onToggle={() => {
-        language === "en" ? setLanguage("fr") : setLanguage("en");
+        const _url = document.location.href;
+        let _newUrl = "";
+        if (language === "en") {
+          _newUrl += _url.split("?")[0] + "?lang=fr";
+        } else {
+          _newUrl += _url.split("?")[0] + "?lang=en";
+        }
+        document.location.replace(_newUrl);
       }}
     />
   );
@@ -47,28 +57,12 @@ export default function App() {
       <Router>
         <ScrollToTop />
         <div className="App">
-          <div className="bx--grid header">
-            <div className="bx--row section section__header">
-              <div className="bx--col-sm-3 bx--col-md-6 bx--offset-lg-1 bx--col-lg-5">
-                <Link to="/">
-                  <h3>{translatedData.title}</h3>
-                </Link>
-              </div>
-              <div className="bx--col-sm-1 bx--col-md-2 bx--offset-lg-3 bx--col-lg-1">
-                <div style={{ float: "right" }}>
-                  <Link to="/faq">
-                    <h3>FAQ</h3>
-                  </Link>
-                </div>
-              </div>
-              <div className="bx--col-sm-0 bx--col-md-0 bx--col-lg-2" />
-            </div>
-          </div>
+          <Header language={language} pageTitle={translatedData.title} />
 
           <Switch>
             {cityRoutes}
             <Route path={`/faq`}>
-              <FAQ languageToggle={null} />
+              <FAQ language={language} languageToggle={null} />
             </Route>
             <Route path={`/`}>
               <Homepage

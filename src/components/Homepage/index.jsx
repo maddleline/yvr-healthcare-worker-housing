@@ -7,14 +7,14 @@ import React from "react";
 import ReactHtmlParser from "react-html-parser";
 import data from "./homepageData";
 
-const Homepage = ({ cities, languageToggle, language }) => {
-  let translatedData = language === "en" ? data.English : data.French;
+const Homepage = (props) => {
+  let translatedData = props.language === "en" ? data.English : data.French;
   return (
     <div className="Homepage">
       <div className="bx--grid lead">
         <div className="bx--row section section__lead">
           <div className="bx--offset-lg-9 bx--col-lg-1">
-            <div style={{ float: "right" }}>{languageToggle}</div>
+            <div style={{ float: "right" }}>{props.languageToggle}</div>
           </div>
           <div className="bx--offset-lg-1 bx--col-lg-4 bx--col-md-3 bx--col-sm-4 left">
             <div>
@@ -40,14 +40,14 @@ const Homepage = ({ cities, languageToggle, language }) => {
       <div className="bx--grid list">
         <div className="bx--row section section__list">
           <div className="bx--offset-lg-1 bx--col-lg-9">
-            {cities.map((city, index) => {
+            {props.cities.map((city, index) => {
               if (city.isComingSoon) {
                 return null;
               }
               return (
                 <div key={city.url}>
                   {index !== 0 && <br />}
-                  <Link to={`/${city.url}`}>
+                  <Link to={`/${city.url}?lang=${props.language}`}>
                     <div>
                       {ReactHtmlParser(city.name)}
                       <ArrowRight16 />
