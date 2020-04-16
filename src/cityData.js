@@ -79,7 +79,7 @@ export default {
     cities: [
       {
         name: "Victoria",
-        province: "British Columbia",
+        province: "Colombie-Britannique",
         url: "victoria",
         contact: "Emmanuelle",
         email: "victoria@healthworkerhousing.ca",
@@ -89,7 +89,7 @@ export default {
       },
       {
         name: "Vancouver",
-        province: "British Columbia",
+        province: "Colombie-Britannique",
         url: "vancouver",
         contact: "Madeline",
         email: "vancouver@healthworkerhousing.ca",
