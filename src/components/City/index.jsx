@@ -26,14 +26,14 @@ const City = (props) => {
       <div className="City">
         <div className="bx--grid city-name">
           <div className="bx--row">
-            <div className="bx--offset-lg-1 bx--col-lg-5 bx--col-md-7">
+            <div className="bx--offset-lg-1 bx--col-lg-5 bx--col-md-7 bx--col-sm-3">
               <h1>
                 {ReactHtmlParser(props.name)},
                 <br />
                 <span>{ReactHtmlParser(props.province)}, Canada</span>
               </h1>
             </div>
-            <div className="bx--offset-lg-3 bx--col-lg-1 bx--col-md-1">
+            <div className="bx--offset-lg-3 bx--col-lg-1 bx--col-md-1 bx--col-sm-1">
               <div style={{ float: "right" }}>{props.languageToggle}</div>
             </div>
           </div>

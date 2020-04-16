@@ -10,10 +10,10 @@ const FAQ = (props) => {
     <div className="FAQ">
       <div className="bx--grid faq">
         <div className="bx--row section section__faq">
-          <div className="bx--col-sm-4 bx--col-md-8 bx--offset-lg-1 bx--col-lg-5">
+          <div className="bx--offset-lg-1 bx--col-lg-5 bx--col-md-7 bx--col-sm-3">
             <h1>Frequently Asked Questions</h1>
           </div>
-          <div className="bx--offset-lg-3 bx--col-lg-1 bx--col-md-1">
+          <div className="bx--offset-lg-3 bx--col-lg-1 bx--col-md-1 bx--col-sm-1">
             <div style={{ float: "right" }}>{props.languageToggle}</div>
           </div>
           <div className="bx--col-sm-4 bx--col-md-7 bx--offset-lg-1 bx--col-lg-4">

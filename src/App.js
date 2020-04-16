@@ -36,7 +36,7 @@ export default function App() {
     }
     return (
       <Route key={city.url} path={`/${city.url}`}>
-        <City {...city} languageToggle={languageToggle} />
+        <City {...city} language={language} languageToggle={languageToggle} />
       </Route>
     );
   });
@@ -68,7 +68,7 @@ export default function App() {
           <Switch>
             {cityRoutes}
             <Route path="/faq">
-              <FAQ languageToggle={languageToggle} />
+              <FAQ languageToggle={null} />
             </Route>
             <Route path="/">
               <Homepage
