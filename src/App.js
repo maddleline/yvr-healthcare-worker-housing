@@ -62,7 +62,7 @@ export default function App() {
           <Switch>
             {cityRoutes}
             <Route path={`/faq`}>
-              <FAQ language={language} languageToggle={null} />
+              <FAQ language={language} languageToggle={languageToggle} />
             </Route>
             <Route path={`/`}>
               <Homepage

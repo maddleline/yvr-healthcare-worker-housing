@@ -6,6 +6,7 @@ import ReactHtmlParser from "react-html-parser";
 import data from "./faqData.js";
 
 const FAQ = (props) => {
+  let translatedData = props.language === "en" ? data.English : data.French;
   return (
     <div className="FAQ">
       <div className="bx--grid faq">
@@ -17,7 +18,7 @@ const FAQ = (props) => {
             <div style={{ float: "right" }}>{props.languageToggle}</div>
           </div>
           <div className="bx--col-sm-4 bx--col-md-7 bx--offset-lg-1 bx--col-lg-4">
-            {data.faqs.map((faq, index) => {
+            {translatedData.map((faq, index) => {
               if (index % 2 === 0) {
                 return (
                   <div className="question" key={index}>
@@ -30,7 +31,7 @@ const FAQ = (props) => {
             })}
           </div>
           <div className="bx--col-sm-4 bx--col-md-7 bx--offset-lg-1 bx--col-lg-4">
-            {data.faqs.map((faq, index) => {
+            {translatedData.map((faq, index) => {
               if (index === 1) {
                 return [
                   <div className="question" key={index}>

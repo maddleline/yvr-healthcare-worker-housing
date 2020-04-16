@@ -1,5 +1,5 @@
 export default {
-  faqs: [
+  English: [
     {
       question: "I'm not a healthcare worker, can I apply for housing?",
       answer:
@@ -58,6 +58,69 @@ export default {
       question: "Can I start this in another city?",
       answer:
         'Yes! Email victoria&#64;healthworkerhousing.ca with "New City" in the subject line, and we will help you get started. You only need know how to use email and Google Forms to act as a city coordinator.',
+      tag: "other",
+    },
+  ],
+  French: [
+    {
+      question:
+        "Si je ne suis pas travailleu.r.e.s de la santé, puis-je demander un logement?",
+      answer:
+        "Ce service est destiné principalement aux travailleur.e.s de la santé qui présentent un risque plus élevé de contracter le COVID-19. Cependant, nous comprenons que tous les aidant.e.s naturel.le.s sont aussi à risques et pourraient se chercher un logement temporaire. Si vous êtes préoccupé par l’exposition de votre famille ou colocataire.s au COVID-19, nous vous encourageons à remplir une demande.",
+      tag: "healthcare",
+    },
+    {
+      question: "Puis-je inscrire mon condominium?",
+      answer:
+        "Les condominiums acceptés dans la mesure où l’unité n’est pas partagée. Les espaces communs doivent être gardés propre et sécuritaire pour éviter la propagation du virus.",
+      tag: "property",
+    },
+    {
+      question:
+        "Puis-je utiliser ce service à des fins de logement à long-terme?",
+      answer:
+        "Notre service est destiné uniquement à soutenir les travailleur.e.s de la santé pendant la pandémie de la COVID-19. À la lumière de ces circonstances extraordinaires, les propriétaires auront inscrit leur logements aux tarifs le plus bas. Nous vous remercions de ne pas contacter les propriétaires avec l’intention de sécuriser un logement à faible coût sur le long-terme.",
+      tag: "healthcare",
+    },
+    {
+      question:
+        "Je ne dispose pas d’une salle de lavage dans mon logement, devrais-je l’annoncer quand même?",
+      answer:
+        "Avoir la salle de lavage dans le logement facilite la réduction du risque d'exposition des autres avec les travailleur.e.s de la santé. Cependant, une unité sans peut toujours leur être utile. Nous vous encourageons à inscrire votre logement comme une option à envisager par les professionnel.le.s de la santé.",
+      tag: "property",
+    },
+    {
+      question: "Puis-je inscrire mon logement non-meublé?",
+      answer:
+        "Pour le moment, nous recherchons uniquement des logements meublés pour que les travailleur.e.s de la santé puissent emménager facilement et rapidement. Nous vous invitons à inscrire votre logement non-meublé cependant, il incombe aux travailleur.e.s de savoir si le logement réponds à leurs besoins.",
+      tag: "property",
+    },
+    {
+      question: "Puis-je faire des donations aux travailleur.e.s de la santé?",
+      answer: `Malheureusement, nous n'avons pas la capacité d'accepter ou de distribuer des dons. Nous vous recommandons de faire des dons par le biais d'autres organisations, comme <a href="https://thehomefront.ca/" target="_blank" rel="noopener noreferrer">The Home Front</a> ou la <a href="https://www.croixrouge.ca/" target="_blank" rel="noopener noreferrer">Croix-Rouge canadienne</a>.`,
+      tag: "other",
+    },
+    {
+      question: "Est-ce qu’Airbnb fait la même chose?",
+      answer: `Airbnb a lancé un <a href="https://www.airbnb.ca/openhomes/covid19relief" target="_blank" rel="noopener noreferrer">programme de secours pour la pandémie de la COVID-19</a> pour les travailleur.e.s de la santé et les premiers répondants. S’inscrire sur Airbnb requiert un certains nombre d’étapes, ce qui peut paraître un processus complexe. Ce que nous proposons est un processus simple et moins formel afin de faciliter un échange rapide entre les propriétaires et les professionnel.les de la santé`,
+      tag: "other",
+    },
+    {
+      question:
+        "Puis-je vous contacter pour les demandes de renseignements des médias?",
+      answer: `Pour les demandes de renseignements des médias, veuillez envoyer un courriel à montreal@healthworkerhousing.ca avec l'objet «Demande médiatique».`,
+      tag: "other",
+    },
+    {
+      question:
+        "Qu’en est-il des hôtels et de leur offre d’hébergement pour les professionnel.le.s de la santé?",
+      answer:
+        "Nous saluons l’offre généreuses des hôtels et des organisations qui offrent ce service. Cependant, les chambres d’hôtel n’offrent pas tous les équipements dont les travailleur.e.s de la santé ont besoin, comme par exemple, une cuisine ou cuisinette ou une salle de lavage. De plus, la plupart des hôtels qui proposent ce service sont situés au centre-ville et ne sont donc pas utiles à ceux qui travaillent dans les autres arrondissements de la ville.",
+      tag: "other",
+    },
+    {
+      question: "Comment puis-je inscrire une autre ville?",
+      answer: `Envoyez un courriel à victoria@healthworkerhousing.ca avec l'objet  «Nouvelle ville» et nous vous aiderons à démarrer le processus. Pour agir en tant que coordinateur de la ville, vous avez besoin de savoir comment gérer une boîte courriel et les formulaires Google.`,
       tag: "other",
     },
   ],
