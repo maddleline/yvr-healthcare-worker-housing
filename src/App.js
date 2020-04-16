@@ -51,7 +51,7 @@ export default function App() {
             <div className="bx--row section section__header">
               <div className="bx--col-sm-3 bx--col-md-6 bx--offset-lg-1 bx--col-lg-5">
                 <Link to="/">
-                  <h3>Health Worker Housing</h3>
+                  <h3>{translatedData.title}</h3>
                 </Link>
               </div>
               <div className="bx--col-sm-1 bx--col-md-2 bx--offset-lg-3 bx--col-lg-1">

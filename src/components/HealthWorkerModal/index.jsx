@@ -9,6 +9,8 @@ import {
 } from "carbon-components-react";
 import React, { useState } from "react";
 
+import data from "./modalData";
+
 const HealthWorkerModal = ({
   name,
   linkToListings,
@@ -16,6 +18,7 @@ const HealthWorkerModal = ({
   email,
   isOpen,
   setIsOpen,
+  language,
 }) => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -24,6 +27,8 @@ const HealthWorkerModal = ({
   const [userEmail, setUserEmail] = useState("");
   const [feedback, setFeedback] = useState("");
   const [formIsSubmitted, setFormIsSubmitted] = useState(false);
+
+  let translatedData = language === "English" ? data.English : data.French;
 
   const handleSubmit = (event) => {
     const templateId = "canada_health_worker_housing_template";
@@ -48,20 +53,14 @@ const HealthWorkerModal = ({
       .then((res) => {
         setFormIsSubmitted(true);
         console.log("Email successfully sent!", variables);
-        setFeedback(
-          "Your request has been received! We'll contact you shortly by email."
-        );
+        setFeedback(translatedData.feedbackSuccessText);
       })
       .catch((err) => {
         console.error("Email failed to send.", err);
         if (err.status === 412) {
-          setFeedback(
-            "Whoops-- we weren't able to process your request.  Please try again with a valid email."
-          );
+          setFeedback(translatedData.feedbackEmailFailureText);
         } else {
-          setFeedback(
-            "Whoops-- we weren't able to process your request.  Please try again later."
-          );
+          setFeedback(translatedData.feedbackFailureText);
         }
       });
   };
@@ -69,8 +68,8 @@ const HealthWorkerModal = ({
   return (
     <Modal
       className="health-worker-modal"
-      modalHeading="Request access to listings"
-      modalLabel="Health Workers"
+      modalHeading={translatedData.modalHeading}
+      modalLabel={translatedData.modalLabel}
       selectorPrimaryFocus="[data-modal-primary-focus]"
       iconDescription="Close the modal"
       modalAriaLabel="Modal for healthcare workers to submit their information"
@@ -96,7 +95,7 @@ const HealthWorkerModal = ({
               required
               helperText=""
               id="first-name-text-input"
-              labelText="First name:"
+              labelText={translatedData.firstNameLabelText}
               placeholder=""
               type="text"
               onChange={(e) => {
@@ -108,7 +107,7 @@ const HealthWorkerModal = ({
               required
               helperText=""
               id="last-name-text-input"
-              labelText="Last name:"
+              labelText={translatedData.lastNameLabelText}
               placeholder=""
               type="text"
               onChange={(e) => {
@@ -121,7 +120,7 @@ const HealthWorkerModal = ({
             required
             helperText=""
             id="occupation-text-input"
-            labelText="Occupation:"
+            labelText={translatedData.occupationLabelText}
             placeholder=""
             type="text"
             onChange={(e) => {
@@ -133,7 +132,7 @@ const HealthWorkerModal = ({
             required
             helperText=""
             id="workplace-text-input"
-            labelText="Place of work:"
+            labelText={translatedData.workplaceLabelText}
             placeholder=""
             type="text"
             onChange={(e) => {
@@ -145,7 +144,7 @@ const HealthWorkerModal = ({
             required
             helperText=""
             id="email-text-input"
-            labelText="Email:"
+            labelText={translatedData.emailLabelText}
             placeholder=""
             type="email"
             onChange={(e) => {
@@ -157,7 +156,7 @@ const HealthWorkerModal = ({
             className="checkbox"
             id="checkbox-1"
             required
-            labelText="I confirm I am a healthcare or other essential worker at high risk of contracting COVID-19."
+            labelText={translatedData.acknowledgement1}
             name="checkbox-1"
             onChange={() => {}}
             value="standard"
@@ -167,7 +166,7 @@ const HealthWorkerModal = ({
             className="checkbox"
             id="checkbox-2"
             required
-            labelText="I confirm I am willing to pay a reasonable rate for a seperate, furnished suite."
+            labelText={translatedData.acknowledgement2}
             name="checkbox-2"
             onChange={() => {}}
             value="standard"
@@ -177,7 +176,7 @@ const HealthWorkerModal = ({
             className="checkbox"
             id="checkbox-3"
             required
-            labelText="I understand that it's my responsibility to contact suites to set up viewings and come up with a suitable rental agreement."
+            labelText={translatedData.acknowledgement3}
             name="checkbox-3"
             onChange={() => {}}
             value="standard"
@@ -187,7 +186,7 @@ const HealthWorkerModal = ({
             className="checkbox"
             id="checkbox-4"
             required
-            labelText="I understand that I may be asked to show my work identification to property owners before entering into an agreement."
+            labelText={translatedData.acknowledgement4}
             name="checkbox-4"
             onChange={() => {}}
             value="standard"
@@ -200,7 +199,7 @@ const HealthWorkerModal = ({
             tabIndex={0}
             type="submit"
           >
-            Submit
+            {translatedData.buttonText}
           </Button>
         </Form>
       )}

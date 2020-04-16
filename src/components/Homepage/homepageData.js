@@ -2,7 +2,6 @@ import React from "react";
 
 export default {
   English: {
-    title: "Health Worker Housing",
     heading: "Help keep healthcare workers' families safe",
     paragraphs: [
       <p>
@@ -26,7 +25,6 @@ export default {
     cta: "Select your city below:",
   },
   French: {
-    title: "Logements pour les travailleur.e.s de la santé",
     heading:
       "Aidez-nous à protéger les familles des travailleur.e.s de la santé",
     paragraphs: [
