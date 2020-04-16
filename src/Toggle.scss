@@ -12,15 +12,24 @@
     }
     .bx--toggle__switch::before {
       border-radius: 0;
+      width: 3.5rem;
       background-color: #fec720;
     }
     .bx--toggle__switch::after {
+      padding: 1px 0 0 4px;
       border-radius: 0;
+      width: 1.5rem;
+      content: "En";
     }
   }
   .bx--toggle-input:checked
     + .bx--toggle-input__label
     > .bx--toggle__switch::before {
     background-color: #f29483;
+  }
+  .bx--toggle-input:checked
+    + .bx--toggle-input__label
+    .bx--toggle__switch::after {
+    content: "Fr";
   }
 }
