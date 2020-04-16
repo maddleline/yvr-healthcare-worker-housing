@@ -23,7 +23,6 @@ export default {
         action: "Onward!",
       },
       {
-        isComingSoon: 1,
         name: "Edmonton",
         province: "Alberta",
         url: "edmonton",
@@ -99,7 +98,6 @@ export default {
         action: "Onward!",
       },
       {
-        isComingSoon: 1,
         name: "Edmonton",
         province: "Alberta",
         url: "edmonton",
