@@ -23,6 +23,7 @@ export default {
       </p>,
     ],
     cta: "Select your city below:",
+    footer: { text: "Created by volunteers with" },
   },
   French: {
     heading:
@@ -49,5 +50,6 @@ export default {
       </p>,
     ],
     cta: "Sélectionnez votre ville ci-dessous:",
+    footer: { text: "Créer par des bénévoles avec" },
   },
 };

@@ -67,7 +67,7 @@ const Homepage = ({ cities, languageToggle, language }) => {
           <div className="bx--col-sm-3 bx--col-md-6 bx--offset-lg-1 bx--col-lg-5">
             <p>
               <span className="bold inline-icon">
-                Created by volunteers with
+                {translatedData.footer.text}
                 <FavoriteFilled16 />
               </span>
             </p>

@@ -61,10 +61,9 @@ export default {
         email: "ottawa@healthworkerhousing.ca",
         linkToPropertyForm:
           "https://docs.google.com/forms/d/1D9JUMZXNrTUc_o1PYCwTioDVOCA7ZwTj4Nnj_TIukMs/viewform",
-        action: "Allons-y!",
+        action: "On y va!",
       },
       {
-        isComingSoon: 0,
         name: "Montreal",
         province: "Quebec",
         url: "montreal",
@@ -138,10 +137,9 @@ export default {
         email: "ottawa@healthworkerhousing.ca",
         linkToPropertyForm:
           "https://docs.google.com/forms/d/1D9JUMZXNrTUc_o1PYCwTioDVOCA7ZwTj4Nnj_TIukMs/viewform",
-        action: "Allons-y!",
+        action: "On y va!",
       },
       {
-        isComingSoon: 0,
         name: "Montr&eacute;al",
         province: "Qu&eacute;bec",
         url: "montreal",
