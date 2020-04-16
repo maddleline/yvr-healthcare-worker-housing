@@ -47,9 +47,7 @@ const City = (props) => {
             <div className="bx--col-lg-4 bx--col-md-4 bx--col-sm-4 health-workers-text">
               <h2>{translatedData.healthcareWorkers.heading}</h2>
               <h3>{translatedData.healthcareWorkers.subHeading}</h3>
-              {translatedData.healthcareWorkers.paragraphs.map((p, index) => {
-                return <p key={index}>{p}</p>;
-              })}
+              {translatedData.healthcareWorkers.paragraphs}
               <div
                 className="link"
                 onClick={() => {
@@ -79,9 +77,7 @@ const City = (props) => {
             <div className="bx--col-lg-4 bx--col-md-4 bx--col-sm-4 property-owners-text">
               <h2>{translatedData.propertyOwners.heading}</h2>
               <h3>{translatedData.propertyOwners.subHeading}</h3>
-              {translatedData.propertyOwners.paragraphs.map((p, index) => {
-                return <p key={index}>{p}</p>;
-              })}
+              {translatedData.propertyOwners.paragraphs}
               <h4>{translatedData.propertyOwners.listHeading}</h4>
               <ul>
                 {translatedData.propertyOwners.listItems.map(
