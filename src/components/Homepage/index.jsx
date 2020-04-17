@@ -61,7 +61,10 @@ const Homepage = (props) => {
           <div className="bx--col-lg-2" />
         </div>
       </div>
-      <Footer text={translatedData.footer.text} email="victoria" />
+      <Footer
+        text={translatedData.footer.text}
+        email={props.language === "en" ? "victoria" : "montreal"}
+      />
     </div>
   );
 };
