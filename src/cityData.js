@@ -24,6 +24,16 @@ export default {
         action: "Onward!",
       },
       {
+        name: "Calgary",
+        province: "Alberta",
+        url: "calgary",
+        contact: "Ari",
+        email: "calgary@healthworkerhousing.ca",
+        linkToPropertyForm:
+          "https://docs.google.com/forms/d/1nT4BgjJPwKSeHhryC7jmsbNvTJrJkimJc14Cz0KTVw8/viewform",
+        action: "Giddy-up!",
+      },
+      {
         name: "Edmonton",
         province: "Alberta",
         url: "edmonton",
@@ -31,7 +41,7 @@ export default {
         email: "edmonton@healthworkerhousing.ca",
         linkToPropertyForm:
           "https://docs.google.com/forms/d/1L8I69ULBw9whLCOF-MPdXRekoKb1tAlOcoP6a0z8PB0/viewform",
-        action: "Giddy-up!",
+        action: "On your marks!",
       },
       {
         name: "Toronto",
@@ -41,7 +51,7 @@ export default {
         email: "toronto@healthworkerhousing.ca",
         linkToPropertyForm:
           "https://docs.google.com/forms/d/e/1FAIpQLScQW2JE4WTC9rtHLaIlK0BOb5IEW7dGz4DDPyGPB5nkfDZNDw/viewform",
-        action: "Let's go!",
+        action: "Get set!",
       },
       {
         name: "Kingston",
@@ -51,7 +61,7 @@ export default {
         email: "kingston@healthworkerhousing.ca",
         linkToPropertyForm:
           "https://docs.google.com/forms/d/1E9wPtx6IogtOSZP6EGjxi-vao-QEFv_YkmdcPj8IgRA/viewform",
-        action: "Hop to it!",
+        action: "Let's go!",
       },
       {
         name: "Ottawa",
@@ -100,6 +110,16 @@ export default {
         action: "Onward!",
       },
       {
+        name: "Calgary",
+        province: "Alberta",
+        url: "calgary",
+        contact: "Ari",
+        email: "calgary@healthworkerhousing.ca",
+        linkToPropertyForm:
+          "https://docs.google.com/forms/d/1nT4BgjJPwKSeHhryC7jmsbNvTJrJkimJc14Cz0KTVw8/viewform",
+        action: "Giddy-up!",
+      },
+      {
         name: "Edmonton",
         province: "Alberta",
         url: "edmonton",
@@ -107,7 +127,7 @@ export default {
         email: "edmonton@healthworkerhousing.ca",
         linkToPropertyForm:
           "https://docs.google.com/forms/d/1L8I69ULBw9whLCOF-MPdXRekoKb1tAlOcoP6a0z8PB0/viewform",
-        action: "Giddy-up!",
+        action: "On your marks!",
       },
       {
         name: "Toronto",
@@ -117,7 +137,7 @@ export default {
         email: "toronto@healthworkerhousing.ca",
         linkToPropertyForm:
           "https://docs.google.com/forms/d/e/1FAIpQLScQW2JE4WTC9rtHLaIlK0BOb5IEW7dGz4DDPyGPB5nkfDZNDw/viewform",
-        action: "Let's go!",
+        action: "Get set!",
       },
       {
         name: "Kingston",
@@ -127,7 +147,7 @@ export default {
         email: "kingston@healthworkerhousing.ca",
         linkToPropertyForm:
           "https://docs.google.com/forms/d/1E9wPtx6IogtOSZP6EGjxi-vao-QEFv_YkmdcPj8IgRA/viewform",
-        action: "Hop to it!",
+        action: "Let's go!",
       },
       {
         name: "Ottawa",
