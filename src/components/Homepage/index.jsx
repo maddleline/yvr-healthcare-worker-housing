@@ -16,12 +16,13 @@ const Homepage = (props) => {
           <div className="bx--offset-lg-9 bx--col-lg-1">
             <div style={{ float: "right" }}>{props.languageToggle}</div>
           </div>
-          <div className="bx--offset-lg-1 bx--col-lg-4 bx--col-md-3 bx--col-sm-4 left">
+          <div className="bx--offset-lg-1 bx--col-lg-4 bx--col-md-3 bx--col-sm-3 left">
             <div>
               <h1>{translatedData.heading}</h1>
               {translatedData.paragraphs}
             </div>
           </div>
+          <div className="bx--offset-lg-0 bx--offset-md-0 bx--offset-sm-1" />
           <div className="bx--col-lg-5 bx--offset-md-0 bx--col-md-5 bx--offset-sm-1 bx--col-sm-3 right">
             <img
               className="hero-image"

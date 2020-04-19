@@ -8,6 +8,7 @@ import FAQ from "./components/FAQ";
 import GridHelper from "./components/GridHelper";
 import Header from "./components/Header";
 import Homepage from "./components/Homepage";
+import HttpsRedirect from "react-https-redirect";
 import React from "react";
 import ScrollToTop from "./components/ScrollToTop";
 import { Toggle } from "carbon-components-react";
@@ -52,7 +53,7 @@ export default function App() {
   });
 
   return (
-    <>
+    <HttpsRedirect>
       {process.env.NODE_ENV === "development" && <GridHelper />}
       <Router>
         <ScrollToTop />
@@ -74,6 +75,6 @@ export default function App() {
           </Switch>
         </div>
       </Router>
-    </>
+    </HttpsRedirect>
   );
 }
