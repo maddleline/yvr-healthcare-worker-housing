@@ -17,7 +17,7 @@ export default {
         name: "Vancouver",
         province: "British Columbia",
         url: "vancouver",
-        contact: "Madeline",
+        contact: "Mary",
         email: "vancouver@healthworkerhousing.ca",
         linkToPropertyForm:
           "https://docs.google.com/forms/d/e/1FAIpQLSeoDudR3nhYv8KvutU6osarBFqdnNBUq303LI_k2qf0CiRAnQ/viewform",
@@ -103,7 +103,7 @@ export default {
         name: "Vancouver",
         province: "Colombie-Britannique",
         url: "vancouver",
-        contact: "Madeline",
+        contact: "Mary",
         email: "vancouver@healthworkerhousing.ca",
         linkToPropertyForm:
           "https://docs.google.com/forms/d/e/1FAIpQLSeoDudR3nhYv8KvutU6osarBFqdnNBUq303LI_k2qf0CiRAnQ/viewform",
