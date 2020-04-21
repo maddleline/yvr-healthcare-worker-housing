@@ -1,5 +1,6 @@
 import { FavoriteFilled16 } from "@carbon/icons-react/es";
 import React from "react";
+import ReactHtmlParser from "react-html-parser";
 
 const Footer = (props) => {
   return (
@@ -12,7 +13,7 @@ const Footer = (props) => {
               <FavoriteFilled16 />
             </span>
           </p>
-          <p>{props.email}&#64;healthworkerhousing.ca</p>
+          <p>{ReactHtmlParser(props.email)}</p>
         </div>
       </div>
     </div>

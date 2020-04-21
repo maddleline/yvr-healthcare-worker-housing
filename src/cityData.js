@@ -44,6 +44,16 @@ export default {
         action: "On your marks!",
       },
       {
+        name: "Waterloo Region",
+        province: "Ontario",
+        url: "waterloo-region",
+        contact: "Mingchang",
+        email: "waterloo@healthworkerhousing.ca",
+        linkToPropertyForm:
+          "https://docs.google.com/forms/d/e/1FAIpQLSd1dOOXFearmFLkvZkrRIxJxjskpvJvkiNUNrSjKN6daYPjpg/viewform",
+        action: "Get set!",
+      },
+      {
         name: "Toronto",
         province: "Ontario",
         url: "toronto",
@@ -51,7 +61,7 @@ export default {
         email: "toronto@healthworkerhousing.ca",
         linkToPropertyForm:
           "https://docs.google.com/forms/d/e/1FAIpQLScQW2JE4WTC9rtHLaIlK0BOb5IEW7dGz4DDPyGPB5nkfDZNDw/viewform",
-        action: "Get set!",
+        action: "Let's go!",
       },
       {
         name: "Kingston",
@@ -61,7 +71,7 @@ export default {
         email: "kingston@healthworkerhousing.ca",
         linkToPropertyForm:
           "https://docs.google.com/forms/d/1E9wPtx6IogtOSZP6EGjxi-vao-QEFv_YkmdcPj8IgRA/viewform",
-        action: "Let's go!",
+        action: "Hop to it!",
       },
       {
         name: "Ottawa",
@@ -130,6 +140,16 @@ export default {
         action: "On your marks!",
       },
       {
+        name: "Région de Waterloo",
+        province: "Ontario",
+        url: "waterloo-region",
+        contact: "Mingchang",
+        email: "waterloo@healthworkerhousing.ca",
+        linkToPropertyForm:
+          "https://docs.google.com/forms/d/e/1FAIpQLSd1dOOXFearmFLkvZkrRIxJxjskpvJvkiNUNrSjKN6daYPjpg/viewform",
+        action: "Get set!",
+      },
+      {
         name: "Toronto",
         province: "Ontario",
         url: "toronto",
@@ -137,7 +157,7 @@ export default {
         email: "toronto@healthworkerhousing.ca",
         linkToPropertyForm:
           "https://docs.google.com/forms/d/e/1FAIpQLScQW2JE4WTC9rtHLaIlK0BOb5IEW7dGz4DDPyGPB5nkfDZNDw/viewform",
-        action: "Get set!",
+        action: "Let's go!",
       },
       {
         name: "Kingston",
@@ -147,7 +167,7 @@ export default {
         email: "kingston@healthworkerhousing.ca",
         linkToPropertyForm:
           "https://docs.google.com/forms/d/1E9wPtx6IogtOSZP6EGjxi-vao-QEFv_YkmdcPj8IgRA/viewform",
-        action: "Let's go!",
+        action: "Hop to it!",
       },
       {
         name: "Ottawa",

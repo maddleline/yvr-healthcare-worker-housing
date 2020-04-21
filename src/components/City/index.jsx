@@ -98,10 +98,7 @@ const City = (props) => {
             <div className="bx--offset-lg-3" />
           </div>
         </div>
-        <Footer
-          text={translatedData.footer.text}
-          email={document.location.pathname.slice(1)}
-        />
+        <Footer text={translatedData.footer.text} email={props.email} />
       </div>
     </>
   );

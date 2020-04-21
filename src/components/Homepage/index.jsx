@@ -64,7 +64,11 @@ const Homepage = (props) => {
       </div>
       <Footer
         text={translatedData.footer.text}
-        email={props.language === "en" ? "victoria" : "montreal"}
+        email={
+          props.language === "en"
+            ? "victoria&#64;healthworkerhousing.ca"
+            : "montreal&#64;healthworkerhousing.ca"
+        }
       />
     </div>
   );
