@@ -62,7 +62,6 @@ export default {
         tag: "other",
       },
     ],
-    footer: { text: "Created by volunteers with" },
   },
   French: {
     faqs: [
@@ -129,6 +128,5 @@ export default {
         tag: "other",
       },
     ],
-    footer: { text: "Créer par des bénévoles avec" },
   },
 };

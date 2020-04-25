@@ -61,7 +61,7 @@ const FAQ = (props) => {
         </div>
       </div>
       <Footer
-        text={translatedData.footer.text}
+        language={props.language}
         email={
           props.language === "en"
             ? "victoria&#64;healthworkerhousing.ca"

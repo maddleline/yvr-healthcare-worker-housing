@@ -1,7 +1,6 @@
 export default {
   English: {
     title: "Health Worker Housing",
-    footer: { text: "Created by volunteers with" },
     cities: [
       {
         name: "Victoria",
@@ -97,7 +96,6 @@ export default {
   },
   French: {
     title: "Logements pour les Travailleur.e.s de la Santé",
-    footer: { text: "Créer par des bénévoles avec" },
     cities: [
       {
         name: "Victoria",

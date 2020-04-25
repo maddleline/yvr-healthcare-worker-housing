@@ -46,7 +46,6 @@ export default {
       linkText: "List your property",
       linkHoverText: "Thanks!",
     },
-    footer: { text: "Created by volunteers with" },
   },
   French: {
     healthcareWorkers: {
@@ -95,6 +94,5 @@ export default {
       linkText: "Liste des logements",
       linkHoverText: "Merci!",
     },
-    footer: { text: "Créer par des bénévoles avec" },
   },
 };
