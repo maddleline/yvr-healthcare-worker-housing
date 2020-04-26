@@ -44,7 +44,7 @@ const City = (props) => {
               <h2>{translatedData.healthcareWorkers.heading}</h2>
               <h3>{translatedData.healthcareWorkers.subHeading}</h3>
               {translatedData.healthcareWorkers.paragraphs}
-              <div
+              <a
                 className="link"
                 onClick={() => {
                   setIsModalOpen(true);
@@ -58,7 +58,7 @@ const City = (props) => {
                   <View16 />
                   <View16 />
                 </span>
-              </div>
+              </a>
             </div>
             <div className="bx--col-lg-3" />
           </div>

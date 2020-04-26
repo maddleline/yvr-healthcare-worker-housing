@@ -194,6 +194,7 @@ const HealthWorkerModal = ({
           <br />
           <Button
             className="submit-request-for-listings"
+            id="submit-request-for-listings-button"
             kind="primary"
             size="default"
             tabIndex={0}
