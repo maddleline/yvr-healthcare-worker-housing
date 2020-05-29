@@ -28,7 +28,11 @@ const Footer = (props) => {
               <FavoriteFilled16 />
             </span>
           </p>
-          <p>{ReactHtmlParser(props.email)}</p>
+          <p>
+            {props.siteIsDormant
+              ? "housing4frontlinehealth@gmail.com"
+              : ReactHtmlParser(props.email)}
+          </p>
         </div>
         <div className="bx--col-sm-4 bx--col-md-4 bx--col-lg-6 social-media-container">
           <p>

@@ -16,6 +16,7 @@ import data from "./cityData";
 import queryString from "query-string";
 
 export default function App() {
+  const siteIsDormant = true;
   const language = queryString.parse(document.location.search).lang || "en";
   let translatedData = language === "en" ? data.English : data.French;
 
@@ -47,7 +48,12 @@ export default function App() {
     }
     return (
       <Route key={city.url} path={`/${city.url}`}>
-        <City {...city} language={language} languageToggle={languageToggle} />
+        <City
+          {...city}
+          language={language}
+          languageToggle={languageToggle}
+          siteIsDormant={siteIsDormant}
+        />
       </Route>
     );
   });
@@ -63,13 +69,18 @@ export default function App() {
           <Switch>
             {cityRoutes}
             <Route path={`/faq`}>
-              <FAQ language={language} languageToggle={languageToggle} />
+              <FAQ
+                language={language}
+                languageToggle={languageToggle}
+                siteIsDormant={siteIsDormant}
+              />
             </Route>
             <Route path={`/`}>
               <Homepage
                 language={language}
                 cities={translatedData.cities}
                 languageToggle={languageToggle}
+                siteIsDormant={siteIsDormant}
               />
             </Route>
           </Switch>

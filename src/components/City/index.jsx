@@ -5,18 +5,27 @@ import React, { useState } from "react";
 
 import Footer from "../Footer/";
 import HealthWorkerModal from "../HealthWorkerModal";
+import PropertyOwnerModal from "../PropertyOwnerModal";
 import ReactHtmlParser from "react-html-parser";
 import data from "./cityPageData";
 
 const City = (props) => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isHealthWorkerModalOpen, setIsHealthWorkerModalOpen] = useState(false);
+  const [isPropertyOwnerModalOpen, setIsPropertyOwnerModalOpen] = useState(
+    false
+  );
   let translatedData = props.language === "en" ? data.English : data.French;
   return (
     <>
       <HealthWorkerModal
         {...props}
-        isOpen={isModalOpen}
-        setIsOpen={setIsModalOpen}
+        isOpen={isHealthWorkerModalOpen}
+        setIsOpen={setIsHealthWorkerModalOpen}
+      />
+      <PropertyOwnerModal
+        {...props}
+        isOpen={isPropertyOwnerModalOpen}
+        setIsOpen={setIsPropertyOwnerModalOpen}
       />
       <div className="City">
         <div className="bx--grid city-name">
@@ -47,7 +56,7 @@ const City = (props) => {
               <a
                 className="link"
                 onClick={() => {
-                  setIsModalOpen(true);
+                  setIsHealthWorkerModalOpen(true);
                 }}
               >
                 <div>
@@ -82,23 +91,42 @@ const City = (props) => {
                   }
                 )}
               </ul>
-              <a
-                href={props.linkToPropertyForm}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="link"
-              >
-                <div>
-                  {translatedData.propertyOwners.linkText}
-                  <Launch16 />
-                </div>
-                <span>{translatedData.propertyOwners.linkHoverText}</span>
-              </a>
+              {props.siteIsDormant ? (
+                <a
+                  className="link"
+                  onClick={() => {
+                    setIsPropertyOwnerModalOpen(true);
+                  }}
+                >
+                  <div>
+                    {translatedData.propertyOwners.linkText}
+                    <ArrowRight16 />
+                  </div>
+                  <span>{translatedData.propertyOwners.linkHoverText}</span>
+                </a>
+              ) : (
+                <a
+                  href={props.linkToPropertyForm}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="link"
+                >
+                  <div>
+                    {translatedData.propertyOwners.linkText}
+                    <Launch16 />
+                  </div>
+                  <span>{translatedData.propertyOwners.linkHoverText}</span>
+                </a>
+              )}
             </div>
             <div className="bx--offset-lg-3" />
           </div>
         </div>
-        <Footer language={props.language} email={props.email} />
+        <Footer
+          language={props.language}
+          email={props.email}
+          siteIsDormant={props.siteIsDormant}
+        />
       </div>
     </>
   );

@@ -67,6 +67,7 @@ const FAQ = (props) => {
             ? "victoria&#64;healthworkerhousing.ca"
             : "montreal&#64;healthworkerhousing.ca"
         }
+        siteIsDormant={props.siteIsDormant}
       />
     </div>
   );

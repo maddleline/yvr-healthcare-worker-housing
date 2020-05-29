@@ -19,6 +19,7 @@ const HealthWorkerModal = ({
   isOpen,
   setIsOpen,
   language,
+  siteIsDormant,
 }) => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -80,7 +81,9 @@ const HealthWorkerModal = ({
       }}
       open={isOpen}
     >
-      {formIsSubmitted ? (
+      {siteIsDormant ? (
+        <div>{translatedData.dormantMessage}</div>
+      ) : formIsSubmitted ? (
         <div className="feedback">{feedback}</div>
       ) : (
         <Form

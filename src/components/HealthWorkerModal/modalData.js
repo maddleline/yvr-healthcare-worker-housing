@@ -2,6 +2,8 @@ export default {
   English: {
     modalLabel: "Health Workers",
     modalHeading: "Request access to listings",
+    dormantMessage:
+      "We are not accepting requests for access to listings at this time.",
     firstNameLabelText: "First name:",
     lastNameLabelText: "Last name:",
     occupationLabelText: "Occupation",
@@ -26,6 +28,8 @@ export default {
   French: {
     modalLabel: "Travailleur.e.s de la Santé",
     modalHeading: "Demande d'accès aux petites annonces",
+    dormantMessage:
+      "Nous n'acceptons pas les demandes d'accès aux petites annonces pour le moment.",
     firstNameLabelText: "Prénom",
     lastNameLabelText: "Nom:",
     occupationLabelText: "Occupation",
