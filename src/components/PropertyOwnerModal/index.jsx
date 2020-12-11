@@ -5,7 +5,7 @@ import React from "react";
 
 import data from "./modalData";
 
-const HealthWorkerModal = ({ isOpen, setIsOpen, language }) => {
+const PropertyOwnerModal = ({ isOpen, setIsOpen, language }) => {
   let translatedData = language === "en" ? data.English : data.French;
 
   return (
@@ -28,4 +28,4 @@ const HealthWorkerModal = ({ isOpen, setIsOpen, language }) => {
   );
 };
 
-export default HealthWorkerModal;
+export default PropertyOwnerModal;
