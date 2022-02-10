@@ -13,7 +13,7 @@
     "emailjs-com": "^2.6.4",
     "husky": "^4.3.5",
     "lint-staged": "^10.5.3",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "prettier": "^2.2.1",
     "query-string": "^6.13.7",
     "react": "^16.14.0",
